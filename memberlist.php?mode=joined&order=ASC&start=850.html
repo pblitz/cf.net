@@ -1,0 +1,656 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<link rel="top" href="index.php.html" title="Computer-Forum Foren-Übersicht" />
+<link rel="search" href="http://www.computer-forum.net/search.php" title="Suchen" />
+<link rel="help" href="faq.php.html" title="FAQ" />
+<link rel="author" href="memberlist.php.html" title="Mitgliederliste" />
+
+<title>Computer-Forum :: Mitgliederliste</title>
+<link rel="stylesheet" href="templates/DAJ_Glass/DAJ_Glass.css" type="text/css" />
+
+<!-- Start add - Birthday MOD -->
+
+<!-- End add - Birthday MOD -->
+
+</head>
+<body>
+
+<a name="top"></a>
+<!-- <div style="color: red;position:fixed;left:30%;top:20px;width:40%;font-size:2em;font-weight:bold">
+  Abschaltung des CF zum 1.5.2014 - <a href="http://www.computer-forum.net/viewtopic.php?t=5559">mehr Infos</a>
+
+</div> -->
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+  	<td height="14" width="25" nowrap="nowrap" class="ul"><span class="vsmall">&nbsp;</span></td>
+	<td width="100%" colspan="2" class="uc"><span class="vsmall">&nbsp;</span></td>
+	<td width="25" nowrap="nowrap" class="ur"><span class="vsmall">&nbsp;</span></td>
+  </tr>
+  <tr>
+  	<td class="headl"><span class="vsmall">&nbsp;</span></td>
+	<td class="row3" colspan="2">
+	<a href="index.php.html"><img src="templates/DAJ_Glass/images/logo_phpBB.gif" border="0" alt="Computer-Forum Foren-Übersicht" /></a>
+	</td>
+	<td class="headr"><span class="vsmall">&nbsp;</span></td>
+  </tr>
+  <tr valign="bottom">
+  	<td rowspan="3" class="tul"><span class="vsmall">&nbsp;</span></td>
+	<td height="30" class="tuc">
+	<a href="index.php.html" class="mainmenu1">Computer-Forum</a>
+	</td>
+	<td align="right" nowrap="nowrap" class="tuc">
+	  <table cellspacing="0" cellpadding="0" border="0">
+	  	<tr>
+		  <td><a href="faq.php.html"><img src="templates/DAJ_Glass/images/icon_mini_faq.gif" border="0" alt="FAQ" /></a></td>
+		  <td><span class="mainmenu1">&nbsp;<a href="faq.php.html" class="mainmenu1">FAQ</a>ï¿½ï¿½</span></td>
+		  <td><a href="http://www.computer-forum.net/search.php"><img src="templates/DAJ_Glass/images/icon_mini_search.gif" border="0" alt="Suchen" /></a></td>
+		  <td><span class="mainmenu1">&nbsp;<a href="http://www.computer-forum.net/search.php" class="mainmenu1">Suchen</a>ï¿½ï¿½</span></td>
+		  <td><a href="memberlist.php.html"><img src="templates/DAJ_Glass/images/icon_mini_members.gif" border="0" alt="Mitgliederliste" /></a></td>
+		  <td><span class="mainmenu1">&nbsp;<a href="memberlist.php.html" class="mainmenu1">Mitgliederliste</a>ï¿½ï¿½</span></td>
+		  <td><a href="groupcp.php.html"><img src="templates/DAJ_Glass/images/icon_mini_groups.gif" border="0" alt="Benutzergruppen" /></a></td>
+		  <td><span class="mainmenu1">&nbsp;<a href="groupcp.php.html" class="mainmenu1">Benutzergruppen</a></span></td>
+		</tr>
+	  </table>
+	</td>
+	<td rowspan="3" class="tur"><span class="vsmall">&nbsp;</span></td>
+  </tr>
+  <tr>
+  	<td height="10" colspan="2" class="row5"><img src="templates/DAJ_Glass/images/spacer.gif" border="0" height="1" width="1"></td>
+  </tr>
+  <tr valign="top">
+	<td height="30" nowrap="nowrap" class="tlc"><span class="mainmenu1">
+	<a href="profile.php%3Fmode=register.html" class="mainmenu1">Registrieren</a>&nbsp;&nbsp;::&nbsp;
+	<a href="login.php.html" class="mainmenu1">Login</a>
+	</span></td>
+	<td nowrap="nowrap" align="right" class="tlc"><span class="mainmenu1">
+	<a href="privmsg.php%3Ffolder=inbox.html" class="mainmenu1">Einloggen, um private Nachrichten zu lesen</a>
+	</span></td>
+  </tr>
+  <tr>
+    <td class="left"><span class="vsmall">&nbsp;</span></td>
+	<td colspan="2" class="row2"><br />
+
+<form method="post" action="memberlist.php.html">
+<table width="100%" cellspacing="1" cellpadding="1" border="0">
+  <tr valign="top">
+	<td nowrap="nowrap"><img src="templates/DAJ_Glass/images/nav.gif" border="0"></td>
+	<td width="100%"><span class="mainmenu"><a href="index.php.html" class="mainmenu">Computer-Forum Foren-Übersicht</a> » <a href="memberlist.php.html" class="mainmenu">Mitgliederliste</a></span></td>
+  </tr>
+</table>
+
+<table width="100%" cellspacing="1" cellpadding="1" border="0">
+  <tr>
+	<td align="right" nowrap="nowrap"><span class="genmed">Sortierungs-Methode auswählen: <select name="mode"><option value="joined" selected="selected">Anmeldungsdatum</option><option value="username">Benutzername</option><option value="location">Ort</option><option value="posts">Beiträge total</option><option value="email">E-Mail</option><option value="website">Website</option><option value="topten">Top-Ten-Autoren</option></select>  Ordnung <select name="order"><option value="ASC" selected="selected">Aufsteigend</option><option value="DESC">Absteigend</option></select>  
+	<input type="submit" name="submit" value="Sortieren" class="liteoption" /></span></td>
+  </tr>
+</table>
+
+<table width="100%" cellspacing="0" cellpadding="0" class="forumline">
+  <tr>
+	<td height="25" nowrap="nowrap" class="row4"><span class="cattitle"> Mitgliederliste</span></td>
+  </tr>
+  <tr>
+  	<td colspan="3">
+	  <table width="100%" cellspacing="1" cellpadding="3" border="0">
+		<tr align="center">
+	  	  <td height="20" class="row6" nowrap="nowrap"><span class="mainmenu">#</span></td>
+	  	  <td class="row6" nowrap="nowrap"><span class="mainmenu">Private Nachricht</span></td>
+	  	  <td class="row6" nowrap="nowrap"><span class="mainmenu">Benutzername</span></td>
+	  	  <td class="row6" nowrap="nowrap"><span class="mainmenu">E-Mail</span></td>
+	  	  <td class="row6" nowrap="nowrap"><span class="mainmenu">Wohnort</span></td>
+	  	  <td class="row6" nowrap="nowrap"><span class="mainmenu">Anmeldungsdatum</span></td>
+	  	  <td class="row6" nowrap="nowrap"><span class="mainmenu">Beiträge</span></td>
+	  	  <td class="row6" nowrap="nowrap"><span class="mainmenu">Website</span></td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 851 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1043.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1043.html" class="genmed">Simon_Lukas</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">17.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">46</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 852 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1044.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1044.html" class="genmed">c-o-b</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">18.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">15</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 853 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1045.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1045.html" class="genmed">Jarome</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">19.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 854 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1046.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1046.html" class="genmed">NobodysDarling</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">20.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">1</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 855 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1047.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1047.html" class="genmed">hiepsimu</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">20.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 856 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1048.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1048.html" class="genmed">tft.bildschirm</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">20.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">1</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 857 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1049.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1049.html" class="genmed">pum3ler</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">20.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">2</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 858 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1051.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1051.html" class="genmed">looser_killer</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">20.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">6</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 859 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1052.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1052.html" class="genmed">dognose</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">20.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">55</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 860 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1053.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1053.html" class="genmed">esonical</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">20.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">4</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 861 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1054.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1054.html" class="genmed">placetobe</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">21.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">2</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 862 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1055.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1055.html" class="genmed">Laura 21</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">21.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">1</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 863 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1056.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1056.html" class="genmed">jayem7</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">21.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">2</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 864 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1057.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1057.html" class="genmed">Tristar</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">21.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">1</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 865 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1058.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1058.html" class="genmed">chamoune</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">21.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 866 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1059.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1059.html" class="genmed">Styrol</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">Lippe</span></td>
+	  	  <td class="row2"><span class="gensmall">23.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">2</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 867 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1060.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1060.html" class="genmed">paul.b</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">23.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">1</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 868 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1061.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1061.html" class="genmed">grobi90</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">23.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">3</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 869 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1062.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1062.html" class="genmed">brrzl</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">24.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">3</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 870 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1063.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1063.html" class="genmed">paul40</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">25.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">1</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 871 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1064.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1064.html" class="genmed">Ernie128</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">25.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">2</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 872 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1065.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1065.html" class="genmed">Bina</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">25.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">1</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 873 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1066.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1066.html" class="genmed">regda</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">26.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">1</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 874 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1067.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1067.html" class="genmed">Riley</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">26.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">5</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 875 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1068.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1068.html" class="genmed">Diana</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">26.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">5</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 876 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1069.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1069.html" class="genmed">R4Z0R</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">27.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">1</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 877 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1070.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1070.html" class="genmed">zerberusse</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">27.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">1</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 878 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1071.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1071.html" class="genmed">Speedy87</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">28.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">4</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 879 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1072.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1072.html" class="genmed">Rio</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">28.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">4</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 880 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1073.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1073.html" class="genmed">bOernY</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">28.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">3</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 881 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1074.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1074.html" class="genmed">oppy</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">28.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 882 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1075.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1075.html" class="genmed">Björn</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">Bremen</span></td>
+	  	  <td class="row2"><span class="gensmall">28.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">1</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 883 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1076.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1076.html" class="genmed">Eigööö</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">28.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">8</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 884 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1077.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1077.html" class="genmed">master123</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">28.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">1</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 885 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1078.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1078.html" class="genmed">LordFrosti</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">29.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">1</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 886 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1079.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1079.html" class="genmed">eidm</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">29.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">2</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 887 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1080.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1080.html" class="genmed">blue-cat</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">29.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">1</span></td>
+	  	  <td class="row2"> <a href="http://www.magister.de.tl" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 888 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1081.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1081.html" class="genmed">Siglander</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">Schweiz</span></td>
+	  	  <td class="row2"><span class="gensmall">29.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">4</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 889 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1082.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1082.html" class="genmed">metzingerbub</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">29.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 890 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1083.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1083.html" class="genmed">annilein</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">29.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">3</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 891 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1084.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1084.html" class="genmed">Armin</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">30.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">1</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 892 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1085.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1085.html" class="genmed">TrixieTripp</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">30.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">14</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 893 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1086.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1086.html" class="genmed">Jan</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">aalen</span></td>
+	  	  <td class="row2"><span class="gensmall">30.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">1</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 894 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1087.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1087.html" class="genmed">titusbrutus</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">Berlin</span></td>
+	  	  <td class="row2"><span class="gensmall">30.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">3</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 895 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1088.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1088.html" class="genmed">migi</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">30.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">1</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 896 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1089.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1089.html" class="genmed">1:10</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">30.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">7</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 897 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1090.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1090.html" class="genmed">Dsimon1702</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">30.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">3</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 898 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1091.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1091.html" class="genmed">Unox</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">31.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 899 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1092.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1092.html" class="genmed">Sakrileg</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">31.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">1</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 900 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=1093.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=1093.html" class="genmed">Albert_M</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">&nbsp;</span></td>
+	  	  <td class="row2"><span class="gensmall">31.10.2007</span></td>
+	  	  <td class="row2"><span class="genmed">9</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+	  </table>
+	</td>
+  </tr>
+</table>
+
+<table width="100%" cellspacing="1" cellpadding="1" border="0">
+  <tr>
+	<td><span class="genmed">Gehe zu Seite  <a href="memberlist.php%3Fmode=joined&amp;order=ASC&amp;start=800.html">Zurück</a>&nbsp;&nbsp;<a href="memberlist.php%3Fmode=joined&amp;order=ASC&amp;start=0.html">1</a>, <a href="memberlist.php%3Fmode=joined&amp;order=ASC&amp;start=50.html">2</a>, <a href="memberlist.php%3Fmode=joined&amp;order=ASC&amp;start=100.html">3</a> ... <a href="memberlist.php%3Fmode=joined&amp;order=ASC&amp;start=800.html">17</a>, <b>18</b>, <a href="memberlist.php%3Fmode=joined&amp;order=ASC&amp;start=900.html">19</a> ... <a href="memberlist.php%3Fmode=joined&amp;order=ASC&amp;start=2800.html">57</a>, <a href="memberlist.php%3Fmode=joined&amp;order=ASC&amp;start=2850.html">58</a>, <a href="memberlist.php%3Fmode=joined&amp;order=ASC&amp;start=2900.html">59</a>&nbsp;&nbsp;<a href="memberlist.php%3Fmode=joined&amp;order=ASC&amp;start=900.html">Weiter</a>&nbsp;</span></td>
+	<td align="right"><span class="nav">Seite <b>18</b> von <b>59</b></span></td>
+  </tr>
+</table>
+</form>
+
+<table width="100%" cellspacing="1" border="0" cellpadding="1">
+  <tr>
+	<td valign="top" align="right"><br /><form method="get" name="jumpbox" action="http://www.computer-forum.net/viewforum.php" onSubmit="if(document.jumpbox.f.value == -1){return false;}">
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+	<td nowrap="nowrap"><span class="gensmall">Gehe zu: <select name="f" onchange="if(this.options[this.selectedIndex].value != -1){ forms['jumpbox'].submit() }"><option value="-1">Forum auswählen</option><option value="-1">&nbsp;</option><option value="-1">Betriebssysteme</option><option value="-1">----------------</option><option value="2">Linux</option><option value="3">Mac OS X / Unix</option><option value="4">Windows</option><option value="5">Sonst. Betriebssysteme</option><option value="-1">&nbsp;</option><option value="-1">Hardware</option><option value="-1">----------------</option><option value="6">Hardware</option><option value="7">Mobile Computing</option><option value="-1">&nbsp;</option><option value="-1">Software</option><option value="-1">----------------</option><option value="8">Anwendungen</option><option value="9">Spiele</option><option value="10">Programmieren</option><option value="11">Sicherheit</option><option value="-1">&nbsp;</option><option value="-1">Internet & Intranet</option><option value="-1">----------------</option><option value="12">Netzwerk</option><option value="13">Web-Forum</option><option value="-1">&nbsp;</option><option value="-1">Sonstiges</option><option value="-1">----------------</option><option value="1">Rund ums Forum</option><option value="18">Kaufberatung</option><option value="15">Smalltalk</option></select><input type="hidden" name="sid" value="5d76da0a1d16a36f0135a7d18bcb610f" /> <input type="submit" value="Los" class="liteoption" /></span></td>
+  </tr>
+</table>
+</form>
+</td>
+  </tr>
+</table>
+  	</td>
+	<td class="right"><span class="vsmall"> </span></td>
+  </tr>
+  <tr>
+  	<td class="left"><span class="vsmall"> </span></td>
+	<td colspan="2" class="row2">
+	<div align="center"><span class="copyright"><br /><br />
+	<a href="http://www.computer-forum.net/viewtopic.php?p=1661"><b>Impressum</b></a><br/><br><br>
+	DAJ Glass (1.0.5) template by <a href="http://www.dumbassjones.com/" target="_blank" class="copyright">Dustin Baccetti</a><br />
+	Powered by <a href="http://www.phpbb.com/" target="_phpbb" class="copyright">phpBB</a>  © 2001, 2002 phpBB Group<br />Deutsche Übersetzung von <a href="http://www.phpbb.de/" target="_blank" class="copyright">phpBB.de</a></span></div>
+	</td>
+	<td class="right"><span class="vsmall"> </span></td>
+  </tr>
+  <tr>
+  	<td height="27" class="ll"><span class="vsmall"> </span></td>
+	<td colspan="2" class="lc"><span class="vsmall"> </span></td>
+	<td class="lr"><span class="vsmall"> </span></td>
+  </tr>
+</table>
+
+</body>
+</html>
+

@@ -1,0 +1,656 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<link rel="top" href="index.php.html" title="Computer-Forum Foren-Übersicht" />
+<link rel="search" href="http://www.computer-forum.net/search.php" title="Suchen" />
+<link rel="help" href="faq.php.html" title="FAQ" />
+<link rel="author" href="memberlist.php.html" title="Mitgliederliste" />
+
+<title>Computer-Forum :: Mitgliederliste</title>
+<link rel="stylesheet" href="templates/DAJ_Glass/DAJ_Glass.css" type="text/css" />
+
+<!-- Start add - Birthday MOD -->
+
+<!-- End add - Birthday MOD -->
+
+</head>
+<body>
+
+<a name="top"></a>
+<!-- <div style="color: red;position:fixed;left:30%;top:20px;width:40%;font-size:2em;font-weight:bold">
+  Abschaltung des CF zum 1.5.2014 - <a href="http://www.computer-forum.net/viewtopic.php?t=5559">mehr Infos</a>
+
+</div> -->
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+  	<td height="14" width="25" nowrap="nowrap" class="ul"><span class="vsmall">&nbsp;</span></td>
+	<td width="100%" colspan="2" class="uc"><span class="vsmall">&nbsp;</span></td>
+	<td width="25" nowrap="nowrap" class="ur"><span class="vsmall">&nbsp;</span></td>
+  </tr>
+  <tr>
+  	<td class="headl"><span class="vsmall">&nbsp;</span></td>
+	<td class="row3" colspan="2">
+	<a href="index.php.html"><img src="templates/DAJ_Glass/images/logo_phpBB.gif" border="0" alt="Computer-Forum Foren-Übersicht" /></a>
+	</td>
+	<td class="headr"><span class="vsmall">&nbsp;</span></td>
+  </tr>
+  <tr valign="bottom">
+  	<td rowspan="3" class="tul"><span class="vsmall">&nbsp;</span></td>
+	<td height="30" class="tuc">
+	<a href="index.php.html" class="mainmenu1">Computer-Forum</a>
+	</td>
+	<td align="right" nowrap="nowrap" class="tuc">
+	  <table cellspacing="0" cellpadding="0" border="0">
+	  	<tr>
+		  <td><a href="faq.php.html"><img src="templates/DAJ_Glass/images/icon_mini_faq.gif" border="0" alt="FAQ" /></a></td>
+		  <td><span class="mainmenu1">&nbsp;<a href="faq.php.html" class="mainmenu1">FAQ</a>ï¿½ï¿½</span></td>
+		  <td><a href="http://www.computer-forum.net/search.php"><img src="templates/DAJ_Glass/images/icon_mini_search.gif" border="0" alt="Suchen" /></a></td>
+		  <td><span class="mainmenu1">&nbsp;<a href="http://www.computer-forum.net/search.php" class="mainmenu1">Suchen</a>ï¿½ï¿½</span></td>
+		  <td><a href="memberlist.php.html"><img src="templates/DAJ_Glass/images/icon_mini_members.gif" border="0" alt="Mitgliederliste" /></a></td>
+		  <td><span class="mainmenu1">&nbsp;<a href="memberlist.php.html" class="mainmenu1">Mitgliederliste</a>ï¿½ï¿½</span></td>
+		  <td><a href="groupcp.php.html"><img src="templates/DAJ_Glass/images/icon_mini_groups.gif" border="0" alt="Benutzergruppen" /></a></td>
+		  <td><span class="mainmenu1">&nbsp;<a href="groupcp.php.html" class="mainmenu1">Benutzergruppen</a></span></td>
+		</tr>
+	  </table>
+	</td>
+	<td rowspan="3" class="tur"><span class="vsmall">&nbsp;</span></td>
+  </tr>
+  <tr>
+  	<td height="10" colspan="2" class="row5"><img src="templates/DAJ_Glass/images/spacer.gif" border="0" height="1" width="1"></td>
+  </tr>
+  <tr valign="top">
+	<td height="30" nowrap="nowrap" class="tlc"><span class="mainmenu1">
+	<a href="profile.php%3Fmode=register.html" class="mainmenu1">Registrieren</a>&nbsp;&nbsp;::&nbsp;
+	<a href="login.php.html" class="mainmenu1">Login</a>
+	</span></td>
+	<td nowrap="nowrap" align="right" class="tlc"><span class="mainmenu1">
+	<a href="privmsg.php%3Ffolder=inbox.html" class="mainmenu1">Einloggen, um private Nachrichten zu lesen</a>
+	</span></td>
+  </tr>
+  <tr>
+    <td class="left"><span class="vsmall">&nbsp;</span></td>
+	<td colspan="2" class="row2"><br />
+
+<form method="post" action="memberlist.php.html">
+<table width="100%" cellspacing="1" cellpadding="1" border="0">
+  <tr valign="top">
+	<td nowrap="nowrap"><img src="templates/DAJ_Glass/images/nav.gif" border="0"></td>
+	<td width="100%"><span class="mainmenu"><a href="index.php.html" class="mainmenu">Computer-Forum Foren-Übersicht</a> » <a href="memberlist.php.html" class="mainmenu">Mitgliederliste</a></span></td>
+  </tr>
+</table>
+
+<table width="100%" cellspacing="1" cellpadding="1" border="0">
+  <tr>
+	<td align="right" nowrap="nowrap"><span class="genmed">Sortierungs-Methode auswählen: <select name="mode"><option value="joined" selected="selected">Anmeldungsdatum</option><option value="username">Benutzername</option><option value="location">Ort</option><option value="posts">Beiträge total</option><option value="email">E-Mail</option><option value="website">Website</option><option value="topten">Top-Ten-Autoren</option></select>  Ordnung <select name="order"><option value="ASC" selected="selected">Aufsteigend</option><option value="DESC">Absteigend</option></select>  
+	<input type="submit" name="submit" value="Sortieren" class="liteoption" /></span></td>
+  </tr>
+</table>
+
+<table width="100%" cellspacing="0" cellpadding="0" class="forumline">
+  <tr>
+	<td height="25" nowrap="nowrap" class="row4"><span class="cattitle"> Mitgliederliste</span></td>
+  </tr>
+  <tr>
+  	<td colspan="3">
+	  <table width="100%" cellspacing="1" cellpadding="3" border="0">
+		<tr align="center">
+	  	  <td height="20" class="row6" nowrap="nowrap"><span class="mainmenu">#</span></td>
+	  	  <td class="row6" nowrap="nowrap"><span class="mainmenu">Private Nachricht</span></td>
+	  	  <td class="row6" nowrap="nowrap"><span class="mainmenu">Benutzername</span></td>
+	  	  <td class="row6" nowrap="nowrap"><span class="mainmenu">E-Mail</span></td>
+	  	  <td class="row6" nowrap="nowrap"><span class="mainmenu">Wohnort</span></td>
+	  	  <td class="row6" nowrap="nowrap"><span class="mainmenu">Anmeldungsdatum</span></td>
+	  	  <td class="row6" nowrap="nowrap"><span class="mainmenu">Beiträge</span></td>
+	  	  <td class="row6" nowrap="nowrap"><span class="mainmenu">Website</span></td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2801 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3117.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3117.html" class="genmed">faaosohnx</a></td>
+	  	  <td class="row2"> <a href="mailto:aangeastop@gotmail.net"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">UnitedStates</span></td>
+	  	  <td class="row2"><span class="gensmall">23.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://benjamanritt12.insanejournal.com/415.html" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2802 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3118.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3118.html" class="genmed">alalmeprinary</a></td>
+	  	  <td class="row2"> <a href="mailto:mileqfrancesy@cmail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Russia</span></td>
+	  	  <td class="row2"><span class="gensmall">24.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://xn--pracuj-za-granic-c4b.info.pl" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2803 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3120.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3120.html" class="genmed">DuhPoito</a></td>
+	  	  <td class="row2"> <a href="mailto:ajhnztivanova@ymail.org"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Moldova</span></td>
+	  	  <td class="row2"><span class="gensmall">24.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://colt45forsale.tk/colt-woodsman-automatic-22-long-rifle.html" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2804 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3122.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3122.html" class="genmed">hetypomek</a></td>
+	  	  <td class="row2"> <a href="mailto:velesyittlea@gotmail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Tunisia</span></td>
+	  	  <td class="row2"><span class="gensmall">24.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://paydayloansonlineinuk.co.uk" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2805 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3123.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3123.html" class="genmed">Adonis_Allsop</a></td>
+	  	  <td class="row2"> <a href="mailto:marketing@agrotechniki.info"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Nepal</span></td>
+	  	  <td class="row2"><span class="gensmall">24.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://www.vipescortslondon.co.uk" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2806 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3124.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3124.html" class="genmed">tarWrita</a></td>
+	  	  <td class="row2"> <a href="mailto:bannatshulze@e-mail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">USA</span></td>
+	  	  <td class="row2"><span class="gensmall">25.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://viewhue.com/139" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2807 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3126.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3126.html" class="genmed">SnimitEdisE</a></td>
+	  	  <td class="row2"> <a href="mailto:bbradawiftay@gotmail.net"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Iran</span></td>
+	  	  <td class="row2"><span class="gensmall">25.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://mmo-list.ru" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2808 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3127.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3127.html" class="genmed">yqasbpka</a></td>
+	  	  <td class="row2"> <a href="mailto:xqfzicbv@gmx.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">France</span></td>
+	  	  <td class="row2"><span class="gensmall">25.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://akkuschraubertest.centotorri.biz/" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2809 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3128.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3128.html" class="genmed">SpattyFraussy</a></td>
+	  	  <td class="row2"> <a href="mailto:patrickmtivnovy@e-mail.org"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Guymon</span></td>
+	  	  <td class="row2"><span class="gensmall">25.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://www.coachtokyo.net" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2810 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3130.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3130.html" class="genmed">annerseTizTem</a></td>
+	  	  <td class="row2"> <a href="mailto:broberospitt@cmail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Atwater</span></td>
+	  	  <td class="row2"><span class="gensmall">26.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://www.coachbagya.com/" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2811 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3131.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3131.html" class="genmed">cpqlresaa</a></td>
+	  	  <td class="row2"> <a href="mailto:adizzyctivanvy@gotmail.net"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Benin</span></td>
+	  	  <td class="row2"><span class="gensmall">26.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://www.louisvuittonoutletmarket.co.uk/" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2812 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3132.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3132.html" class="genmed">ImmatheIterie</a></td>
+	  	  <td class="row2"> <a href="mailto:pityshulze@gotmail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Salem</span></td>
+	  	  <td class="row2"><span class="gensmall">26.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2813 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3133.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3133.html" class="genmed">grourewen</a></td>
+	  	  <td class="row2"> <a href="mailto:bamaxmuslittlea@ymail.org"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">USA</span></td>
+	  	  <td class="row2"><span class="gensmall">26.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://cnn.com" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2814 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3134.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3134.html" class="genmed">StevieHcp</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">Chicago</span></td>
+	  	  <td class="row2"><span class="gensmall">26.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://www.familienurlaub-kinderhotels.de/" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2815 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3136.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3136.html" class="genmed">NopDoovePes</a></td>
+	  	  <td class="row2"> <a href="mailto:jaessgooglety@cmail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">D 97794 Rieneck</span></td>
+	  	  <td class="row2"><span class="gensmall">26.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2816 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3137.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3137.html" class="genmed">unamnence</a></td>
+	  	  <td class="row2"> <a href="mailto:bamaimustts@ymail.net"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Ireland</span></td>
+	  	  <td class="row2"><span class="gensmall">26.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://sacsvuittonpascher.webnode.fr/" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2817 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3138.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3138.html" class="genmed">preobappern</a></td>
+	  	  <td class="row2"> <a href="mailto:jaessyandext@e-mail.org"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">United States</span></td>
+	  	  <td class="row2"><span class="gensmall">26.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://topamax.blog.com/2012/08/24/topamax-25-mg/" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2818 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3139.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3139.html" class="genmed">aminxibyky</a></td>
+	  	  <td class="row2"> <a href="mailto:admi@jlinduxpnr.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Luzern</span></td>
+	  	  <td class="row2"><span class="gensmall">26.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2819 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3141.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3141.html" class="genmed">Towsnoma7h</a></td>
+	  	  <td class="row2"> <a href="mailto:ilesqlittleay@e-mail.net"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">êóïèòü áîòèëüîíû äæåôôðè êýìïáåëë</span></td>
+	  	  <td class="row2"><span class="gensmall">27.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://shop-sapato.ru/" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2820 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3142.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3142.html" class="genmed">entecytrutt</a></td>
+	  	  <td class="row2"> <a href="mailto:aveleytivanov@ymail.org"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Malawi</span></td>
+	  	  <td class="row2"><span class="gensmall">27.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://www.bethlsim.com/tramadol" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2821 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3143.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3143.html" class="genmed">mvuwazwkz</a></td>
+	  	  <td class="row2"> <a href="mailto:bamaximustexaxay@cmail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Samoa</span></td>
+	  	  <td class="row2"><span class="gensmall">27.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://www.authenticlouisvuittonoutletmarket.com/" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2822 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3144.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3144.html" class="genmed">Glomialoase</a></td>
+	  	  <td class="row2"> <a href="mailto:aadamasjnr@gotmail.org"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Iceland</span></td>
+	  	  <td class="row2"><span class="gensmall">27.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://doggroomingprices.info/1/index.php?c=result&amp;query=àìåðèêàíñêèå ñàéòû ãåé çíàêîìñòâ" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2823 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3145.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3145.html" class="genmed">AllOlonge</a></td>
+	  	  <td class="row2"> <a href="mailto:bannetaefrances@cmail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Italia</span></td>
+	  	  <td class="row2"><span class="gensmall">27.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://www.gssf.biz" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2824 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3147.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3147.html" class="genmed">MadonnaAat</a></td>
+	  	  <td class="row2"> &nbsp; </td>
+	  	  <td class="row2"><span class="genmed">Nogent-Sur-Marne</span></td>
+	  	  <td class="row2"><span class="gensmall">27.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://hopeinsure.org/" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2825 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3149.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3149.html" class="genmed">Scoocride</a></td>
+	  	  <td class="row2"> <a href="mailto:bapitytopa@ymail.org"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Kazakhstan</span></td>
+	  	  <td class="row2"><span class="gensmall">27.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://medwaystudios.tumblr.com/" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2826 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3150.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3150.html" class="genmed">tetThassyzers</a></td>
+	  	  <td class="row2"> <a href="mailto:fathlamn@nhathongminh-hai.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Benin</span></td>
+	  	  <td class="row2"><span class="gensmall">27.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2827 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3151.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3151.html" class="genmed">ToriouddifS</a></td>
+	  	  <td class="row2"> <a href="mailto:jessusiedeodcausstro@hotmail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Greenland</span></td>
+	  	  <td class="row2"><span class="gensmall">28.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://www.madville.com/blogs/497897_alternative_dog_training_collars" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2828 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3152.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3152.html" class="genmed">jlvuzvfmplud</a></td>
+	  	  <td class="row2"> <a href="mailto:mydayacrold@toenailmail.info"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Cape Verde</span></td>
+	  	  <td class="row2"><span class="gensmall">28.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://earth4energy-review.com" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2829 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3153.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3153.html" class="genmed">lspidb48</a></td>
+	  	  <td class="row2"> <a href="mailto:angelasjunory@cmail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">ALGERIA</span></td>
+	  	  <td class="row2"><span class="gensmall">28.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://termoplast.pulawy.pl/" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2830 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3154.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3154.html" class="genmed">MeewawlGads</a></td>
+	  	  <td class="row2"> <a href="mailto:bapatrckmdarka@ymail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Egypt</span></td>
+	  	  <td class="row2"><span class="gensmall">28.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://www.royal-grips.com" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2831 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3155.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3155.html" class="genmed">Advognini</a></td>
+	  	  <td class="row2"> <a href="mailto:ailesqtexaxd@cmail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">United Kingdom</span></td>
+	  	  <td class="row2"><span class="gensmall">28.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://huangshimeins.blogs.sapo.pt/" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2832 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3156.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3156.html" class="genmed">sptljdoxe</a></td>
+	  	  <td class="row2"> <a href="mailto:jehnzperov@cmail.org"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">El Salvador</span></td>
+	  	  <td class="row2"><span class="gensmall">28.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://www.authenticlouisvuittonoutletmarket.com/" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2833 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3157.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3157.html" class="genmed">XRumerTest</a></td>
+	  	  <td class="row2"> <a href="mailto:aaximustexaxday@ymail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Schweiz, 6064, Kerns</span></td>
+	  	  <td class="row2"><span class="gensmall">28.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2834 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3158.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3158.html" class="genmed">ASSAUGSPORWAY</a></td>
+	  	  <td class="row2"> <a href="mailto:aolgushtolze@gotmail.net"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Marshall Islands</span></td>
+	  	  <td class="row2"><span class="gensmall">28.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://www.longchamplepliageaustralia.com" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2835 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3159.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3159.html" class="genmed">Pozycjonowanie--L36</a></td>
+	  	  <td class="row2"> <a href="mailto:bmaxiusdark@cmail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Puerto Rico</span></td>
+	  	  <td class="row2"><span class="gensmall">28.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://pozycjonowanie.darmowe-strony.com" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2836 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3160.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3160.html" class="genmed">MityMypefew</a></td>
+	  	  <td class="row2"> <a href="mailto:bapatrickmpetrvay@ymail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Romania</span></td>
+	  	  <td class="row2"><span class="gensmall">28.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://juquoquub.freeoda.com/f_286.html" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2837 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3162.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3162.html" class="genmed">axioffnat</a></td>
+	  	  <td class="row2"> <a href="mailto:aalexeyswity@gotmail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Netherlands</span></td>
+	  	  <td class="row2"><span class="gensmall">28.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2838 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3163.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3163.html" class="genmed">irrifySig</a></td>
+	  	  <td class="row2"> <a href="mailto:bajaessjuniory@ymail.org"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Albania</span></td>
+	  	  <td class="row2"><span class="gensmall">28.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2839 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3164.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3164.html" class="genmed">vscwibue</a></td>
+	  	  <td class="row2"> <a href="mailto:foodwsrc@dmygavie.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">UK</span></td>
+	  	  <td class="row2"><span class="gensmall">28.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://wesckopfhoererweiss.blag.gy/2012/08/25/kopfhoerer-tests/" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2840 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3165.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3165.html" class="genmed">HighUnlologoNe</a></td>
+	  	  <td class="row2"> <a href="mailto:abobbpetrov@cmail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Norway</span></td>
+	  	  <td class="row2"><span class="gensmall">29.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://biurorachunkowe7.pl" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2841 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3166.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3166.html" class="genmed">Atolumumnitte</a></td>
+	  	  <td class="row2"> <a href="mailto:bmileqshulzey@ymail.net"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">United States</span></td>
+	  	  <td class="row2"><span class="gensmall">29.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://members.isupporttexasmusic.com/vicodin" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2842 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3167.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3167.html" class="genmed">Liaizeengenia</a></td>
+	  	  <td class="row2"> <a href="mailto:abrdatopay@ymail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Angola</span></td>
+	  	  <td class="row2"><span class="gensmall">29.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://www.animalcollectivetickets.org" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2843 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3168.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3168.html" class="genmed">AntedeEnelien</a></td>
+	  	  <td class="row2"> <a href="mailto:robertoschvs@cmail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Latvia</span></td>
+	  	  <td class="row2"><span class="gensmall">29.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://www.bestfakeraybansuk.co.uk" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2844 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3169.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3169.html" class="genmed">curntraurdy</a></td>
+	  	  <td class="row2"> <a href="mailto:bbobbymaareyy@gotmail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Vietnam</span></td>
+	  	  <td class="row2"><span class="gensmall">29.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://www.chrystuspan.pl/noclegi/1" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2845 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3170.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3170.html" class="genmed">arionvpkxl</a></td>
+	  	  <td class="row2"> <a href="mailto:olgaujuniray@e-mail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Australia</span></td>
+	  	  <td class="row2"><span class="gensmall">29.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://arionvps.com/" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2846 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3173.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3173.html" class="genmed">trataThorce</a></td>
+	  	  <td class="row2"> <a href="mailto:babradasifty@cmail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Finland</span></td>
+	  	  <td class="row2"><span class="gensmall">29.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2847 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3174.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3174.html" class="genmed">Vonoshouche</a></td>
+	  	  <td class="row2"> <a href="mailto:alexeyrancesay@ymail.net"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Albania</span></td>
+	  	  <td class="row2"><span class="gensmall">29.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2848 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3175.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3175.html" class="genmed">csillkmub</a></td>
+	  	  <td class="row2"> <a href="mailto:bvelesjuniory@ymail.net"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Vietnam</span></td>
+	  	  <td class="row2"><span class="gensmall">29.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://www.chanelbagsoutletwebsite.com" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2849 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3176.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3176.html" class="genmed">DiniCtDorkCer</a></td>
+	  	  <td class="row2"> <a href="mailto:abradayndexta@ymail.com"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Saudi Arabia</span></td>
+	  	  <td class="row2"><span class="gensmall">30.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2">  </td>
+		</tr>
+		<tr align="center" valign="middle">
+	  	  <td class="row2"><span class="genmed"> 2850 </span></td>
+	  	  <td class="row2"> <a href="privmsg.php%3Fmode=post&amp;u=3177.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a></td>
+	  	  <td class="row2"><a href="profile.php%3Fmode=viewprofile&amp;u=3177.html" class="genmed">Laskrabbage</a></td>
+	  	  <td class="row2"> <a href="mailto:baeveascahsay@ymail.net"><img src="templates/DAJ_Glass/images/lang_german/icon_email.gif" alt="E-Mail senden" title="E-Mail senden" border="0" /></a> </td>
+	  	  <td class="row2"><span class="genmed">Guatemala</span></td>
+	  	  <td class="row2"><span class="gensmall">30.08.2012</span></td>
+	  	  <td class="row2"><span class="genmed">0</span></td>
+	  	  <td class="row2"> <a href="http://www.google.com/" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> </td>
+		</tr>
+	  </table>
+	</td>
+  </tr>
+</table>
+
+<table width="100%" cellspacing="1" cellpadding="1" border="0">
+  <tr>
+	<td><span class="genmed">Gehe zu Seite  <a href="memberlist.php%3Fmode=joined&amp;order=ASC&amp;start=2750.html">Zurück</a>&nbsp;&nbsp;<a href="memberlist.php%3Fmode=joined&amp;order=ASC&amp;start=0.html">1</a>, <a href="memberlist.php%3Fmode=joined&amp;order=ASC&amp;start=50.html">2</a>, <a href="memberlist.php%3Fmode=joined&amp;order=ASC&amp;start=100.html">3</a> ... <a href="memberlist.php%3Fmode=joined&amp;order=ASC&amp;start=2750.html">56</a>, <b>57</b>, <a href="memberlist.php%3Fmode=joined&amp;order=ASC&amp;start=2850.html">58</a>, <a href="memberlist.php%3Fmode=joined&amp;order=ASC&amp;start=2900.html">59</a>&nbsp;&nbsp;<a href="memberlist.php%3Fmode=joined&amp;order=ASC&amp;start=2850.html">Weiter</a>&nbsp;</span></td>
+	<td align="right"><span class="nav">Seite <b>57</b> von <b>59</b></span></td>
+  </tr>
+</table>
+</form>
+
+<table width="100%" cellspacing="1" border="0" cellpadding="1">
+  <tr>
+	<td valign="top" align="right"><br /><form method="get" name="jumpbox" action="http://www.computer-forum.net/viewforum.php" onSubmit="if(document.jumpbox.f.value == -1){return false;}">
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+	<td nowrap="nowrap"><span class="gensmall">Gehe zu: <select name="f" onchange="if(this.options[this.selectedIndex].value != -1){ forms['jumpbox'].submit() }"><option value="-1">Forum auswählen</option><option value="-1">&nbsp;</option><option value="-1">Betriebssysteme</option><option value="-1">----------------</option><option value="2">Linux</option><option value="3">Mac OS X / Unix</option><option value="4">Windows</option><option value="5">Sonst. Betriebssysteme</option><option value="-1">&nbsp;</option><option value="-1">Hardware</option><option value="-1">----------------</option><option value="6">Hardware</option><option value="7">Mobile Computing</option><option value="-1">&nbsp;</option><option value="-1">Software</option><option value="-1">----------------</option><option value="8">Anwendungen</option><option value="9">Spiele</option><option value="10">Programmieren</option><option value="11">Sicherheit</option><option value="-1">&nbsp;</option><option value="-1">Internet & Intranet</option><option value="-1">----------------</option><option value="12">Netzwerk</option><option value="13">Web-Forum</option><option value="-1">&nbsp;</option><option value="-1">Sonstiges</option><option value="-1">----------------</option><option value="1">Rund ums Forum</option><option value="18">Kaufberatung</option><option value="15">Smalltalk</option></select><input type="hidden" name="sid" value="74cf9c6e0ec09eb401cf65cc493d8e44" /> <input type="submit" value="Los" class="liteoption" /></span></td>
+  </tr>
+</table>
+</form>
+</td>
+  </tr>
+</table>
+  	</td>
+	<td class="right"><span class="vsmall"> </span></td>
+  </tr>
+  <tr>
+  	<td class="left"><span class="vsmall"> </span></td>
+	<td colspan="2" class="row2">
+	<div align="center"><span class="copyright"><br /><br />
+	<a href="http://www.computer-forum.net/viewtopic.php?p=1661"><b>Impressum</b></a><br/><br><br>
+	DAJ Glass (1.0.5) template by <a href="http://www.dumbassjones.com/" target="_blank" class="copyright">Dustin Baccetti</a><br />
+	Powered by <a href="http://www.phpbb.com/" target="_phpbb" class="copyright">phpBB</a>  © 2001, 2002 phpBB Group<br />Deutsche Übersetzung von <a href="http://www.phpbb.de/" target="_blank" class="copyright">phpBB.de</a></span></div>
+	</td>
+	<td class="right"><span class="vsmall"> </span></td>
+  </tr>
+  <tr>
+  	<td height="27" class="ll"><span class="vsmall"> </span></td>
+	<td colspan="2" class="lc"><span class="vsmall"> </span></td>
+	<td class="lr"><span class="vsmall"> </span></td>
+  </tr>
+</table>
+
+</body>
+</html>
+

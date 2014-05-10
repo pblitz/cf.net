@@ -1,0 +1,2103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<link rel="top" href="index.php.html" title="Computer-Forum Foren-Übersicht" />
+<link rel="search" href="http://www.computer-forum.net/search.php" title="Suchen" />
+<link rel="help" href="faq.php.html" title="FAQ" />
+<link rel="author" href="memberlist.php.html" title="Mitgliederliste" />
+<link rel="prev" href="http://www.computer-forum.net/viewtopic.php?t=5433&amp;view=previous" title="Vorheriges Thema anzeigen" />
+<link rel="next" href="http://www.computer-forum.net/viewtopic.php?t=5433&amp;view=next" title="Nächstes Thema anzeigen" />
+<link rel="up" href="viewforum.php%3Ff=2.html" title="Linux" />
+<link rel="chapter forum" href="viewforum.php%3Ff=2.html" title="Linux" />
+<link rel="chapter forum" href="viewforum.php%3Ff=3.html" title="Mac OS X / Unix" />
+<link rel="chapter forum" href="viewforum.php%3Ff=4.html" title="Windows" />
+<link rel="chapter forum" href="viewforum.php%3Ff=5.html" title="Sonst. Betriebssysteme" />
+<link rel="chapter forum" href="viewforum.php%3Ff=6.html" title="Hardware" />
+<link rel="chapter forum" href="viewforum.php%3Ff=7.html" title="Mobile Computing" />
+<link rel="chapter forum" href="viewforum.php%3Ff=8.html" title="Anwendungen" />
+<link rel="chapter forum" href="viewforum.php%3Ff=9.html" title="Spiele" />
+<link rel="chapter forum" href="viewforum.php%3Ff=10.html" title="Programmieren" />
+<link rel="chapter forum" href="viewforum.php%3Ff=11.html" title="Sicherheit" />
+<link rel="chapter forum" href="viewforum.php%3Ff=12.html" title="Netzwerk" />
+<link rel="chapter forum" href="viewforum.php%3Ff=13.html" title="Web-Forum" />
+<link rel="chapter forum" href="viewforum.php%3Ff=1.html" title="Rund ums Forum" />
+<link rel="chapter forum" href="viewforum.php%3Ff=18.html" title="Kaufberatung" />
+<link rel="chapter forum" href="viewforum.php%3Ff=15.html" title="Smalltalk" />
+
+<title>Computer-Forum :: Thema anzeigen - Arch Linux auf dem Trim-Slice (2-Kern ARM Cortex A9 1 GHz)</title>
+<link rel="stylesheet" href="templates/DAJ_Glass/DAJ_Glass.css" type="text/css" />
+
+<!-- Start add - Birthday MOD -->
+
+<!-- End add - Birthday MOD -->
+
+</head>
+<body>
+
+<a name="top"></a>
+<!-- <div style="color: red;position:fixed;left:30%;top:20px;width:40%;font-size:2em;font-weight:bold">
+  Abschaltung des CF zum 1.5.2014 - <a href="http://www.computer-forum.net/viewtopic.php?t=5559">mehr Infos</a>
+
+</div> -->
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+  	<td height="14" width="25" nowrap="nowrap" class="ul"><span class="vsmall">&nbsp;</span></td>
+	<td width="100%" colspan="2" class="uc"><span class="vsmall">&nbsp;</span></td>
+	<td width="25" nowrap="nowrap" class="ur"><span class="vsmall">&nbsp;</span></td>
+  </tr>
+  <tr>
+  	<td class="headl"><span class="vsmall">&nbsp;</span></td>
+	<td class="row3" colspan="2">
+	<a href="index.php.html"><img src="templates/DAJ_Glass/images/logo_phpBB.gif" border="0" alt="Computer-Forum Foren-Übersicht" /></a>
+	</td>
+	<td class="headr"><span class="vsmall">&nbsp;</span></td>
+  </tr>
+  <tr valign="bottom">
+  	<td rowspan="3" class="tul"><span class="vsmall">&nbsp;</span></td>
+	<td height="30" class="tuc">
+	<a href="index.php.html" class="mainmenu1">Computer-Forum</a>
+	</td>
+	<td align="right" nowrap="nowrap" class="tuc">
+	  <table cellspacing="0" cellpadding="0" border="0">
+	  	<tr>
+		  <td><a href="faq.php.html"><img src="templates/DAJ_Glass/images/icon_mini_faq.gif" border="0" alt="FAQ" /></a></td>
+		  <td><span class="mainmenu1">&nbsp;<a href="faq.php.html" class="mainmenu1">FAQ</a>ï¿½ï¿½</span></td>
+		  <td><a href="http://www.computer-forum.net/search.php"><img src="templates/DAJ_Glass/images/icon_mini_search.gif" border="0" alt="Suchen" /></a></td>
+		  <td><span class="mainmenu1">&nbsp;<a href="http://www.computer-forum.net/search.php" class="mainmenu1">Suchen</a>ï¿½ï¿½</span></td>
+		  <td><a href="memberlist.php.html"><img src="templates/DAJ_Glass/images/icon_mini_members.gif" border="0" alt="Mitgliederliste" /></a></td>
+		  <td><span class="mainmenu1">&nbsp;<a href="memberlist.php.html" class="mainmenu1">Mitgliederliste</a>ï¿½ï¿½</span></td>
+		  <td><a href="groupcp.php.html"><img src="templates/DAJ_Glass/images/icon_mini_groups.gif" border="0" alt="Benutzergruppen" /></a></td>
+		  <td><span class="mainmenu1">&nbsp;<a href="groupcp.php.html" class="mainmenu1">Benutzergruppen</a></span></td>
+		</tr>
+	  </table>
+	</td>
+	<td rowspan="3" class="tur"><span class="vsmall">&nbsp;</span></td>
+  </tr>
+  <tr>
+  	<td height="10" colspan="2" class="row5"><img src="templates/DAJ_Glass/images/spacer.gif" border="0" height="1" width="1"></td>
+  </tr>
+  <tr valign="top">
+	<td height="30" nowrap="nowrap" class="tlc"><span class="mainmenu1">
+	<a href="profile.php%3Fmode=register.html" class="mainmenu1">Registrieren</a>&nbsp;&nbsp;::&nbsp;
+	<a href="login.php.html" class="mainmenu1">Login</a>
+	</span></td>
+	<td nowrap="nowrap" align="right" class="tlc"><span class="mainmenu1">
+	<a href="privmsg.php%3Ffolder=inbox.html" class="mainmenu1">Einloggen, um private Nachrichten zu lesen</a>
+	</span></td>
+  </tr>
+  <tr>
+    <td class="left"><span class="vsmall">&nbsp;</span></td>
+	<td colspan="2" class="row2"><br />
+
+<table width="100%" cellspacing="1" cellpadding="1" border="0">
+  <tr valign="top">
+	<td nowrap="nowrap"><img src="templates/DAJ_Glass/images/nav.gif" border="0"></td>
+	<td width="100%"><span class="mainmenu"><a href="index.php.html" class="mainmenu">Computer-Forum Foren-Übersicht</a> » <a href="viewforum.php%3Ff=2.html" class="mainmenu">Linux</a> » <a class="mainmenu" href="viewtopic.php%3Ft=5433&amp;start=0&amp;postdays=0&amp;postorder=asc&amp;highlight=.html">Arch Linux auf dem Trim-Slice (2-Kern ARM Cortex A9 1 GHz)</a></span></td>
+  </tr>
+</table>
+
+<br />
+
+<table width="100%" cellspacing="1" cellpadding="1" border="0">
+  <tr>
+	<td valign="middle" nowrap="nowrap"><span class="nav"><a href="posting.php%3Fmode=newtopic&amp;f=2.html"><img src="templates/DAJ_Glass/images/lang_german/post.gif" border="0" alt="Neues Thema eröffnen" align="middle" /></a>  <a href="http://www.computer-forum.net/posting.php?mode=reply&amp;t=5433"><img src="templates/DAJ_Glass/images/lang_german/reply-locked.gif" border="0" alt="Dieses Thema ist gesperrt, du kannst keine Beiträge editieren oder beantworten." align="middle" /></a></span></td>
+	<td valign="middle" align="left" width="50%"><span class="gensmall"><b></b></span></td>
+		             <td align="right" valign="bottom" class="gensmall">
+				       <a href="http://www.computer-forum.net/search.php?search_id=unanswered" class="gensmall">Unbeantwortete Beiträge anzeigen</a></td>
+
+
+  </tr>
+</table>
+
+<table width="100%" cellspacing="0" cellpadding="0" class="forumline">
+  <tr valign="middle">
+	<td height="25" nowrap="nowrap" class="row4"><span class="cattitle"> Arch Linux auf dem Trim-Slice (2-Kern ARM Cortex A9 1 GHz)</span></td>
+	<td align="right" class="row4"><span class="mainmenu1">« <a href="http://www.computer-forum.net/viewtopic.php?t=5433&amp;view=previous" class="mainmenu1">Vorheriges Thema anzeigen</a> :: <a href="http://www.computer-forum.net/viewtopic.php?t=5433&amp;view=next" class="mainmenu1">Nächstes Thema anzeigen</a> » </span></td>
+  </tr>
+  <tr>
+  	<td colspan="2">
+	  <table width="100%" cellspacing="1" cellpadding="3" border="0">
+		
+		<tr align="center">
+		  <td class="row6" width="150" height="20" nowrap="nowrap"><span class="mainmenu">Autor</span></td>
+		  <td class="row6" nowrap="nowrap"><span class="mainmenu">Nachricht</span></th>
+		</tr>
+		<tr valign="middle">
+		  <td class="row1" width="150" height="20" nowrap="nowrap"><span class="name"><a name="30545"></a><b>atomical</b></span></td>
+		  <td class="row1" width="100%">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td width="100%"><a href="http://www.computer-forum.net/viewtopic.php?p=30545#30545"><img src="templates/DAJ_Glass/images/icon_minipost.gif" alt="Beitrag" title="Beitrag" border="0" /></a><span class="postdetails">Verfasst am: 13.07.2012 - 22:47<span class="genmed"> </span>   Titel: Arch Linux auf dem Trim-Slice (2-Kern ARM Cortex A9 1 GHz)</span></td>
+				<td nowrap="nowrap" valign="middle"><a href="http://www.computer-forum.net/posting.php?mode=quote&amp;p=30545"><img src="templates/DAJ_Glass/images/lang_german/icon_quote.gif" alt="Antworten mit Zitat" title="Antworten mit Zitat" border="0" /></a>   </td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td valign="top" align="center" class="row2"><br /><span class="postdetails">Administrator<br /><img src="images/raenge/admin.gif" alt="Administrator" title="Administrator" border="0" /><br /><br /></span><div align="left"><span class="postdetails">Anmeldungsdatum: 05.03.2005<br />Beiträge: 1017<br /></span></div><br /></td>
+		  <td class="row2" width="100%" height="28" valign="top">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td><span class="postbody">Servus,
+<br />
+
+<br />
+Nachdem meine Seagate Dockstar an ihre Grenzen stieß und der Raspberry Pi 4 Wochen nach Bestelldatum immer noch nicht da ist, habe ich mich nach etwas anderem umgesehen. Meine Wahl fiel auf den Trim-Slice von CompuLab.
+<br />
+
+<br />
+Technische Daten kann jeder selber nachschauen ... <a href="http://www.trimslice.com" target="_blank" class="postlink">http://www.trimslice.com</a>
+<br />
+
+<br />
+Ich habe den Trim-Slice H Diskless, nachgerüstet mit einer 16GB µSD-Karte (Class 10) und einer 64GB SSD.
+<br />
+
+<br />
+Blödsinn wie Unboxing Video erspare ich der Allgemeinheit, das Teil kommt mit Netzteil, Adapter für RS232 und Audio sowie Bluetooth-Dongel (der aber nur je nach Modell).
+<br />
+
+<br />
+Einsatzzweck soll wie auch schon bei der Dockstar eine Art Mini-Server für die Wohnstube sein - unter anderem Router / Pulseaudio-Server / Scan-Server / Druck-Server / VPN-Client (in Verbindung mit Routing) / VDR und was mir sonst noch so einfällt ...
+<br />
+
+<br />
+Doku in aller Kürze / Erfahrungen meinerseits in den kommenden Posts meinerseits ... das wird <span style="font-weight: bold">kein Howto für Anfänger</span> - ich werde mich hauptsächlich auf die Sachen mit Stolperpotential (in meinen Augen) beschränken ...
+<br />
+
+<br />
+
+<br />
+... zwecks Übersicht mache ich den Thread zu - bei Fragen oder Anregungen bitte einen neuen Thread "Arch Linux auf dem Trim-Slice - Diskussion" (o.ä.) aufmachen - den kann ich dann hier verlinken.<br />_________________<br />mfg, atomical
+<br />
+
+<br />
+Jabber: <a href="mailto:alext@jabber.ccc.de">alext@jabber.ccc.de</a>
+<br />
+
+<br />
+<a href="http://www.prima-klima-weltweit.de/" target="_blank">http://www.prima-klima-weltweit.de/</a></span><span class="gensmall"><br /><br />Zuletzt bearbeitet von atomical am 13.07.2012 - 23:42, insgesamt einmal bearbeitet</span></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row6" valign="middle"><a href="viewtopic.php%3Ft=5433.html#top" class="mainmenu">Nach oben</a></td>
+		  <td class="row6" width="100%" height="20" valign="bottom" nowrap="nowrap">
+		  	<table cellspacing="0" cellpadding="0" border="0" height="18" width="18">
+			  <tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php%3Fmode=viewprofile&amp;u=15.html"><img src="templates/DAJ_Glass/images/lang_german/icon_profile.gif" alt="Benutzer-Profile anzeigen" title="Benutzer-Profile anzeigen" border="0" /></a> <a href="privmsg.php%3Fmode=post&amp;u=15.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a>     <script language="JavaScript" type="text/javascript"><!--
+
+				if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+					document.write(' ');
+				else
+					document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script><noscript></noscript></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row3" colspan="2" height="2"><img src="templates/DAJ_Glass/images/spacer.gif" border="0" width="1" height="1"></td>
+		</tr>
+		<tr valign="middle">
+		  <td class="row1" width="150" height="20" nowrap="nowrap"><span class="name"><a name="30546"></a><b>atomical</b></span></td>
+		  <td class="row1" width="100%">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td width="100%"><a href="http://www.computer-forum.net/viewtopic.php?p=30546#30546"><img src="templates/DAJ_Glass/images/icon_minipost.gif" alt="Beitrag" title="Beitrag" border="0" /></a><span class="postdetails">Verfasst am: 13.07.2012 - 23:10<span class="genmed"> </span>   Titel: Grundinstallation</span></td>
+				<td nowrap="nowrap" valign="middle"><a href="http://www.computer-forum.net/posting.php?mode=quote&amp;p=30546"><img src="templates/DAJ_Glass/images/lang_german/icon_quote.gif" alt="Antworten mit Zitat" title="Antworten mit Zitat" border="0" /></a>   </td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td valign="top" align="center" class="row2"><br /><span class="postdetails">Administrator<br /><img src="images/raenge/admin.gif" alt="Administrator" title="Administrator" border="0" /><br /><br /></span><div align="left"><span class="postdetails">Anmeldungsdatum: 05.03.2005<br />Beiträge: 1017<br /></span></div><br /></td>
+		  <td class="row2" width="100%" height="28" valign="top">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td><span class="postbody">Das eigentliche System befindet sich bei mir auf der µSD.
+<br />
+
+<br />
+Da der <span style="font-weight: bold">Bootloader uboot zur Zeit nur mit ext2</span> umgehen kann und ext4 doch einen Tick schneller ist, habe ich mir auf der µSD eine 100MB große ext2 Boot-Partition angelegt, der Rest als Root-Dateisystem ist mit ext4 formatiert.
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">
+<br />
+mkfs.ext2 /dev/sde1
+<br />
+mkfs.ext4 /dev/sde2</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+... rootfs mounten, Mountpoint boot anlegen und die boot-Partition dahin mounten ...
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">
+<br />
+mount /dev/sde2 /media/usb
+<br />
+mkdir /media/usb/boot
+<br />
+mount /dev/sde1 /media/usb/boot</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+... fertiges Root-Dateisystem laden und auf die µSD entpacken
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">
+<br />
+cd /media/usb
+<br />
+wget http&#58;//archlinuxarm.org/os/ArchLinuxARM-trimslice-latest.tar.gz
+<br />
+tar -xzf ArchLinuxARM-trimslice-latest.tar.gz</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+... jetzt muss für den uboot Bootloader die Datei boot.scr erstellt werden - dafür eine für mein Setup gültige Vorlage namens bootcmd-file.txt (2 Zeilen: setenv... &amp; mmc ...), "mmcblk0<span style="font-weight: bold">p1</span>" habe ich wegen meiner Root-Partition nach <span style="font-weight: bold">p2</span> abgeändert, das die Datei uImage liegt auf der Bootpartition im Hauptverzeichnis ...
+<br />
+
+<br />
+
+<br />
+für µSD-Karte
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">
+<br />
+setenv bootargs 'root=/dev/mmcblk0p2 rw rootwait console=tty1 console=ttyS0,115200n8 mem=384M@0M mem=512M@512M nvmem=128M@384M vmalloc=248M nohdparm noinitrd init=/sbin/init rootwait loglevel=8 video=tegrafb'
+<br />
+mmc init 1 &amp;&amp; ext2load mmc 1 4080000 /uImage &amp;&amp; bootm 4080000</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+
+<br />
+für SD-Karte
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">
+<br />
+setenv bootargs 'root=/dev/mmcblk0p2 rw rootwait console=tty1 console=ttyS0,115200n8 mem=384M@0M mem=512M@512M nvmem=128M@384M vmalloc=248M nohdparm noinitrd init=/sbin/init rootwait loglevel=8 video=tegrafb'
+<br />
+ext2load mmc 0&#58;1 4080000 /uImage &amp;&amp; bootm 4080000</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+... das Erstellen der boot.scr passiert mit dem Tool "mkimage" (<span style="font-weight: bold">uboot-mkimage</span>) ...
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">
+<br />
+mkimage -A arm -O linux -T script -C none -a 0 -e 0 -n &quot;Trim Slice µSD Boot&quot; -d /media/usb/boot/bootcmd-file.txt /media/usb/boot/boot.scr</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+... jetzt die µSD in den Slot der Trim-Slice, RS-232 Adapter dran, diesen mittels Nullmodem-Kabel an PC oder Notebook und mit einem Terminal-Programm seiner Wahl (hier picocom) dem Bootvorgang zusehen - <span style="font-weight: bold">115200-N-8</span> ...
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">picocom -b 115200 /dev/ttyS0</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">U-Boot 2010.09-1.03-00006-ga52694f &#40;Nov 24 2011 - 10&#58;41&#58;33&#41;
+<br />
+
+<br />
+TEGRA2 
+<br />
+Board&#58;&nbsp; &nbsp;TrimSlice
+<br />
+DRAM&#58;&nbsp; 1 GiB
+<br />
+SF&#58; Detected W25Q80BL with page size 256, total 1 MiB
+<br />
+In&#58;&nbsp; &nbsp; serial
+<br />
+Out&#58;&nbsp; &nbsp;serial
+<br />
+Err&#58;&nbsp; &nbsp;serial
+<br />
+Boot&#58;&nbsp; Spi
+<br />
+Net&#58;&nbsp; &nbsp;RTL8169#0
+<br />
+Hit any key to stop autoboot&#58;&nbsp; 0 
+<br />
+Scanning MMC card ...
+<br />
+&#91;mmc_legacy_init&#58;234&#93; EMMC 0 Probe Failed
+<br />
+No MMC card found
+<br />
+Scanning fat mmc 0 on prefix / ...
+<br />
+
+<br />
+** Invalid boot device **
+<br />
+Scanning ext2 mmc 0 on prefix / ...
+<br />
+** Block device mmc 0 not supported
+<br />
+Scanning fat mmc 0 on prefix /boot/ ...
+<br />
+
+<br />
+** Invalid boot device **
+<br />
+Scanning ext2 mmc 0 on prefix /boot/ ...
+<br />
+** Block device mmc 0 not supported
+<br />
+Scanning USB key ...
+<br />
+&#40;Re&#41;start USB...
+<br />
+USB&#58;&nbsp; &nbsp;Tegra ehci init hccr c5008100 and hcor c5008140 hc_length 64
+<br />
+Register 10011 NbrPorts 1
+<br />
+USB EHCI 1.00
+<br />
+scanning bus for devices... 2 USB Device&#40;s&#41; found
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp;scanning bus for storage devices... 0 Storage Device&#40;s&#41; found
+<br />
+Scanning fat usb 0 on prefix / ...
+<br />
+
+<br />
+** Invalid boot device **
+<br />
+Scanning ext2 usb 0 on prefix / ...
+<br />
+** Block device usb 0 not supported
+<br />
+Scanning fat usb 0 on prefix /boot/ ...
+<br />
+
+<br />
+** Invalid boot device **
+<br />
+Scanning ext2 usb 0 on prefix /boot/ ...
+<br />
+** Block device usb 0 not supported
+<br />
+Scanning microSD card ...
+<br />
+EMMC 1 Probed Successfully
+<br />
+mmc1 is available
+<br />
+Scanning fat mmc 1 on prefix / ...
+<br />
+reading /boot.scr
+<br />
+
+<br />
+** Unable to read &quot;/boot.scr&quot; from mmc 1&#58;1 **
+<br />
+Scanning ext2 mmc 1 on prefix / ...
+<br />
+Loading file &quot;/boot.scr&quot; from mmc device 1&#58;1 &#40;xxb1&#41;
+<br />
+343 bytes read
+<br />
+boot.scr found! Executing ...
+<br />
+## Executing script at 00408000
+<br />
+EMMC 1 Probed Successfully
+<br />
+mmc1 is available
+<br />
+Loading file &quot;/uImage&quot; from mmc device 1&#58;1 &#40;xxb1&#41;
+<br />
+4246616 bytes read
+<br />
+## Booting kernel from Legacy Image at 04080000 ...
+<br />
+&nbsp; &nbsp;Image Name&#58;&nbsp; &nbsp;Linux-2.6.38-6-ARCH
+<br />
+&nbsp; &nbsp;Image Type&#58;&nbsp; &nbsp;ARM Linux Kernel Image &#40;uncompressed&#41;
+<br />
+&nbsp; &nbsp;Data Size&#58;&nbsp; &nbsp; 4246552 Bytes = 4 MiB
+<br />
+&nbsp; &nbsp;Load Address&#58; 00008000
+<br />
+&nbsp; &nbsp;Entry Point&#58;&nbsp; 00008000
+<br />
+&nbsp; &nbsp;Verifying Checksum ... OK
+<br />
+&nbsp; &nbsp;Loading Kernel Image ... OK
+<br />
+OK
+<br />
+
+<br />
+Starting kernel ...
+<br />
+
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; Initializing cgroup subsys cpuset
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; Initializing cgroup subsys cpu
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; Linux version 2.6.38-6-ARCH &#40;nobody@titanium&#41; &#40;gcc version 4.6.2 20111125 &#40;prerelease&#41; &#40;GCC&#41; &#41; #1 SMP PREEMPT Tue Jan 3 04&#58;23&#58;49 UTC 2012
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; CPU&#58; ARMv7 Processor &#91;411fc090&#93; revision 0 &#40;ARMv7&#41;, cr=10c5387f
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; CPU&#58; VIPT nonaliasing data cache, VIPT aliasing instruction cache
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; Machine&#58; trimslice
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; Ignoring unrecognised tag 0x54410008
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; Memory policy&#58; ECC disabled, Data cache writealloc
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; On node 0 totalpages&#58; 229376
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; free_area_init_node&#58; node 0, pgdat c08c22c0, node_mem_map c097c000
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93;&nbsp; &nbsp;Normal zone&#58; 1488 pages used for memmap
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93;&nbsp; &nbsp;Normal zone&#58; 0 pages reserved
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93;&nbsp; &nbsp;Normal zone&#58; 156208 pages, LIFO batch&#58;31
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93;&nbsp; &nbsp;HighMem zone&#58; 560 pages used for memmap
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93;&nbsp; &nbsp;HighMem zone&#58; 71120 pages, LIFO batch&#58;15
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; Tegra Revision&#58; A03 prime SKU&#58; 8 CPU Process&#58; 1 Core Process&#58; 2 Speedo ID&#58; 1
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; PERCPU&#58; Embedded 8 pages/cpu @c1185000 s10528 r8192 d14048 u32768
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; pcpu-alloc&#58; s10528 r8192 d14048 u32768 alloc=8*4096
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; pcpu-alloc&#58; &#91;0&#93; 0 &#91;0&#93; 1 
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; Built 1 zonelists in Zone order, mobility grouping on.&nbsp; Total pages&#58; 227328
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; Kernel command line&#58; root=/dev/mmcblk0p2 rw rootwait console=tty1 console=ttyS0,115200n8 mem=384M@0M mem=512M@512M nvmem=128M@384M vmalloc=248M nohdparm noinitrd init=/sbin/init rootwait loglevel=8 video=tegrafb
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; PID hash table entries&#58; 4096 &#40;order&#58; 2, 16384 bytes&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; Dentry cache hash table entries&#58; 131072 &#40;order&#58; 7, 524288 bytes&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; Inode-cache hash table entries&#58; 65536 &#40;order&#58; 6, 262144 bytes&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; allocated 5242880 bytes of page_cgroup
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; please try 'cgroup_disable=memory' option if you don't want memory cgroups
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; Memory&#58; 384MB 512MB = 896MB total
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; Memory&#58; 894612k/894612k available, 22892k reserved, 286720K highmem
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; Virtual kernel memory layout&#58;
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93;&nbsp; &nbsp; &nbsp;vector&nbsp; &#58; 0xffff0000 - 0xffff1000&nbsp; &nbsp;&#40;&nbsp; &nbsp;4 kB&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93;&nbsp; &nbsp; &nbsp;fixmap&nbsp; &#58; 0xfff00000 - 0xfffe0000&nbsp; &nbsp;&#40; 896 kB&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93;&nbsp; &nbsp; &nbsp;DMA&nbsp; &nbsp; &nbsp;&#58; 0xffc00000 - 0xffe00000&nbsp; &nbsp;&#40;&nbsp; &nbsp;2 MB&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93;&nbsp; &nbsp; &nbsp;vmalloc &#58; 0xef000000 - 0xfe000000&nbsp; &nbsp;&#40; 240 MB&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93;&nbsp; &nbsp; &nbsp;lowmem&nbsp; &#58; 0xc0000000 - 0xee800000&nbsp; &nbsp;&#40; 744 MB&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93;&nbsp; &nbsp; &nbsp;pkmap&nbsp; &nbsp;&#58; 0xbfe00000 - 0xc0000000&nbsp; &nbsp;&#40;&nbsp; &nbsp;2 MB&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93;&nbsp; &nbsp; &nbsp;modules &#58; 0xbf000000 - 0xbfe00000&nbsp; &nbsp;&#40;&nbsp; 14 MB&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93;&nbsp; &nbsp; &nbsp; &nbsp;.init &#58; 0xc0008000 - 0xc0058000&nbsp; &nbsp;&#40; 320 kB&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93;&nbsp; &nbsp; &nbsp; &nbsp;.text &#58; 0xc0058000 - 0xc0865130&nbsp; &nbsp;&#40;8245 kB&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93;&nbsp; &nbsp; &nbsp; &nbsp;.data &#58; 0xc0866000 - 0xc08c6120&nbsp; &nbsp;&#40; 385 kB&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; SLUB&#58; Genslabs=13, HWalign=32, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; Preemptable hierarchical RCU implementation.
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; &nbsp; &nbsp;RCU-based detection of stalled CPUs is disabled.
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; &nbsp; &nbsp;Verbose stalled-CPUs detection is disabled.
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; NR_IRQS&#58;448
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; sched_clock&#58; 32 bits at 1000kHz, resolution 1000ns, wraps every 4294967ms
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; Console&#58; colour dummy device 80x30
+<br />
+&#91;&nbsp; &nbsp; 0.000000&#93; console &#91;tty1&#93; enabled
+<br />
+&#91;&nbsp; &nbsp; 0.001199&#93; Calibrating delay loop... 996.14 BogoMIPS &#40;lpj=4980736&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.260073&#93; pid_max&#58; default&#58; 32768 minimum&#58; 301
+<br />
+&#91;&nbsp; &nbsp; 0.260255&#93; Security Framework initialized
+<br />
+&#91;&nbsp; &nbsp; 0.260292&#93; AppArmor&#58; AppArmor disabled by boot time parameter
+<br />
+&#91;&nbsp; &nbsp; 0.260397&#93; Mount-cache hash table entries&#58; 512
+<br />
+&#91;&nbsp; &nbsp; 0.261070&#93; Initializing cgroup subsys ns
+<br />
+&#91;&nbsp; &nbsp; 0.261104&#93; ns_cgroup deprecated&#58; consider using the 'clone_children' flag without the ns_cgroup.
+<br />
+&#91;&nbsp; &nbsp; 0.261154&#93; Initializing cgroup subsys cpuacct
+<br />
+&#91;&nbsp; &nbsp; 0.261223&#93; Initializing cgroup subsys memory
+<br />
+&#91;&nbsp; &nbsp; 0.261276&#93; Initializing cgroup subsys devices
+<br />
+&#91;&nbsp; &nbsp; 0.261305&#93; Initializing cgroup subsys freezer
+<br />
+&#91;&nbsp; &nbsp; 0.261394&#93; CPU&#58; Testing write buffer coherency&#58; ok
+<br />
+&#91;&nbsp; &nbsp; 0.261460&#93; ftrace&#58; allocating 22666 entries in 67 pages
+<br />
+&#91;&nbsp; &nbsp; 0.286063&#93; Calibrating local timer... 249.95MHz, setting to 2.50MHz.
+<br />
+&#91;&nbsp; &nbsp; 0.340108&#93; hw perfevents&#58; enabled with ARMv7 Cortex-A9 PMU driver, 7 counters available
+<br />
+&#91;&nbsp; &nbsp; 0.341417&#93; CPU1&#58; Booted secondary processor
+<br />
+&#91;&nbsp; &nbsp; 0.343125&#93; Brought up 2 CPUs
+<br />
+&#91;&nbsp; &nbsp; 0.343163&#93; SMP&#58; Total of 2 processors activated &#40;1005.69 BogoMIPS&#41;.
+<br />
+&#91;&nbsp; &nbsp; 0.343600&#93; devtmpfs&#58; initialized
+<br />
+&#91;&nbsp; &nbsp; 0.347154&#93; print_constraints&#58; dummy&#58; 
+<br />
+&#91;&nbsp; &nbsp; 0.347423&#93; NET&#58; Registered protocol family 16
+<br />
+&#91;&nbsp; &nbsp; 0.348168&#93; preserved&#58; reserved 1MB at 0x2000000 &#40;virtual c2000000&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.348441&#93; host1x bus init
+<br />
+&#91;&nbsp; &nbsp; 0.348819&#93; Suspend mode LP0 requested, but missing lp0_vec
+<br />
+&#91;&nbsp; &nbsp; 0.348848&#93; Disabling LP0
+<br />
+&#91;&nbsp; &nbsp; 0.351745&#93; hw-breakpoint&#58; found 6 breakpoint and 1 watchpoint registers.
+<br />
+&#91;&nbsp; &nbsp; 0.351792&#93; hw-breakpoint&#58; 1 breakpoint&#40;s&#41; reserved for watchpoint single-step.
+<br />
+&#91;&nbsp; &nbsp; 0.351838&#93; hw-breakpoint&#58; maximum watchpoint size is 4 bytes.
+<br />
+&#91;&nbsp; &nbsp; 0.352192&#93; tegra_arb_init&#58; initialized
+<br />
+&#91;&nbsp; &nbsp; 0.352268&#93; tegra_iovmm_register&#58; added iovmm-gart
+<br />
+&#91;&nbsp; &nbsp; 0.442604&#93; pci 0000&#58;00&#58;00.0&#58; &#91;10de&#58;0bf0&#93; type 1 class 0x000600
+<br />
+&#91;&nbsp; &nbsp; 0.442699&#93; pci 0000&#58;00&#58;00.0&#58; PME# supported from D0 D1 D2 D3hot D3cold
+<br />
+&#91;&nbsp; &nbsp; 0.442733&#93; pci 0000&#58;00&#58;00.0&#58; PME# disabled
+<br />
+&#91;&nbsp; &nbsp; 0.442824&#93; PCI&#58; bus0&#58; Fast back to back transfers disabled
+<br />
+&#91;&nbsp; &nbsp; 0.442929&#93; pci 0000&#58;01&#58;00.0&#58; &#91;10ec&#58;8168&#93; type 0 class 0x000200
+<br />
+&#91;&nbsp; &nbsp; 0.442984&#93; pci 0000&#58;01&#58;00.0&#58; reg 10&#58; &#91;io&nbsp; 0x0000-0x00ff&#93;
+<br />
+&#91;&nbsp; &nbsp; 0.443047&#93; pci 0000&#58;01&#58;00.0&#58; reg 18&#58; &#91;mem 0x00000000-0x00000fff 64bit pref&#93;
+<br />
+&#91;&nbsp; &nbsp; 0.443106&#93; pci 0000&#58;01&#58;00.0&#58; reg 20&#58; &#91;mem 0x00000000-0x00003fff 64bit pref&#93;
+<br />
+&#91;&nbsp; &nbsp; 0.443149&#93; pci 0000&#58;01&#58;00.0&#58; reg 30&#58; &#91;mem 0x00000000-0x0001ffff pref&#93;
+<br />
+&#91;&nbsp; &nbsp; 0.443226&#93; pci 0000&#58;01&#58;00.0&#58; supports D1 D2
+<br />
+&#91;&nbsp; &nbsp; 0.443250&#93; pci 0000&#58;01&#58;00.0&#58; PME# supported from D0 D1 D2 D3hot D3cold
+<br />
+&#91;&nbsp; &nbsp; 0.443292&#93; pci 0000&#58;01&#58;00.0&#58; PME# disabled
+<br />
+&#91;&nbsp; &nbsp; 0.443340&#93; PCI&#58; bus1&#58; Fast back to back transfers disabled
+<br />
+&#91;&nbsp; &nbsp; 0.443738&#93; pci 0000&#58;00&#58;00.0&#58; BAR 9&#58; assigned &#91;mem 0xa0000000-0xa00fffff pref&#93;
+<br />
+&#91;&nbsp; &nbsp; 0.443778&#93; pci 0000&#58;00&#58;00.0&#58; BAR 7&#58; assigned &#91;io&nbsp; 0x1000-0x1fff&#93;
+<br />
+&#91;&nbsp; &nbsp; 0.443823&#93; pci 0000&#58;01&#58;00.0&#58; BAR 6&#58; assigned &#91;mem 0xa0000000-0xa001ffff pref&#93;
+<br />
+&#91;&nbsp; &nbsp; 0.443862&#93; pci 0000&#58;01&#58;00.0&#58; BAR 4&#58; assigned &#91;mem 0xa0020000-0xa0023fff 64bit pref&#93;
+<br />
+&#91;&nbsp; &nbsp; 0.443917&#93; pci 0000&#58;01&#58;00.0&#58; BAR 4&#58; set to &#91;mem 0xa0020000-0xa0023fff 64bit pref&#93; &#40;PCI address &#91;0xa0020000-0xa0023fff&#93;&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.443967&#93; pci 0000&#58;01&#58;00.0&#58; BAR 2&#58; assigned &#91;mem 0xa0024000-0xa0024fff 64bit pref&#93;
+<br />
+&#91;&nbsp; &nbsp; 0.444022&#93; pci 0000&#58;01&#58;00.0&#58; BAR 2&#58; set to &#91;mem 0xa0024000-0xa0024fff 64bit pref&#93; &#40;PCI address &#91;0xa0024000-0xa0024fff&#93;&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.444071&#93; pci 0000&#58;01&#58;00.0&#58; BAR 0&#58; assigned &#91;io&nbsp; 0x1000-0x10ff&#93;
+<br />
+&#91;&nbsp; &nbsp; 0.444114&#93; pci 0000&#58;01&#58;00.0&#58; BAR 0&#58; set to &#91;io&nbsp; 0x1000-0x10ff&#93; &#40;PCI address &#91;0x1000-0x10ff&#93;&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.444154&#93; pci 0000&#58;00&#58;00.0&#58; PCI bridge to &#91;bus 01-01&#93;
+<br />
+&#91;&nbsp; &nbsp; 0.444181&#93; pci 0000&#58;00&#58;00.0&#58;&nbsp; &nbsp;bridge window &#91;io&nbsp; 0x1000-0x1fff&#93;
+<br />
+&#91;&nbsp; &nbsp; 0.444221&#93; pci 0000&#58;00&#58;00.0&#58;&nbsp; &nbsp;bridge window &#91;mem disabled&#93;
+<br />
+&#91;&nbsp; &nbsp; 0.444252&#93; pci 0000&#58;00&#58;00.0&#58;&nbsp; &nbsp;bridge window &#91;mem 0xa0000000-0xa00fffff pref&#93;
+<br />
+&#91;&nbsp; &nbsp; 0.449472&#93; bio&#58; create slab &lt;bio-0&gt; at 0
+<br />
+&#91;&nbsp; &nbsp; 0.450081&#93; vgaarb&#58; loaded
+<br />
+&#91;&nbsp; &nbsp; 0.450167&#93; i2c-core&#58; driver &#91;tps6586x&#93; using legacy suspend method
+<br />
+&#91;&nbsp; &nbsp; 0.450208&#93; i2c-core&#58; driver &#91;tps6586x&#93; using legacy resume method
+<br />
+&#91;&nbsp; &nbsp; 0.450493&#93; SCSI subsystem initialized
+<br />
+&#91;&nbsp; &nbsp; 0.450638&#93; usbcore&#58; registered new interface driver usbfs
+<br />
+&#91;&nbsp; &nbsp; 0.450735&#93; usbcore&#58; registered new interface driver hub
+<br />
+&#91;&nbsp; &nbsp; 0.450880&#93; usbcore&#58; registered new device driver usb
+<br />
+&#91;&nbsp; &nbsp; 0.452039&#93; Advanced Linux Sound Architecture Driver Version 1.0.23.
+<br />
+&#91;&nbsp; &nbsp; 0.452521&#93; NetLabel&#58; Initializing
+<br />
+&#91;&nbsp; &nbsp; 0.452544&#93; NetLabel&#58;&nbsp; domain hash size = 128
+<br />
+&#91;&nbsp; &nbsp; 0.452566&#93; NetLabel&#58;&nbsp; protocols = UNLABELED CIPSOv4
+<br />
+&#91;&nbsp; &nbsp; 0.452635&#93; NetLabel&#58;&nbsp; unlabeled traffic allowed by default
+<br />
+&#91;&nbsp; &nbsp; 0.452696&#93; Switching to clocksource timer_us
+<br />
+&#91;&nbsp; &nbsp; 0.452768&#93; Switched to NOHz mode on CPU #1
+<br />
+&#91;&nbsp; &nbsp; 0.452797&#93; Switched to NOHz mode on CPU #0
+<br />
+&#91;&nbsp; &nbsp; 0.477293&#93; tegra-nvmap tegra-nvmap&#58; created carveout iram &#40;256KiB&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.477441&#93; tegra-nvmap tegra-nvmap&#58; created carveout generic-0 &#40;118784KiB&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.487979&#93; NET&#58; Registered protocol family 2
+<br />
+&#91;&nbsp; &nbsp; 0.488316&#93; IP route cache hash table entries&#58; 32768 &#40;order&#58; 5, 131072 bytes&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.489363&#93; TCP established hash table entries&#58; 131072 &#40;order&#58; 8, 1048576 bytes&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.491014&#93; TCP bind hash table entries&#58; 65536 &#40;order&#58; 7, 786432 bytes&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.491995&#93; TCP&#58; Hash tables configured &#40;established 131072 bind 65536&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.492029&#93; TCP reno registered
+<br />
+&#91;&nbsp; &nbsp; 0.492057&#93; UDP hash table entries&#58; 512 &#40;order&#58; 2, 16384 bytes&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.492116&#93; UDP-Lite hash table entries&#58; 512 &#40;order&#58; 2, 16384 bytes&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.492814&#93; NET&#58; Registered protocol family 1
+<br />
+&#91;&nbsp; &nbsp; 0.493422&#93; RPC&#58; Registered udp transport module.
+<br />
+&#91;&nbsp; &nbsp; 0.493451&#93; RPC&#58; Registered tcp transport module.
+<br />
+&#91;&nbsp; &nbsp; 0.493478&#93; RPC&#58; Registered tcp NFSv4.1 backchannel transport module.
+<br />
+&#91;&nbsp; &nbsp; 0.493562&#93; PCI&#58; CLS 32 bytes, default 32
+<br />
+&#91;&nbsp; &nbsp; 0.493906&#93; PMU&#58; registered new PMU device of type 0
+<br />
+&#91;&nbsp; &nbsp; 0.494599&#93; audit&#58; initializing netlink socket &#40;disabled&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.494658&#93; type=2000 audit&#40;23.912&#58;1&#41;&#58; initialized
+<br />
+&#91;&nbsp; &nbsp; 0.566484&#93; highmem bounce pool size&#58; 64 pages
+<br />
+&#91;&nbsp; &nbsp; 0.573114&#93; VFS&#58; Disk quotas dquot_6.5.2
+<br />
+&#91;&nbsp; &nbsp; 0.573438&#93; Dquot-cache hash table entries&#58; 1024 &#40;order 0, 4096 bytes&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.575457&#93; squashfs&#58; version 4.0 &#40;2009/01/31&#41; Phillip Lougher
+<br />
+&#91;&nbsp; &nbsp; 0.576340&#93; nfs4filelayout_init&#58; NFSv4 File Layout Driver Registering...
+<br />
+&#91;&nbsp; &nbsp; 0.576377&#93; Installing knfsd &#40;copyright &#40;C&#41; 1996 <a href="mailto:okir@monad.swb.de">okir@monad.swb.de</a>&#41;.
+<br />
+&#91;&nbsp; &nbsp; 0.577274&#93; JFS&#58; nTxBlock = 6989, nTxLock = 55913
+<br />
+&#91;&nbsp; &nbsp; 0.583748&#93; SGI XFS with ACLs, security attributes, large block/inode numbers, no debug enabled
+<br />
+&#91;&nbsp; &nbsp; 0.585609&#93; msgmni has been set to 1187
+<br />
+&#91;&nbsp; &nbsp; 0.586264&#93; cryptomgr_test used greatest stack depth&#58; 6764 bytes left
+<br />
+&#91;&nbsp; &nbsp; 0.586981&#93; cryptomgr_test used greatest stack depth&#58; 6644 bytes left
+<br />
+&#91;&nbsp; &nbsp; 0.588786&#93; Block layer SCSI generic &#40;bsg&#41; driver version 0.4 loaded &#40;major 253&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.588831&#93; io scheduler noop registered
+<br />
+&#91;&nbsp; &nbsp; 0.588854&#93; io scheduler deadline registered
+<br />
+&#91;&nbsp; &nbsp; 0.588952&#93; io scheduler cfq registered &#40;default&#41;
+<br />
+&#91;&nbsp; &nbsp; 0.590760&#93; tegra_grhost tegra_grhost&#58; initialized
+<br />
+&#91;&nbsp; &nbsp; 0.590998&#93; host1x&#58; tegradc tegradc
+<br />
+&#91;&nbsp; &nbsp; 0.591627&#93; tegradc tegradc.0&#58; probed
+<br />
+&#91;&nbsp; &nbsp; 0.591991&#93; tegradc tegradc.0&#58; probed
+<br />
+&#91;&nbsp; &nbsp; 0.592781&#93; tegradc tegradc.0&#58; error reading edid
+<br />
+&#91;&nbsp; &nbsp; 0.592813&#93; host1x&#58; tegradc tegradc
+<br />
+&#91;&nbsp; &nbsp; 0.593341&#93; nvhdcp&#58; using &quot;always on&quot; policy.
+<br />
+&#91;&nbsp; &nbsp; 0.593867&#93; tegradc tegradc.1&#58; probed
+<br />
+&#91;&nbsp; &nbsp; 0.594225&#93; tegradc tegradc.1&#58; probed
+<br />
+&#91;&nbsp; &nbsp; 0.594664&#93; Serial&#58; 8250/16550 driver, 4 ports, IRQ sharing disabled
+<br />
+&#91;&nbsp; &nbsp; 1.113008&#93; serial8250.0&#58; ttyS0 at MMIO 0x70006000 &#40;irq = 68&#41; is a XScale
+<br />
+&#91;&nbsp; &nbsp; 2.030153&#93; console &#91;ttyS0&#93; enabled
+<br />
+&#91;&nbsp; &nbsp; 2.188459&#93; brd&#58; module loaded
+<br />
+&#91;&nbsp; &nbsp; 2.194721&#93; loop&#58; module loaded
+<br />
+&#91;&nbsp; &nbsp; 2.199097&#93; r8169 Gigabit Ethernet driver 2.3LK-NAPI loaded
+<br />
+&#91;&nbsp; &nbsp; 2.204725&#93; PCI&#58; enabling device 0000&#58;01&#58;00.0 &#40;0140 -&gt; 0143&#41;
+<br />
+&#91;&nbsp; &nbsp; 2.210455&#93; r8169 0000&#58;01&#58;00.0&#58; no MSI. Back to INTx.
+<br />
+&#91;&nbsp; &nbsp; 2.216570&#93; r8169 0000&#58;01&#58;00.0&#58; eth0&#58; RTL8168d/8111d at 0xef01e000, 00&#58;01&#58;c0&#58;0c&#58;5d&#58;e2, XID 081000c0 IRQ 130
+<br />
+&#91;&nbsp; &nbsp; 2.272861&#93; console &#91;netcon0&#93; enabled
+<br />
+&#91;&nbsp; &nbsp; 2.276532&#93; netconsole&#58; network logging started
+<br />
+&#91;&nbsp; &nbsp; 2.281072&#93; ehci_hcd&#58; USB 2.0 'Enhanced' Host Controller &#40;EHCI&#41; Driver
+<br />
+&#91;&nbsp; &nbsp; 2.291272&#93; tegra-ehci tegra-ehci.2&#58; Tegra EHCI Host Controller
+<br />
+&#91;&nbsp; &nbsp; 2.297298&#93; tegra-ehci tegra-ehci.2&#58; new USB bus registered, assigned bus number 1
+<br />
+&#91;&nbsp; &nbsp; 2.382788&#93; tegra-ehci tegra-ehci.2&#58; irq 129, io mem 0xc5008000
+<br />
+&#91;&nbsp; &nbsp; 2.402772&#93; tegra-ehci tegra-ehci.2&#58; USB 2.0 started, EHCI 1.00
+<br />
+&#91;&nbsp; &nbsp; 2.408786&#93; usb usb1&#58; New USB device found, idVendor=1d6b, idProduct=0002
+<br />
+&#91;&nbsp; &nbsp; 2.415601&#93; usb usb1&#58; New USB device strings&#58; Mfr=3, Product=2, SerialNumber=1
+<br />
+&#91;&nbsp; &nbsp; 2.422852&#93; usb usb1&#58; Product&#58; Tegra EHCI Host Controller
+<br />
+&#91;&nbsp; &nbsp; 2.428261&#93; usb usb1&#58; Manufacturer&#58; Linux 2.6.38-6-ARCH ehci_hcd
+<br />
+&#91;&nbsp; &nbsp; 2.434286&#93; usb usb1&#58; SerialNumber&#58; tegra-ehci.2
+<br />
+&#91;&nbsp; &nbsp; 2.439452&#93; hub 1-0&#58;1.0&#58; USB hub found
+<br />
+&#91;&nbsp; &nbsp; 2.443243&#93; hub 1-0&#58;1.0&#58; 1 port detected
+<br />
+&#91;&nbsp; &nbsp; 2.462890&#93; tegra-ehci tegra-ehci.1&#58; Tegra EHCI Host Controller
+<br />
+&#91;&nbsp; &nbsp; 2.468848&#93; tegra-ehci tegra-ehci.1&#58; new USB bus registered, assigned bus number 2
+<br />
+&#91;&nbsp; &nbsp; 2.552779&#93; tegra-ehci tegra-ehci.1&#58; irq 53, io mem 0xc5004000
+<br />
+&#91;&nbsp; &nbsp; 2.572773&#93; tegra-ehci tegra-ehci.1&#58; USB 2.0 started, EHCI 1.00
+<br />
+&#91;&nbsp; &nbsp; 2.578767&#93; usb usb2&#58; New USB device found, idVendor=1d6b, idProduct=0002
+<br />
+&#91;&nbsp; &nbsp; 2.585580&#93; usb usb2&#58; New USB device strings&#58; Mfr=3, Product=2, SerialNumber=1
+<br />
+&#91;&nbsp; &nbsp; 2.592826&#93; usb usb2&#58; Product&#58; Tegra EHCI Host Controller
+<br />
+&#91;&nbsp; &nbsp; 2.598234&#93; usb usb2&#58; Manufacturer&#58; Linux 2.6.38-6-ARCH ehci_hcd
+<br />
+&#91;&nbsp; &nbsp; 2.604259&#93; usb usb2&#58; SerialNumber&#58; tegra-ehci.1
+<br />
+&#91;&nbsp; &nbsp; 2.609362&#93; hub 2-0&#58;1.0&#58; USB hub found
+<br />
+&#91;&nbsp; &nbsp; 2.613156&#93; hub 2-0&#58;1.0&#58; 1 port detected
+<br />
+&#91;&nbsp; &nbsp; 2.619904&#93; tegra-ehci tegra-ehci.0&#58; Tegra EHCI Host Controller
+<br />
+&#91;&nbsp; &nbsp; 2.625879&#93; tegra-ehci tegra-ehci.0&#58; new USB bus registered, assigned bus number 3
+<br />
+&#91;&nbsp; &nbsp; 2.722781&#93; tegra-ehci tegra-ehci.0&#58; irq 52, io mem 0xc5000000
+<br />
+&#91;&nbsp; &nbsp; 2.762789&#93; usb 1-1&#58; new high speed USB device using tegra-ehci and address 2
+<br />
+&#91;&nbsp; &nbsp; 2.782789&#93; tegra-ehci tegra-ehci.0&#58; USB 2.0 started, EHCI 1.00
+<br />
+&#91;&nbsp; &nbsp; 2.788797&#93; usb usb3&#58; New USB device found, idVendor=1d6b, idProduct=0002
+<br />
+&#91;&nbsp; &nbsp; 2.795635&#93; usb usb3&#58; New USB device strings&#58; Mfr=3, Product=2, SerialNumber=1
+<br />
+&#91;&nbsp; &nbsp; 2.802883&#93; usb usb3&#58; Product&#58; Tegra EHCI Host Controller
+<br />
+&#91;&nbsp; &nbsp; 2.808291&#93; usb usb3&#58; Manufacturer&#58; Linux 2.6.38-6-ARCH ehci_hcd
+<br />
+&#91;&nbsp; &nbsp; 2.814339&#93; usb usb3&#58; SerialNumber&#58; tegra-ehci.0
+<br />
+&#91;&nbsp; &nbsp; 2.819458&#93; hub 3-0&#58;1.0&#58; USB hub found
+<br />
+&#91;&nbsp; &nbsp; 2.823250&#93; hub 3-0&#58;1.0&#58; 1 port detected
+<br />
+&#91;&nbsp; &nbsp; 2.827561&#93; usbcore&#58; registered new interface driver cdc_acm
+<br />
+&#91;&nbsp; &nbsp; 2.833250&#93; cdc_acm&#58; v0.26&#58;USB Abstract Control Model driver for USB modems and ISDN adapters
+<br />
+&#91;&nbsp; &nbsp; 2.841867&#93; usbcore&#58; registered new interface driver usblp
+<br />
+&#91;&nbsp; &nbsp; 2.847421&#93; usbcore&#58; registered new interface driver uas
+<br />
+&#91;&nbsp; &nbsp; 2.853097&#93; Initializing USB Mass Storage driver...
+<br />
+&#91;&nbsp; &nbsp; 2.858095&#93; usbcore&#58; registered new interface driver usb-storage
+<br />
+&#91;&nbsp; &nbsp; 2.864129&#93; USB Mass Storage support registered.
+<br />
+&#91;&nbsp; &nbsp; 2.868852&#93; usbcore&#58; registered new interface driver libusual
+<br />
+&#91;&nbsp; &nbsp; 2.874670&#93; usbcore&#58; registered new interface driver ums-alauda
+<br />
+&#91;&nbsp; &nbsp; 2.880651&#93; usbcore&#58; registered new interface driver ums-cypress
+<br />
+&#91;&nbsp; &nbsp; 2.886728&#93; usbcore&#58; registered new interface driver ums-datafab
+<br />
+&#91;&nbsp; &nbsp; 2.892803&#93; usbcore&#58; registered new interface driver ums-freecom
+<br />
+&#91;&nbsp; &nbsp; 2.898869&#93; usbcore&#58; registered new interface driver ums-isd200
+<br />
+&#91;&nbsp; &nbsp; 2.904859&#93; usbcore&#58; registered new interface driver ums-jumpshot
+<br />
+&#91;&nbsp; &nbsp; 2.911027&#93; usbcore&#58; registered new interface driver ums-karma
+<br />
+&#91;&nbsp; &nbsp; 2.916977&#93; usbcore&#58; registered new interface driver ums-onetouch
+<br />
+&#91;&nbsp; &nbsp; 2.923238&#93; usbcore&#58; registered new interface driver ums-realtek
+<br />
+&#91;&nbsp; &nbsp; 2.929306&#93; usbcore&#58; registered new interface driver ums-sddr09
+<br />
+&#91;&nbsp; &nbsp; 2.935323&#93; usbcore&#58; registered new interface driver ums-sddr55
+<br />
+&#91;&nbsp; &nbsp; 2.941307&#93; usbcore&#58; registered new interface driver ums-usbat
+<br />
+&#91;&nbsp; &nbsp; 2.947366&#93; mousedev&#58; PS/2 mouse device common for all mice
+<br />
+&#91;&nbsp; &nbsp; 2.953402&#93; usb 1-1&#58; New USB device found, idVendor=0424, idProduct=2514
+<br />
+&#91;&nbsp; &nbsp; 2.960120&#93; usb 1-1&#58; New USB device strings&#58; Mfr=0, Product=0, SerialNumber=0
+<br />
+&#91;&nbsp; &nbsp; 2.967463&#93; input&#58; gpio-keys as /devices/platform/gpio-keys.0/input/input0
+<br />
+&#91;&nbsp; &nbsp; 2.975052&#93; rtc-em3027 2-0056&#58; rtc core&#58; registered rtc-em3027 as rtc0
+<br />
+&#91;&nbsp; &nbsp; 2.981777&#93; trpc_sema_init&#58; registered misc dev 10&#58;57
+<br />
+&#91;&nbsp; &nbsp; 2.987394&#93; hub 1-1&#58;1.0&#58; USB hub found
+<br />
+&#91;&nbsp; &nbsp; 2.991193&#93; trpc_node_register&#58; Adding 'local' to node list
+<br />
+&#91;&nbsp; &nbsp; 2.996825&#93; hub 1-1&#58;1.0&#58; 4 ports detected
+<br />
+&#91;&nbsp; &nbsp; 3.004178&#93; trpc_node_register&#58; Adding 'avp-remote' to node list
+<br />
+&#91;&nbsp; &nbsp; 3.010546&#93; tegra_avp_probe&#58; driver registered, kernel 1ff00000&#40;ef200000&#41;, msg area 2d91e000/2d91e110
+<br />
+&#91;&nbsp; &nbsp; 3.020864&#93; device-mapper&#58; ioctl&#58; 4.19.1-ioctl &#40;2011-01-07&#41; initialised&#58; <a href="mailto:dm-devel@redhat.com">dm-devel@redhat.com</a>
+<br />
+&#91;&nbsp; &nbsp; 3.029571&#93; device-mapper&#58; verity&#58; dm-verity registered
+<br />
+&#91;&nbsp; &nbsp; 3.034829&#93; device-mapper&#58; verity-chromeos&#58; dm-verity-chromeos registered
+<br />
+&#91;&nbsp; &nbsp; 3.042093&#93; cpuidle&#58; using governor ladder
+<br />
+&#91;&nbsp; &nbsp; 3.046432&#93; cpuidle&#58; using governor menu
+<br />
+&#91;&nbsp; &nbsp; 3.050409&#93; sdhci&#58; Secure Digital Host Controller Interface driver
+<br />
+&#91;&nbsp; &nbsp; 3.057012&#93; sdhci&#58; Copyright&#40;c&#41; Pierre Ossman
+<br />
+&#91;&nbsp; &nbsp; 3.061460&#93; mmc0&#58; Invalid maximum block size, assuming 512 bytes
+<br />
+&#91;&nbsp; &nbsp; 3.067508&#93; mmc0&#58; no vmmc regulator found
+<br />
+&#91;&nbsp; &nbsp; 3.071639&#93; Registered led device&#58; mmc0&#58;&#58;
+<br />
+&#91;&nbsp; &nbsp; 3.075881&#93; mmc0&#58; SDHCI controller on platform &#91;sdhci-tegra.0&#93; using ADMA
+<br />
+&#91;&nbsp; &nbsp; 3.082891&#93; mmc1&#58; Invalid maximum block size, assuming 512 bytes
+<br />
+&#91;&nbsp; &nbsp; 3.088923&#93; mmc1&#58; no vmmc regulator found
+<br />
+&#91;&nbsp; &nbsp; 3.093179&#93; Registered led device&#58; mmc1&#58;&#58;
+<br />
+&#91;&nbsp; &nbsp; 3.097578&#93; mmc1&#58; SDHCI controller on platform &#91;sdhci-tegra.3&#93; using ADMA
+<br />
+&#91;&nbsp; &nbsp; 3.104748&#93; usbcore&#58; registered new interface driver usbhid
+<br />
+&#91;&nbsp; &nbsp; 3.110333&#93; usbhid&#58; USB HID core driver
+<br />
+&#91;&nbsp; &nbsp; 3.114259&#93; usb 2-1&#58; new high speed USB device using tegra-ehci and address 2
+<br />
+&#91;&nbsp; &nbsp; 3.123527&#93; AIC23 Audio Codec 0.1
+<br />
+&#91;&nbsp; &nbsp; 3.128992&#93; asoc&#58; tlv320aic23-hifi &lt;-&gt; tegra-i2s.0 mapping ok
+<br />
+&#91;&nbsp; &nbsp; 3.138954&#93; asoc&#58; dit-hifi &lt;-&gt; tegra-spdif mapping ok
+<br />
+&#91;&nbsp; &nbsp; 3.144566&#93; ALSA device list&#58;
+<br />
+&#91;&nbsp; &nbsp; 3.147559&#93;&nbsp; &nbsp;#0&#58; tegra-trimslice-analog
+<br />
+&#91;&nbsp; &nbsp; 3.151504&#93;&nbsp; &nbsp;#1&#58; tegra-trimslice-digital
+<br />
+&#91;&nbsp; &nbsp; 3.155649&#93; Netfilter messages via NETLINK v0.30.
+<br />
+&#91;&nbsp; &nbsp; 3.160461&#93; nf_conntrack version 0.5.0 &#40;13978 buckets, 55912 max&#41;
+<br />
+&#91;&nbsp; &nbsp; 3.171115&#93; ctnetlink v0.93&#58; registering with nfnetlink.
+<br />
+&#91;&nbsp; &nbsp; 3.176487&#93; NF_TPROXY&#58; Transparent proxy support initialized, version 4.1.0
+<br />
+&#91;&nbsp; &nbsp; 3.183830&#93; NF_TPROXY&#58; Copyright &#40;c&#41; 2006-2007 BalaBit IT Ltd.
+<br />
+&#91;&nbsp; &nbsp; 3.189950&#93; xt_time&#58; kernel timezone is -0000
+<br />
+&#91;&nbsp; &nbsp; 3.197745&#93; ip_tables&#58; &#40;C&#41; 2000-2006 Netfilter Core Team
+<br />
+&#91;&nbsp; &nbsp; 3.203270&#93; ipt_CLUSTERIP&#58; ClusterIP Version 0.8 loaded successfully
+<br />
+&#91;&nbsp; &nbsp; 3.209672&#93; mmc0&#58; host does not support reading read-only switch. assuming write-enable.
+<br />
+&#91;&nbsp; &nbsp; 3.217844&#93; arp_tables&#58; &#40;C&#41; 2002 David S. Miller
+<br />
+&#91;&nbsp; &nbsp; 3.222524&#93; TCP cubic registered
+<br />
+&#91;&nbsp; &nbsp; 3.226553&#93; NET&#58; Registered protocol family 10
+<br />
+&#91;&nbsp; &nbsp; 3.231100&#93; mmc0&#58; new high speed SDHC card at address b368
+<br />
+&#91;&nbsp; &nbsp; 3.242337&#93; ip6_tables&#58; &#40;C&#41; 2000-2006 Netfilter Core Team
+<br />
+&#91;&nbsp; &nbsp; 3.247843&#93; mmcblk0&#58; mmc0&#58;b368 SD&nbsp; &nbsp; 15.4 GiB 
+<br />
+&#91;&nbsp; &nbsp; 3.253554&#93; IPv6 over IPv4 tunneling driver
+<br />
+&#91;&nbsp; &nbsp; 3.257871&#93;&nbsp; mmcblk0&#58; p1 p2
+<br />
+&#91;&nbsp; &nbsp; 3.265146&#93; NET&#58; Registered protocol family 17
+<br />
+&#91;&nbsp; &nbsp; 3.269677&#93; Registering the dns_resolver key type
+<br />
+&#91;&nbsp; &nbsp; 3.274499&#93; VFP support v0.3&#58; implementor 41 architecture 3 part 30 variant 9 rev 1
+<br />
+&#91;&nbsp; &nbsp; 3.282394&#93; ThumbEE CPU extension supported.
+<br />
+&#91;&nbsp; &nbsp; 3.286701&#93; Registering SWP/SWPB emulation handler
+<br />
+&#91;&nbsp; &nbsp; 3.298003&#93; Disabling clocks left on by bootloader&#58;
+<br />
+&#91;&nbsp; &nbsp; 3.302897&#93;&nbsp; &nbsp; audio_2x
+<br />
+&#91;&nbsp; &nbsp; 3.305419&#93; usb 2-1&#58; New USB device found, idVendor=148f, idProduct=3070
+<br />
+&#91;&nbsp; &nbsp; 3.312136&#93; usb 2-1&#58; New USB device strings&#58; Mfr=1, Product=2, SerialNumber=3
+<br />
+&#91;&nbsp; &nbsp; 3.320325&#93;&nbsp; &nbsp; audio
+<br />
+&#91;&nbsp; &nbsp; 3.322534&#93;&nbsp; &nbsp; disp1
+<br />
+&#91;&nbsp; &nbsp; 3.324746&#93;&nbsp; &nbsp; 2d
+<br />
+&#91;&nbsp; &nbsp; 3.326686&#93;&nbsp; &nbsp; 3d
+<br />
+&#91;&nbsp; &nbsp; 3.328617&#93;&nbsp; &nbsp; uartd
+<br />
+&#91;&nbsp; &nbsp; 3.330808&#93;&nbsp; &nbsp; dvc_i2c
+<br />
+&#91;&nbsp; &nbsp; 3.333209&#93; usb 2-1&#58; Product&#58; 802.11 n WLAN
+<br />
+&#91;&nbsp; &nbsp; 3.337438&#93; usb 2-1&#58; Manufacturer&#58; Ralink
+<br />
+&#91;&nbsp; &nbsp; 3.342513&#93;&nbsp; &nbsp; nor
+<br />
+&#91;&nbsp; &nbsp; 3.346586&#93;&nbsp; &nbsp; vde
+<br />
+&#91;&nbsp; &nbsp; 3.348637&#93; usb 2-1&#58; SerialNumber&#58; 1.0
+<br />
+&#91;&nbsp; &nbsp; 3.353025&#93;&nbsp; &nbsp; bsev
+<br />
+&#91;&nbsp; &nbsp; 3.355169&#93;&nbsp; &nbsp; bsea
+<br />
+&#91;&nbsp; &nbsp; 3.357434&#93;&nbsp; &nbsp; spi
+<br />
+&#91;&nbsp; &nbsp; 3.373795&#93;&nbsp; &nbsp; clk_d
+<br />
+&#91;&nbsp; &nbsp; 3.375996&#93;&nbsp; &nbsp; pll_p_out4
+<br />
+&#91;&nbsp; &nbsp; 3.378622&#93;&nbsp; &nbsp; pll_c_out1
+<br />
+&#91;&nbsp; &nbsp; 3.381943&#93; registered taskstats version 1
+<br />
+&#91;&nbsp; &nbsp; 3.393304&#93; rtc-em3027 2-0056&#58; setting system clock to 2012-07-12 21&#58;32&#58;13 UTC &#40;1342128733&#41;
+<br />
+&#91;&nbsp; &nbsp; 3.453388&#93; EXT3-fs &#40;mmcblk0p2&#41;&#58; error&#58; couldn't mount because of unsupported optional features &#40;240&#41;
+<br />
+&#91;&nbsp; &nbsp; 3.503336&#93; EXT2-fs &#40;mmcblk0p2&#41;&#58; error&#58; couldn't mount because of unsupported optional features &#40;240&#41;
+<br />
+&#91;&nbsp; &nbsp; 3.532784&#93; usb 3-1&#58; new high speed USB device using tegra-ehci and address 2
+<br />
+&#91;&nbsp; &nbsp; 3.590973&#93; EXT4-fs &#40;mmcblk0p2&#41;&#58; mounted filesystem with ordered data mode. Opts&#58; &#40;null&#41;
+<br />
+&#91;&nbsp; &nbsp; 3.599143&#93; VFS&#58; Mounted root &#40;ext4 filesystem&#41; on device 179&#58;2.
+<br />
+&#91;&nbsp; &nbsp; 3.613526&#93; devtmpfs&#58; mounted
+<br />
+&#91;&nbsp; &nbsp; 3.616581&#93; Freeing init memory&#58; 320K
+<br />
+INIT&#58; version 2.88 booting&#91;&nbsp; &nbsp; 3.744564&#93; usb 3-1&#58; New USB device found, idVendor=05e3, idProduct=0718
+<br />
+&#91;&nbsp; &nbsp; 3.751288&#93; usb 3-1&#58; New USB device strings&#58; Mfr=0, Product=1, SerialNumber=2
+<br />
+
+<br />
+&#91;&nbsp; &nbsp; 3.758709&#93; usb 3-1&#58; Product&#58; USB Storage
+<br />
+&#91;&nbsp; &nbsp; 3.763064&#93; usb 3-1&#58; SerialNumber&#58; 000000000033
+<br />
+&#91;&nbsp; &nbsp; 3.768644&#93; scsi0 &#58; usb-storage 3-1&#58;1.0
+<br />
+&#91;&nbsp; &nbsp; 3.963470&#93; stty used greatest stack depth&#58; 5188 bytes left
+<br />
+&#91;&nbsp; &nbsp; 4.004347&#93; tput used greatest stack depth&#58; 5104 bytes left
+<br />
+&nbsp;
+<br />
+&nbsp;&gt; Arch Linux ARM
+<br />
+&nbsp;
+<br />
+&nbsp;&gt; http&#58;//www.archlinuxarm.org 
+<br />
+
+<br />
+&nbsp; &nbsp;------------------------------
+<br />
+&#91;&nbsp; &nbsp; 4.071138&#93; mountpoint used greatest stack depth&#58; 5060 bytes left
+<br />
+&#91;&nbsp; &nbsp; 4.096057&#93; mount used greatest stack depth&#58; 4908 bytes left
+<br />
+&#58;&#58; Mounting Root Read-Only&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#91;BUSY&#93; &#91;&nbsp; &nbsp; 4.805137&#93; scsi 0&#58;0&#58;0&#58;0&#58; Direct-Access&nbsp; &nbsp; &nbsp;ADATA SS D S599 64GB&nbsp; &nbsp; &nbsp; 0015 PQ&#58; 0 ANSI&#58; 0
+<br />
+&#91;&nbsp; &nbsp; 4.815633&#93; sd 0&#58;0&#58;0&#58;0&#58; Attached scsi generic sg0 type 0
+<br />
+&#91;&nbsp; &nbsp; 4.839847&#93; sd 0&#58;0&#58;0&#58;0&#58; &#91;sda&#93; 117229291 512-byte logical blocks&#58; &#40;60.0 GB/55.8 GiB&#41;
+<br />
+&#91;&nbsp; &nbsp; 4.848461&#93; sd 0&#58;0&#58;0&#58;0&#58; &#91;sda&#93; Write Protect is off
+<br />
+&#91;&nbsp; &nbsp; 4.853279&#93; sd 0&#58;0&#58;0&#58;0&#58; &#91;sda&#93; Mode Sense&#58; 03 00 00 00
+<br />
+&#91;&nbsp; &nbsp; 4.859336&#93; sd 0&#58;0&#58;0&#58;0&#58; &#91;sda&#93; No Caching mode page present
+<br />
+&#91;&nbsp; &nbsp; 4.864972&#93; sd 0&#58;0&#58;0&#58;0&#58; &#91;sda&#93; Assuming drive cache&#58; write through
+<br />
+&#91;&nbsp; &nbsp; 4.874208&#93; sd 0&#58;0&#58;0&#58;0&#58; &#91;sda&#93; No Caching mode page present
+<br />
+&#91;&nbsp; &nbsp; 4.879707&#93; sd 0&#58;0&#58;0&#58;0&#58; &#91;sda&#93; Assuming drive cache&#58; write through
+<br />
+&#91;&nbsp; &nbsp; 4.886647&#93;&nbsp; sda&#58; unknown partition table
+<br />
+&#91;&nbsp; &nbsp; 4.893583&#93; sd 0&#58;0&#58;0&#58;0&#58; &#91;sda&#93; No Caching mode page present
+<br />
+&#91;&nbsp; &nbsp; 4.899082&#93; sd 0&#58;0&#58;0&#58;0&#58; &#91;sda&#93; Assuming drive cache&#58; write through
+<br />
+&#91;&nbsp; &nbsp; 4.905207&#93; sd 0&#58;0&#58;0&#58;0&#58; &#91;sda&#93; Attached SCSI disk
+<br />
+&#91;&nbsp; &nbsp;11.464722&#93; EXT4-fs &#40;mmcblk0p2&#41;&#58; re-mounted. Opts&#58; barrier=1,data=ordered
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#91;DONE&#93; 
+<br />
+&#58;&#58; Setting Consoles to UTF-8 mode&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#91;DONE&#93; 
+<br />
+&#58;&#58; Loading Keyboard Map&#58; us&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#91;DONE&#93; 
+<br />
+&#58;&#58; Adjusting system time and setting kernel timezone&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#91;DONE&#93; 
+<br />
+&#58;&#58; Starting UDev Daemon&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#91;BUSY&#93; &#91;&nbsp; &nbsp;12.288524&#93; &lt;30&gt;udevd&#91;178&#93;&#58; starting version 182
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#91;DONE&#93; 
+<br />
+&#58;&#58; Triggering UDev uevents&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#91;DONE&#93; 
+<br />
+&#58;&#58; Waiting for UDev uevents to be processed&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#91;BUSY&#93; &#91;&nbsp; &nbsp;12.743506&#93; cfg80211&#58; Calling CRDA to update world regulatory domain
+<br />
+&#91;&nbsp; &nbsp;13.152809&#93; usb 2-1&#58; reset high speed USB device using tegra-ehci and address 2
+<br />
+&#91;&nbsp; &nbsp;13.341191&#93; modprobe used greatest stack depth&#58; 4764 bytes left
+<br />
+&#91;&nbsp; &nbsp;13.353692&#93; ieee80211 phy0&#58; Selected rate control algorithm 'minstrel_ht'
+<br />
+&#91;&nbsp; &nbsp;13.366304&#93; Registered led device&#58; rt2800usb-phy0&#58;&#58;radio
+<br />
+&#91;&nbsp; &nbsp;13.371856&#93; Registered led device&#58; rt2800usb-phy0&#58;&#58;assoc
+<br />
+&#91;&nbsp; &nbsp;13.377379&#93; Registered led device&#58; rt2800usb-phy0&#58;&#58;quality
+<br />
+&#91;&nbsp; &nbsp;13.383987&#93; usbcore&#58; registered new interface driver rt2800usb
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#91;DONE&#93; 
+<br />
+&#58;&#58; Bringing up loopback interface&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#91;BUSY&#93; &#91;&nbsp; &nbsp;13.873092&#93; ip used greatest stack depth&#58; 4340 bytes left
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#91;DONE&#93; 
+<br />
+&#58;&#58; Unlocking encrypted volumes&#58;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#91;DONE&#93; 
+<br />
+&#58;&#58; Checking Filesystems&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#91;DONE&#93; 
+<br />
+&#58;&#58; Remounting Root&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#91;BUSY&#93; &#91;&nbsp; &nbsp;14.108046&#93; EXT4-fs &#40;mmcblk0p2&#41;&#58; re-mounted. Opts&#58; barrier=1,data=ordered
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#91;DONE&#93; 
+<br />
+&#58;&#58; Mounting Local Filesystems&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#91;DONE&#93; 
+<br />
+&#58;&#58; Activating Swap&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#91;DONE&#93; 
+<br />
+&#58;&#58; Configuring Time Zone&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#91;DONE&#93; 
+<br />
+&#58;&#58; Removing Leftover Files&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#91;DONE&#93; 
+<br />
+&#58;&#58; Setting Hostname&#58; alarm&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#91;DONE&#93; 
+<br />
+&#58;&#58; Saving dmesg Log&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#91;DONE&#93; 
+<br />
+INIT&#58; Entering runlevel&#58; 3
+<br />
+&#58;&#58; Starting Syslog-NG&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#91;DONE&#93; 
+<br />
+&#58;&#58; Starting Network&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#91;BUSY&#93; &#91;&nbsp; &nbsp;15.373756&#93; r8169 0000&#58;01&#58;00.0&#58; eth0&#58; link down
+<br />
+&#91;&nbsp; &nbsp;15.378852&#93; ADDRCONF&#40;NETDEV_UP&#41;&#58; eth0&#58; link is not ready
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#91;DONE&#93; 
+<br />
+&#58;&#58; Mounting Network Filesystems&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#91;DONE&#93; 
+<br />
+&#58;&#58; Starting crond daemon&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#91;DONE&#93; 
+<br />
+&#58;&#58; Starting Secure Shell Daemon&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#91;BUSY&#93; ssh-keygen&#58; generating new host keys&#58; RSA1 RSA DSA ECDSA 
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#91;DONE&#93; 
+<br />
+
+<br />
+Arch Linux 2.6.38-6-ARCH &#40;ttyS0&#41;
+<br />
+
+<br />
+alarm login&#58;</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+Fürdie erste Anmeldung gilt: <span style="font-weight: bold">User root / Passwort root</span>
+<br />
+
+<br />
+
+<br />
+Für weitere Einstellungen wie Sprache, Keymap, Zeitzone usw. siehe Arch Linux Wiki.
+<br />
+
+<br />
+
+<br />
+<span style="font-weight: bold">Quellen:</span>
+<br />
+
+<br />
+<a href="http://archlinuxarm.org/platforms/armv7/trimslice" target="_blank">http://archlinuxarm.org/platforms/armv7/trimslice</a>
+<br />
+<a href="http://www.trimslice.com/wiki/index.php/Main_Page" target="_blank">http://www.trimslice.com/wiki/index.php/Main_Page</a><br />_________________<br />mfg, atomical
+<br />
+
+<br />
+Jabber: <a href="mailto:alext@jabber.ccc.de">alext@jabber.ccc.de</a>
+<br />
+
+<br />
+<a href="http://www.prima-klima-weltweit.de/" target="_blank">http://www.prima-klima-weltweit.de/</a></span><span class="gensmall"><br /><br />Zuletzt bearbeitet von atomical am 05.08.2012 - 15:57, insgesamt 5-mal bearbeitet</span></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row6" valign="middle"><a href="viewtopic.php%3Ft=5433.html#top" class="mainmenu">Nach oben</a></td>
+		  <td class="row6" width="100%" height="20" valign="bottom" nowrap="nowrap">
+		  	<table cellspacing="0" cellpadding="0" border="0" height="18" width="18">
+			  <tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php%3Fmode=viewprofile&amp;u=15.html"><img src="templates/DAJ_Glass/images/lang_german/icon_profile.gif" alt="Benutzer-Profile anzeigen" title="Benutzer-Profile anzeigen" border="0" /></a> <a href="privmsg.php%3Fmode=post&amp;u=15.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a>     <script language="JavaScript" type="text/javascript"><!--
+
+				if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+					document.write(' ');
+				else
+					document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script><noscript></noscript></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row3" colspan="2" height="2"><img src="templates/DAJ_Glass/images/spacer.gif" border="0" width="1" height="1"></td>
+		</tr>
+		<tr valign="middle">
+		  <td class="row1" width="150" height="20" nowrap="nowrap"><span class="name"><a name="30547"></a><b>atomical</b></span></td>
+		  <td class="row1" width="100%">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td width="100%"><a href="http://www.computer-forum.net/viewtopic.php?p=30547#30547"><img src="templates/DAJ_Glass/images/icon_minipost.gif" alt="Beitrag" title="Beitrag" border="0" /></a><span class="postdetails">Verfasst am: 14.07.2012 - 00:29<span class="genmed"> </span>   Titel: Erstes Update</span></td>
+				<td nowrap="nowrap" valign="middle"><a href="http://www.computer-forum.net/posting.php?mode=quote&amp;p=30547"><img src="templates/DAJ_Glass/images/lang_german/icon_quote.gif" alt="Antworten mit Zitat" title="Antworten mit Zitat" border="0" /></a>   </td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td valign="top" align="center" class="row2"><br /><span class="postdetails">Administrator<br /><img src="images/raenge/admin.gif" alt="Administrator" title="Administrator" border="0" /><br /><br /></span><div align="left"><span class="postdetails">Anmeldungsdatum: 05.03.2005<br />Beiträge: 1017<br /></span></div><br /></td>
+		  <td class="row2" width="100%" height="28" valign="top">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td><span class="postbody">das erste Update via pacman verlief leicht trickreich - daher dazu ...
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">&#91;root@alarm ~&#93;# pacman -Syyuu
+<br />
+
+<br />
+...
+<br />
+
+<br />
+&#58;&#58; The following packages should be upgraded first &#58;
+<br />
+&nbsp; &nbsp; pacman
+<br />
+&#58;&#58; Do you want to cancel the current operation
+<br />
+&#58;&#58; and upgrade these packages now? &#91;Y/n&#93;
+<br />
+
+<br />
+...
+<br />
+
+<br />
+&#40;22/22&#41; checking package integrity&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#91;######################&#93; 100%
+<br />
+&#40;22/22&#41; loading package files&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#91;######################&#93; 100%
+<br />
+&#40;22/22&#41; checking for file conflicts&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#91;######################&#93; 100%
+<br />
+error&#58; failed to commit transaction &#40;conflicting files&#41;
+<br />
+util-linux&#58; /bin/login exists in filesystem
+<br />
+util-linux&#58; /etc/pam.d/chfn exists in filesystem
+<br />
+util-linux&#58; /etc/pam.d/chsh exists in filesystem
+<br />
+util-linux&#58; /etc/pam.d/login exists in filesystem
+<br />
+util-linux&#58; /usr/bin/chfn exists in filesystem
+<br />
+util-linux&#58; /usr/bin/chsh exists in filesystem
+<br />
+util-linux&#58; /usr/bin/newgrp exists in filesystem
+<br />
+util-linux&#58; /usr/sbin/vigr exists in filesystem
+<br />
+util-linux&#58; /usr/sbin/vipw exists in filesystem
+<br />
+util-linux&#58; /usr/share/man/man1/chfn.1.gz exists in filesystem
+<br />
+util-linux&#58; /usr/share/man/man1/chsh.1.gz exists in filesystem
+<br />
+util-linux&#58; /usr/share/man/man1/login.1.gz exists in filesystem
+<br />
+util-linux&#58; /usr/share/man/man1/newgrp.1.gz exists in filesystem
+<br />
+util-linux&#58; /usr/share/man/man8/vigr.8.gz exists in filesystem
+<br />
+util-linux&#58; /usr/share/man/man8/vipw.8.gz exists in filesystem
+<br />
+Errors occurred, no packages were upgraded.
+<br />
+&#91;&nbsp; 213.341757&#93; pacman used greatest stack depth&#58; 3660 bytes left
+<br />
+
+<br />
+</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+Scheinbar sind einige Dateien (aus dem Paket shadow) nicht korrekt in der Datenbank von pacman enthalten ... aber dafür gibt es ja --force (erste Frage mit <span style="font-weight: bold">nein</span> beantworten)
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">
+<br />
+&#91;root@alarm ~&#93;# pacman -S --force shadow
+<br />
+&#58;&#58; The following packages should be upgraded first &#58;
+<br />
+&nbsp; &nbsp; pacman
+<br />
+&#58;&#58; Do you want to cancel the current operation
+<br />
+&#58;&#58; and upgrade these packages now? &#91;Y/n&#93; n
+<br />
+
+<br />
+resolving dependencies...
+<br />
+looking for inter-conflicts...
+<br />
+
+<br />
+Targets &#40;1&#41;&#58; shadow-4.1.5.1-1
+<br />
+
+<br />
+Total Download Size&#58;&nbsp; &nbsp; 0.98 MiB
+<br />
+Total Installed Size&#58;&nbsp; &nbsp;4.60 MiB
+<br />
+Net Upgrade Size&#58;&nbsp; &nbsp; &nbsp; &nbsp;-0.55 MiB
+<br />
+
+<br />
+Proceed with installation? &#91;Y/n&#93; 
+<br />
+&#58;&#58; Retrieving packages from core...
+<br />
+&nbsp;shadow-4.1.5.1-1-armv7h 1006.2 KiB&nbsp; &nbsp;110K/s 00&#58;09 &#91;######################&#93; 100%
+<br />
+&#40;1/1&#41; checking package integrity&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#91;######################&#93; 100%
+<br />
+&#40;1/1&#41; loading package files&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#91;######################&#93; 100%
+<br />
+&#40;1/1&#41; checking available disk space&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#91;######################&#93; 100%
+<br />
+&#40;1/1&#41; upgrading shadow&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&#91;######################&#93; 100%
+<br />
+</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+ein weiteres <span style="font-style: italic">pacman -Syu</span> (erste Frage mit <span style="font-weight: bold">Ja</span> beantworten) sollte jetzt funktionieren - pacman und Abhängigkeiten sind jetzt up2date - jetzt das Ganze noch mal für den Rest des Systems ...
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">pacman -Syu
+<br />
+
+<br />
+...
+<br />
+
+<br />
+error&#58; failed to commit transaction &#40;conflicting files&#41;
+<br />
+filesystem&#58; /var/lock exists in filesystem
+<br />
+filesystem&#58; /var/run exists in filesystem
+<br />
+</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+dieser Fehler ist wie folgt zu beheben:
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">rm /var/lock
+<br />
+rm /var/run
+<br />
+pacman -Syu
+<br />
+</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+... und damit wäre das auch geklärt ...<br />_________________<br />mfg, atomical
+<br />
+
+<br />
+Jabber: <a href="mailto:alext@jabber.ccc.de">alext@jabber.ccc.de</a>
+<br />
+
+<br />
+<a href="http://www.prima-klima-weltweit.de/" target="_blank">http://www.prima-klima-weltweit.de/</a></span><span class="gensmall"><br /><br />Zuletzt bearbeitet von atomical am 20.08.2012 - 18:45, insgesamt einmal bearbeitet</span></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row6" valign="middle"><a href="viewtopic.php%3Ft=5433.html#top" class="mainmenu">Nach oben</a></td>
+		  <td class="row6" width="100%" height="20" valign="bottom" nowrap="nowrap">
+		  	<table cellspacing="0" cellpadding="0" border="0" height="18" width="18">
+			  <tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php%3Fmode=viewprofile&amp;u=15.html"><img src="templates/DAJ_Glass/images/lang_german/icon_profile.gif" alt="Benutzer-Profile anzeigen" title="Benutzer-Profile anzeigen" border="0" /></a> <a href="privmsg.php%3Fmode=post&amp;u=15.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a>     <script language="JavaScript" type="text/javascript"><!--
+
+				if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+					document.write(' ');
+				else
+					document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script><noscript></noscript></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row3" colspan="2" height="2"><img src="templates/DAJ_Glass/images/spacer.gif" border="0" width="1" height="1"></td>
+		</tr>
+		<tr valign="middle">
+		  <td class="row1" width="150" height="20" nowrap="nowrap"><span class="name"><a name="30550"></a><b>atomical</b></span></td>
+		  <td class="row1" width="100%">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td width="100%"><a href="http://www.computer-forum.net/viewtopic.php?p=30550#30550"><img src="templates/DAJ_Glass/images/icon_minipost.gif" alt="Beitrag" title="Beitrag" border="0" /></a><span class="postdetails">Verfasst am: 14.07.2012 - 19:44<span class="genmed"> </span>   Titel: WLAN</span></td>
+				<td nowrap="nowrap" valign="middle"><a href="http://www.computer-forum.net/posting.php?mode=quote&amp;p=30550"><img src="templates/DAJ_Glass/images/lang_german/icon_quote.gif" alt="Antworten mit Zitat" title="Antworten mit Zitat" border="0" /></a>   </td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td valign="top" align="center" class="row2"><br /><span class="postdetails">Administrator<br /><img src="images/raenge/admin.gif" alt="Administrator" title="Administrator" border="0" /><br /><br /></span><div align="left"><span class="postdetails">Anmeldungsdatum: 05.03.2005<br />Beiträge: 1017<br /></span></div><br /></td>
+		  <td class="row2" width="100%" height="28" valign="top">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td><span class="postbody">Damit das WLAN unter Arch Linux funktioniert, darf man sich noch die Firmware zur verbauten Hardware runterladen.
+<br />
+
+<br />
+Im Trim-Slice kommt ein Ralink 3070 USB zum Einsatz - Firmware gibt es auf der Seite von <a href="http://www.ralinktech.com/en/04_support/license.php?sn=5030" target="_blank" class="postlink">Rallink</a>.
+<br />
+
+<br />
+Die Datei rt2870.bin muss nach /lib/firmware kopiert werden.
+<br />
+
+<br />
+
+<br />
+wpa_supplicant ist schon bei der Grundinstallation dabei, die benötigte Konfigurationsdatei wpa_supplicant.conf sollte in /etc/wpa_supplicant/ vorliegen.
+<br />
+
+<br />
+Nun sollten folgende Befehle zu einer positiven Ausgabe von dhcpd führen ...
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">ip link set wlan0 up
+<br />
+wpa_supplicant -B -D wext -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+<br />
+dhcpcd wlan0
+<br />
+</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+... in etwa so:
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">dhcpcd&#91;1686&#93;&#58; version 5.5.6 starting
+<br />
+dhcpcd&#91;1686&#93;&#58; wlan0&#58; sending IPv6 Router Solicitation
+<br />
+dhcpcd&#91;1686&#93;&#58; wlan0&#58; broadcasting for a lease
+<br />
+dhcpcd&#91;1686&#93;&#58; wlan0&#58; offered 192.168.2.107 from 192.168.2.1
+<br />
+dhcpcd&#91;1686&#93;&#58; wlan0&#58; acknowledged 192.168.2.107 from 192.168.2.1
+<br />
+dhcpcd&#91;1686&#93;&#58; wlan0&#58; checking for 192.168.2.107
+<br />
+dhcpcd&#91;1686&#93;&#58; wlan0&#58; sending IPv6 Router Solicitation
+<br />
+dhcpcd&#91;1686&#93;&#58; wlan0&#58; sending IPv6 Router Solicitation
+<br />
+dhcpcd&#91;1686&#93;&#58; wlan0&#58; leased 192.168.2.107 for infinity
+<br />
+dhcpcd&#91;1686&#93;&#58; forked to background, child pid 1726
+<br />
+</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+... automatisieren ließe sich das unter anderem mittels der Datei /etc/rc.local<br />_________________<br />mfg, atomical
+<br />
+
+<br />
+Jabber: <a href="mailto:alext@jabber.ccc.de">alext@jabber.ccc.de</a>
+<br />
+
+<br />
+<a href="http://www.prima-klima-weltweit.de/" target="_blank">http://www.prima-klima-weltweit.de/</a></span><span class="gensmall"></span></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row6" valign="middle"><a href="viewtopic.php%3Ft=5433.html#top" class="mainmenu">Nach oben</a></td>
+		  <td class="row6" width="100%" height="20" valign="bottom" nowrap="nowrap">
+		  	<table cellspacing="0" cellpadding="0" border="0" height="18" width="18">
+			  <tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php%3Fmode=viewprofile&amp;u=15.html"><img src="templates/DAJ_Glass/images/lang_german/icon_profile.gif" alt="Benutzer-Profile anzeigen" title="Benutzer-Profile anzeigen" border="0" /></a> <a href="privmsg.php%3Fmode=post&amp;u=15.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a>     <script language="JavaScript" type="text/javascript"><!--
+
+				if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+					document.write(' ');
+				else
+					document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script><noscript></noscript></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row3" colspan="2" height="2"><img src="templates/DAJ_Glass/images/spacer.gif" border="0" width="1" height="1"></td>
+		</tr>
+		<tr valign="middle">
+		  <td class="row1" width="150" height="20" nowrap="nowrap"><span class="name"><a name="30551"></a><b>atomical</b></span></td>
+		  <td class="row1" width="100%">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td width="100%"><a href="http://www.computer-forum.net/viewtopic.php?p=30551#30551"><img src="templates/DAJ_Glass/images/icon_minipost.gif" alt="Beitrag" title="Beitrag" border="0" /></a><span class="postdetails">Verfasst am: 14.07.2012 - 23:03<span class="genmed"> </span>   Titel: Router</span></td>
+				<td nowrap="nowrap" valign="middle"><a href="http://www.computer-forum.net/posting.php?mode=quote&amp;p=30551"><img src="templates/DAJ_Glass/images/lang_german/icon_quote.gif" alt="Antworten mit Zitat" title="Antworten mit Zitat" border="0" /></a>   </td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td valign="top" align="center" class="row2"><br /><span class="postdetails">Administrator<br /><img src="images/raenge/admin.gif" alt="Administrator" title="Administrator" border="0" /><br /><br /></span><div align="left"><span class="postdetails">Anmeldungsdatum: 05.03.2005<br />Beiträge: 1017<br /></span></div><br /></td>
+		  <td class="row2" width="100%" height="28" valign="top">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td><span class="postbody">Als nächstes soll das Teil für mein lokales Netz DHCP, DNS und Routing übernehmen.
+<br />
+
+<br />
+Für DNS und DHCP eignet sich dnsmasq recht gut, Routing muss nur aktiviert werden und für etwas mehr Sicherheit kommt noch iptables dazu.
+<br />
+
+<br />
+... dnsmasq und iptables installieren, die Konfiguration von dnsmasq ist ausreichend dokumentiert, schließlich beide Dienste auch zur rc.conf hinzufügen.
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">pacman -S iptables dnsmasq</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+... in /etc/sysctl.conf
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">net.ipv4.ip_forward = 1</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+... und die iptables Regeln (nicht auf meinem Mist gewachsen - siehe Quelle) einpflegen und speichern, wlan0 ist bei mir das öffentliche Netz.
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code"># bisherige Regeln löschen
+<br />
+iptables -F
+<br />
+iptables -t nat -F
+<br />
+iptables -t mangle -F
+<br />
+
+<br />
+# NAT/Masquerading einschalten
+<br />
+iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
+<br />
+
+<br />
+#ICMP für lokale Prozesse filtern
+<br />
+iptables -A INPUT -p icmp --icmp-type 0 -j ACCEPT
+<br />
+iptables -A INPUT -p icmp --icmp-type 3 -j ACCEPT
+<br />
+iptables -A INPUT -p icmp --icmp-type 4 -j ACCEPT
+<br />
+iptables -A INPUT -p icmp --icmp-type 8 -j ACCEPT
+<br />
+iptables -A INPUT -p icmp --icmp-type 11 -j ACCEPT
+<br />
+iptables -A INPUT -p icmp --icmp-type 12 -j ACCEPT
+<br />
+iptables -A INPUT -p icmp --icmp-type 14 -j ACCEPT
+<br />
+iptables -A INPUT -p icmp --icmp-type 16 -j ACCEPT
+<br />
+iptables -A INPUT -p icmp --icmp-type 18 -j ACCEPT
+<br />
+iptables -A INPUT -p icmp -j LOG -m limit --log-prefix &quot;FILTER ICMP-BAD-TYPE-IN&#58;&quot;
+<br />
+iptables -A INPUT -p icmp -j DROP
+<br />
+
+<br />
+iptables -A OUTPUT -p icmp --icmp-type 0 -j ACCEPT
+<br />
+iptables -A OUTPUT -p icmp --icmp-type 4 -j ACCEPT
+<br />
+iptables -A OUTPUT -p icmp --icmp-type 8 -j ACCEPT
+<br />
+iptables -A OUTPUT -p icmp --icmp-type 12 -j ACCEPT
+<br />
+iptables -A OUTPUT -p icmp --icmp-type 13 -j ACCEPT
+<br />
+iptables -A OUTPUT -p icmp --icmp-type 15 -j ACCEPT
+<br />
+iptables -A OUTPUT -p icmp --icmp-type 17 -j ACCEPT
+<br />
+iptables -A OUTPUT -p icmp -j LOG -m limit --log-prefix &quot;FILTER ICMP-BAD-TYPE-OUT&#58;&quot;
+<br />
+iptables -A OUTPUT -p icmp -j DROP
+<br />
+
+<br />
+iptables -A FORWARD -p icmp -j ACCEPT
+<br />
+
+<br />
+#Stateful Inspection einschalten
+<br />
+iptables -A INPUT -m state --state ESTABLISHED,RELATED -i wlan0 -j ACCEPT
+<br />
+iptables -A FORWARD -m state --state ESTABLISHED,RELATED -i wlan0 -j ACCEPT
+<br />
+
+<br />
+# Keinerlei Einschränkungen auf dem Loopback
+<br />
+iptables -A INPUT -i lo -j ACCEPT
+<br />
+iptables -A OUTPUT -o lo -j ACCEPT
+<br />
+
+<br />
+# Unlimitierten Zugriff aus dem LAN
+<br />
+iptables -A INPUT -i eth0 -j ACCEPT
+<br />
+iptables -A FORWARD -i eth0 -j ACCEPT
+<br />
+
+<br />
+# Unlimitierten Zugriff aus dem VPN
+<br />
+iptables -A INPUT -i tun0 -j ACCEPT
+<br />
+iptables -A FORWARD -i tun0 -j ACCEPT
+<br />
+
+<br />
+# Default Policy - alles ohne Regel verwerfen / alles ausgehende erlauben
+<br />
+iptables -P INPUT DROP
+<br />
+iptables -P OUTPUT ACCEPT
+<br />
+iptables -P FORWARD DROP
+<br />
+</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+<span style="font-weight: bold">Quellen:</span>
+<br />
+
+<br />
+<a href="https://www.tux.ethz.ch/wiki/index.php/IPTABLES" target="_blank">https://www.tux.ethz.ch/wiki/index.php/IPTABLES</a><br />_________________<br />mfg, atomical
+<br />
+
+<br />
+Jabber: <a href="mailto:alext@jabber.ccc.de">alext@jabber.ccc.de</a>
+<br />
+
+<br />
+<a href="http://www.prima-klima-weltweit.de/" target="_blank">http://www.prima-klima-weltweit.de/</a></span><span class="gensmall"></span></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row6" valign="middle"><a href="viewtopic.php%3Ft=5433.html#top" class="mainmenu">Nach oben</a></td>
+		  <td class="row6" width="100%" height="20" valign="bottom" nowrap="nowrap">
+		  	<table cellspacing="0" cellpadding="0" border="0" height="18" width="18">
+			  <tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php%3Fmode=viewprofile&amp;u=15.html"><img src="templates/DAJ_Glass/images/lang_german/icon_profile.gif" alt="Benutzer-Profile anzeigen" title="Benutzer-Profile anzeigen" border="0" /></a> <a href="privmsg.php%3Fmode=post&amp;u=15.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a>     <script language="JavaScript" type="text/javascript"><!--
+
+				if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+					document.write(' ');
+				else
+					document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script><noscript></noscript></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row3" colspan="2" height="2"><img src="templates/DAJ_Glass/images/spacer.gif" border="0" width="1" height="1"></td>
+		</tr>
+		<tr valign="middle">
+		  <td class="row1" width="150" height="20" nowrap="nowrap"><span class="name"><a name="30552"></a><b>atomical</b></span></td>
+		  <td class="row1" width="100%">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td width="100%"><a href="http://www.computer-forum.net/viewtopic.php?p=30552#30552"><img src="templates/DAJ_Glass/images/icon_minipost.gif" alt="Beitrag" title="Beitrag" border="0" /></a><span class="postdetails">Verfasst am: 14.07.2012 - 23:23<span class="genmed"> </span>   Titel: Zeitserver</span></td>
+				<td nowrap="nowrap" valign="middle"><a href="http://www.computer-forum.net/posting.php?mode=quote&amp;p=30552"><img src="templates/DAJ_Glass/images/lang_german/icon_quote.gif" alt="Antworten mit Zitat" title="Antworten mit Zitat" border="0" /></a>   </td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td valign="top" align="center" class="row2"><br /><span class="postdetails">Administrator<br /><img src="images/raenge/admin.gif" alt="Administrator" title="Administrator" border="0" /><br /><br /></span><div align="left"><span class="postdetails">Anmeldungsdatum: 05.03.2005<br />Beiträge: 1017<br /></span></div><br /></td>
+		  <td class="row2" width="100%" height="28" valign="top">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td><span class="postbody">Mitunter ist es nicht verkehrt die genaue Uhrzeit zu kennen - also macht das Teil auch einen Abgleich mit externen Zeitservern und dient gleichzeitig als Zeitserver im lokalen Netz:
+<br />
+
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">pacman -S ntp</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+.. die Datei /etc/ntp.conf anpassen ...
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">...
+<br />
+
+<br />
+server 0.de.pool.ntp.org
+<br />
+server 1.de.pool.ntp.org
+<br />
+server 2.de.pool.ntp.org
+<br />
+server 3.de.pool.ntp.org
+<br />
+
+<br />
+...
+<br />
+
+<br />
+restrict 192.168.100.0 mask 255.255.255.0 nomodify notrap
+<br />
+
+<br />
+...
+<br />
+</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+.. und in /etc/conf.d/ntpd.conf das Interface auf dem der NTPD lauscht, einschränken ...
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">NTPD_ARGS=&quot;-g -u ntp -I eth0&quot;</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+<span style="font-weight: bold">Quellen:</span>
+<br />
+
+<br />
+<a href="https://wiki.archlinux.de/title/NTP" target="_blank">https://wiki.archlinux.de/title/NTP</a>
+<br />
+<a href="http://www.dialogic.com/webhelp/bordernet2020/1.0.0/webhelp/sample_ntp_conf.htm" target="_blank">http://www.dialogic.com/webhelp/bordernet2020/1.0.0/webhelp/sample_ntp_conf.htm</a><br />_________________<br />mfg, atomical
+<br />
+
+<br />
+Jabber: <a href="mailto:alext@jabber.ccc.de">alext@jabber.ccc.de</a>
+<br />
+
+<br />
+<a href="http://www.prima-klima-weltweit.de/" target="_blank">http://www.prima-klima-weltweit.de/</a></span><span class="gensmall"></span></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row6" valign="middle"><a href="viewtopic.php%3Ft=5433.html#top" class="mainmenu">Nach oben</a></td>
+		  <td class="row6" width="100%" height="20" valign="bottom" nowrap="nowrap">
+		  	<table cellspacing="0" cellpadding="0" border="0" height="18" width="18">
+			  <tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php%3Fmode=viewprofile&amp;u=15.html"><img src="templates/DAJ_Glass/images/lang_german/icon_profile.gif" alt="Benutzer-Profile anzeigen" title="Benutzer-Profile anzeigen" border="0" /></a> <a href="privmsg.php%3Fmode=post&amp;u=15.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a>     <script language="JavaScript" type="text/javascript"><!--
+
+				if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+					document.write(' ');
+				else
+					document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script><noscript></noscript></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row3" colspan="2" height="2"><img src="templates/DAJ_Glass/images/spacer.gif" border="0" width="1" height="1"></td>
+		</tr>
+		<tr valign="middle">
+		  <td class="row1" width="150" height="20" nowrap="nowrap"><span class="name"><a name="30553"></a><b>atomical</b></span></td>
+		  <td class="row1" width="100%">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td width="100%"><a href="http://www.computer-forum.net/viewtopic.php?p=30553#30553"><img src="templates/DAJ_Glass/images/icon_minipost.gif" alt="Beitrag" title="Beitrag" border="0" /></a><span class="postdetails">Verfasst am: 15.07.2012 - 18:57<span class="genmed"> </span>   Titel: Kernel</span></td>
+				<td nowrap="nowrap" valign="middle"><a href="http://www.computer-forum.net/posting.php?mode=quote&amp;p=30553"><img src="templates/DAJ_Glass/images/lang_german/icon_quote.gif" alt="Antworten mit Zitat" title="Antworten mit Zitat" border="0" /></a>   </td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td valign="top" align="center" class="row2"><br /><span class="postdetails">Administrator<br /><img src="images/raenge/admin.gif" alt="Administrator" title="Administrator" border="0" /><br /><br /></span><div align="left"><span class="postdetails">Anmeldungsdatum: 05.03.2005<br />Beiträge: 1017<br /></span></div><br /></td>
+		  <td class="row2" width="100%" height="28" valign="top">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td><span class="postbody">[edit]
+<br />
+... scheinbar gibt es wohl doch einen aktuelleren Kernel für TrimSlice:
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">pacman -S core/linux-trimslice core/linux-headers-trimslice</td>  </tr></table><span class="postbody">
+<br />
+[/edit]
+<br />
+
+<br />
+Der aktuell über die Repositories verfügbare Kernel ist zum einen nicht mehr ganz aktuell (2.6) und es fehlt das TUN-Device, welches ich für OpenVPN benötige - also wieder eine Baustelle.
+<br />
+
+<br />
+Mit den Quellen, die direkt im Trim Slice Wiki angeboten werden, hatte ich ein paar Probleme, außerdem hätte das Bauen des Kernels über den einfachen "Dreisatz" sich nicht ins Paketsystem eingefügt - durch Zufall bin ich beim Suchen nach Firmware-Dateien auf die Seite <a href="http://myplugbox.com/.trimslice/linux-trimslice/" target="_blank">http://myplugbox.com/.trimslice/linux-trimslice/</a> gestoßen - da gibt es alles, was man braucht um ein Paket mit makepkg zu erstellen.
+<br />
+
+<br />
+... die benötigten Tools installieren ...
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">pacman -S base-devel</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+... ein Verzeichnis zum Bauen des Kernels anlegen, dorthin wechseln und dann das PKGBUILD, einige Patch- und Firmwaredateien und die Quellen selbst herunterladen ...
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">
+<br />
+wget http&#58;//myplugbox.com/.trimslice/linux-trimslice/PKGBUILD
+<br />
+
+<br />
+wget http&#58;//myplugbox.com/.trimslice/linux-trimslice/linux-trimslice.install
+<br />
+
+<br />
+wget http&#58;//myplugbox.com/.trimslice/linux-trimslice/armdma.patch
+<br />
+
+<br />
+wget http&#58;//myplugbox.com/.trimslice/linux-trimslice/build-oops.diff
+<br />
+
+<br />
+wget http&#58;//myplugbox.com/.trimslice/linux-trimslice/change-default-console-loglevel.patch
+<br />
+
+<br />
+wget http&#58;//myplugbox.com/.trimslice/linux-trimslice/config
+<br />
+</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+... in der Datei /etc/makepkg.conf die Anzahl der Jobs erhöhen - wir haben ja einen Dualcore ...
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">MAKEFLAGS=&quot;-j3&quot;</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+makepkg ausführen - ggf. bricht es beim ersten Versuch ab, weil Abhängigkeiten fehlen - diese dann einfach mit pacman nachinstallieren...
+<br />
+
+<br />
+... ich habe in der Konfig für den Kernel das Modul "Universal TUN/TAP" und Unterstützung für iptables raw table hinzugefügt ...
+<br />
+
+<br />
+wenn makepkg fertig ist erhält man zwei Dateien - einmal linux selbst und einmal die passenden Header - das installiert man mittels pacman -U, anschließend Reboot mit dem neuen Kernel
+<br />
+
+<br />
+<span style="font-weight: bold">[edit]
+<br />
+
+<br />
+da bei Arch Linux das Verzeichnis /lib nach /usr/lib wandert gibt es hier Schwierigkeiten, die ich noch lösen muss
+<br />
+
+<br />
+[/edit]</span><br />_________________<br />mfg, atomical
+<br />
+
+<br />
+Jabber: <a href="mailto:alext@jabber.ccc.de">alext@jabber.ccc.de</a>
+<br />
+
+<br />
+<a href="http://www.prima-klima-weltweit.de/" target="_blank">http://www.prima-klima-weltweit.de/</a></span><span class="gensmall"></span></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row6" valign="middle"><a href="viewtopic.php%3Ft=5433.html#top" class="mainmenu">Nach oben</a></td>
+		  <td class="row6" width="100%" height="20" valign="bottom" nowrap="nowrap">
+		  	<table cellspacing="0" cellpadding="0" border="0" height="18" width="18">
+			  <tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php%3Fmode=viewprofile&amp;u=15.html"><img src="templates/DAJ_Glass/images/lang_german/icon_profile.gif" alt="Benutzer-Profile anzeigen" title="Benutzer-Profile anzeigen" border="0" /></a> <a href="privmsg.php%3Fmode=post&amp;u=15.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a>     <script language="JavaScript" type="text/javascript"><!--
+
+				if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+					document.write(' ');
+				else
+					document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script><noscript></noscript></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row3" colspan="2" height="2"><img src="templates/DAJ_Glass/images/spacer.gif" border="0" width="1" height="1"></td>
+		</tr>
+		<tr align="center">
+		  <td class="row3" colspan="2" height="28">
+		    <table cellspacing="0" cellpadding="0" border="0">
+			  <tr><form method="post" action="http://www.computer-forum.net/viewtopic.php?t=5433&amp;start=0">
+				<td align="center"><span class="mainmenu1">Beiträge der letzten Zeit anzeigen: <select name="postdays"><option value="0" selected="selected">Alle Beiträge</option><option value="1">1 Tag</option><option value="7">7 Tage</option><option value="14">2 Wochen</option><option value="30">1 Monat</option><option value="90">3 Monate</option><option value="180">6 Monate</option><option value="364">1 Jahr</option></select> <select name="postorder"><option value="asc" selected="selected">Die ältesten zuerst</option><option value="desc">Die neusten zuerst</option></select> <input type="submit" value="Los" class="liteoption" name="submit" /></span></td>
+			  </form></tr>
+			</table>
+		  </td>
+		</tr>
+	  </table>
+	</td>
+  </tr>
+</table>
+
+<table width="100%" cellspacing="1" cellpadding="1" border="0">
+  <tr valign="top">
+	<td nowrap="nowrap"><span class="nav"><a href="posting.php%3Fmode=newtopic&amp;f=2.html"><img src="templates/DAJ_Glass/images/lang_german/post.gif" border="0" alt="Neues Thema eröffnen" align="middle" /></a>  <a href="http://www.computer-forum.net/posting.php?mode=reply&amp;t=5433"><img src="templates/DAJ_Glass/images/lang_german/reply-locked.gif" border="0" alt="Dieses Thema ist gesperrt, du kannst keine Beiträge editieren oder beantworten." align="middle" /></a></span></td>
+	<td valign="middle" width="100%"><span class="gensmall"></span></td>
+	<td align="right" nowrap="nowrap"><span class="nav">Seite <b>1</b> von <b>1</b></span></td>
+  </tr>
+</table>
+
+<br />
+
+<table width="100%" cellspacing="1" cellpadding="1" border="0">
+  <tr valign="top">
+	<td nowrap="nowrap"><img src="templates/DAJ_Glass/images/nav.gif" border="0"></td>
+	<td width="100%"><span class="mainmenu"><a href="index.php.html" class="mainmenu">Computer-Forum Foren-Übersicht</a> » <a href="viewforum.php%3Ff=2.html" class="mainmenu">Linux</a> » <a class="mainmenu" href="viewtopic.php%3Ft=5433&amp;start=0&amp;postdays=0&amp;postorder=asc&amp;highlight=.html">Arch Linux auf dem Trim-Slice (2-Kern ARM Cortex A9 1 GHz)</a></span></td>
+	<td nowrap="nowrap" align="right"><form method="get" name="jumpbox" action="http://www.computer-forum.net/viewforum.php" onSubmit="if(document.jumpbox.f.value == -1){return false;}">
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+	<td nowrap="nowrap"><span class="gensmall">Gehe zu: <select name="f" onchange="if(this.options[this.selectedIndex].value != -1){ forms['jumpbox'].submit() }"><option value="-1">Forum auswählen</option><option value="-1">&nbsp;</option><option value="-1">Betriebssysteme</option><option value="-1">----------------</option><option value="2"selected="selected">Linux</option><option value="3">Mac OS X / Unix</option><option value="4">Windows</option><option value="5">Sonst. Betriebssysteme</option><option value="-1">&nbsp;</option><option value="-1">Hardware</option><option value="-1">----------------</option><option value="6">Hardware</option><option value="7">Mobile Computing</option><option value="-1">&nbsp;</option><option value="-1">Software</option><option value="-1">----------------</option><option value="8">Anwendungen</option><option value="9">Spiele</option><option value="10">Programmieren</option><option value="11">Sicherheit</option><option value="-1">&nbsp;</option><option value="-1">Internet & Intranet</option><option value="-1">----------------</option><option value="12">Netzwerk</option><option value="13">Web-Forum</option><option value="-1">&nbsp;</option><option value="-1">Sonstiges</option><option value="-1">----------------</option><option value="1">Rund ums Forum</option><option value="18">Kaufberatung</option><option value="15">Smalltalk</option></select><input type="hidden" name="sid" value="74cf9c6e0ec09eb401cf65cc493d8e44" /> <input type="submit" value="Los" class="liteoption" /></span></td>
+  </tr>
+</table>
+</form>
+</td>
+  </tr>
+</table>
+
+<br />
+
+<table width="100%" cellspacing="0" cellpadding="0" class="forumline">
+  <tr>
+  	<td class="row6">
+	  <table width="100%" cellspacing="1" cellpadding="3" border="0">
+		<tr>
+		  <td width="40%" valign="top" nowrap="nowrap"><span class="gensmall"></span><br /><br /></td>
+		  <td align="right" valign="middle" nowrap="nowrap"><span class="gensmall">Du <b>kannst keine</b> Beiträge in dieses Forum schreiben.<br />Du <b>kannst</b> auf Beiträge in diesem Forum <b>nicht</b> antworten.<br />Du <b>kannst</b> deine Beiträge in diesem Forum <b>nicht</b> bearbeiten.<br />Du <b>kannst</b> deine Beiträge in diesem Forum <b>nicht</b> löschen.<br />Du <b>kannst</b> an Umfragen in diesem Forum <b>nicht</b> mitmachen.<br /></span></td>
+  		</tr>
+	  </table>
+	</td>
+  </tr>
+</table>
+
+  	</td>
+	<td class="right"><span class="vsmall"> </span></td>
+  </tr>
+  <tr>
+  	<td class="left"><span class="vsmall"> </span></td>
+	<td colspan="2" class="row2">
+	<div align="center"><span class="copyright"><br /><br />
+	<a href="http://www.computer-forum.net/viewtopic.php?p=1661"><b>Impressum</b></a><br/><br><br>
+	DAJ Glass (1.0.5) template by <a href="http://www.dumbassjones.com/" target="_blank" class="copyright">Dustin Baccetti</a><br />
+	Powered by <a href="http://www.phpbb.com/" target="_phpbb" class="copyright">phpBB</a>  © 2001, 2002 phpBB Group<br />Deutsche Übersetzung von <a href="http://www.phpbb.de/" target="_blank" class="copyright">phpBB.de</a></span></div>
+	</td>
+	<td class="right"><span class="vsmall"> </span></td>
+  </tr>
+  <tr>
+  	<td height="27" class="ll"><span class="vsmall"> </span></td>
+	<td colspan="2" class="lc"><span class="vsmall"> </span></td>
+	<td class="lr"><span class="vsmall"> </span></td>
+  </tr>
+</table>
+
+</body>
+</html>
+

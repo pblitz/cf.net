@@ -1,0 +1,738 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+<link rel="top" href="index.php.html" title="Computer-Forum Foren-Übersicht" />
+<link rel="search" href="http://www.computer-forum.net/search.php" title="Suchen" />
+<link rel="help" href="faq.php.html" title="FAQ" />
+<link rel="author" href="memberlist.php.html" title="Mitgliederliste" />
+<link rel="prev" href="http://www.computer-forum.net/viewtopic.php?t=158&amp;view=previous" title="Vorheriges Thema anzeigen" />
+<link rel="next" href="http://www.computer-forum.net/viewtopic.php?t=158&amp;view=next" title="Nächstes Thema anzeigen" />
+<link rel="up" href="viewforum.php%3Ff=10.html" title="Programmieren" />
+<link rel="chapter forum" href="viewforum.php%3Ff=2.html" title="Linux" />
+<link rel="chapter forum" href="viewforum.php%3Ff=3.html" title="Mac OS X / Unix" />
+<link rel="chapter forum" href="viewforum.php%3Ff=4.html" title="Windows" />
+<link rel="chapter forum" href="viewforum.php%3Ff=5.html" title="Sonst. Betriebssysteme" />
+<link rel="chapter forum" href="viewforum.php%3Ff=6.html" title="Hardware" />
+<link rel="chapter forum" href="viewforum.php%3Ff=7.html" title="Mobile Computing" />
+<link rel="chapter forum" href="viewforum.php%3Ff=8.html" title="Anwendungen" />
+<link rel="chapter forum" href="viewforum.php%3Ff=9.html" title="Spiele" />
+<link rel="chapter forum" href="viewforum.php%3Ff=10.html" title="Programmieren" />
+<link rel="chapter forum" href="viewforum.php%3Ff=11.html" title="Sicherheit" />
+<link rel="chapter forum" href="viewforum.php%3Ff=12.html" title="Netzwerk" />
+<link rel="chapter forum" href="viewforum.php%3Ff=13.html" title="Web-Forum" />
+<link rel="chapter forum" href="viewforum.php%3Ff=1.html" title="Rund ums Forum" />
+<link rel="chapter forum" href="viewforum.php%3Ff=18.html" title="Kaufberatung" />
+<link rel="chapter forum" href="viewforum.php%3Ff=15.html" title="Smalltalk" />
+
+<title>Computer-Forum :: Thema anzeigen - Arrays zusammenfügen und sortieren (PHP)</title>
+<link rel="stylesheet" href="templates/DAJ_Glass/DAJ_Glass.css" type="text/css" />
+
+<!-- Start add - Birthday MOD -->
+
+<!-- End add - Birthday MOD -->
+
+</head>
+<body>
+
+<a name="top"></a>
+<!-- <div style="color: red;position:fixed;left:30%;top:20px;width:40%;font-size:2em;font-weight:bold">
+  Abschaltung des CF zum 1.5.2014 - <a href="http://www.computer-forum.net/viewtopic.php?t=5559">mehr Infos</a>
+
+</div> -->
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+  	<td height="14" width="25" nowrap="nowrap" class="ul"><span class="vsmall">&nbsp;</span></td>
+	<td width="100%" colspan="2" class="uc"><span class="vsmall">&nbsp;</span></td>
+	<td width="25" nowrap="nowrap" class="ur"><span class="vsmall">&nbsp;</span></td>
+  </tr>
+  <tr>
+  	<td class="headl"><span class="vsmall">&nbsp;</span></td>
+	<td class="row3" colspan="2">
+	<a href="index.php.html"><img src="templates/DAJ_Glass/images/logo_phpBB.gif" border="0" alt="Computer-Forum Foren-Übersicht" /></a>
+	</td>
+	<td class="headr"><span class="vsmall">&nbsp;</span></td>
+  </tr>
+  <tr valign="bottom">
+  	<td rowspan="3" class="tul"><span class="vsmall">&nbsp;</span></td>
+	<td height="30" class="tuc">
+	<a href="index.php.html" class="mainmenu1">Computer-Forum</a>
+	</td>
+	<td align="right" nowrap="nowrap" class="tuc">
+	  <table cellspacing="0" cellpadding="0" border="0">
+	  	<tr>
+		  <td><a href="faq.php.html"><img src="templates/DAJ_Glass/images/icon_mini_faq.gif" border="0" alt="FAQ" /></a></td>
+		  <td><span class="mainmenu1">&nbsp;<a href="faq.php.html" class="mainmenu1">FAQ</a>ï¿½ï¿½</span></td>
+		  <td><a href="http://www.computer-forum.net/search.php"><img src="templates/DAJ_Glass/images/icon_mini_search.gif" border="0" alt="Suchen" /></a></td>
+		  <td><span class="mainmenu1">&nbsp;<a href="http://www.computer-forum.net/search.php" class="mainmenu1">Suchen</a>ï¿½ï¿½</span></td>
+		  <td><a href="memberlist.php.html"><img src="templates/DAJ_Glass/images/icon_mini_members.gif" border="0" alt="Mitgliederliste" /></a></td>
+		  <td><span class="mainmenu1">&nbsp;<a href="memberlist.php.html" class="mainmenu1">Mitgliederliste</a>ï¿½ï¿½</span></td>
+		  <td><a href="groupcp.php.html"><img src="templates/DAJ_Glass/images/icon_mini_groups.gif" border="0" alt="Benutzergruppen" /></a></td>
+		  <td><span class="mainmenu1">&nbsp;<a href="groupcp.php.html" class="mainmenu1">Benutzergruppen</a></span></td>
+		</tr>
+	  </table>
+	</td>
+	<td rowspan="3" class="tur"><span class="vsmall">&nbsp;</span></td>
+  </tr>
+  <tr>
+  	<td height="10" colspan="2" class="row5"><img src="templates/DAJ_Glass/images/spacer.gif" border="0" height="1" width="1"></td>
+  </tr>
+  <tr valign="top">
+	<td height="30" nowrap="nowrap" class="tlc"><span class="mainmenu1">
+	<a href="profile.php%3Fmode=register.html" class="mainmenu1">Registrieren</a>&nbsp;&nbsp;::&nbsp;
+	<a href="login.php.html" class="mainmenu1">Login</a>
+	</span></td>
+	<td nowrap="nowrap" align="right" class="tlc"><span class="mainmenu1">
+	<a href="privmsg.php%3Ffolder=inbox.html" class="mainmenu1">Einloggen, um private Nachrichten zu lesen</a>
+	</span></td>
+  </tr>
+  <tr>
+    <td class="left"><span class="vsmall">&nbsp;</span></td>
+	<td colspan="2" class="row2"><br />
+
+<table width="100%" cellspacing="1" cellpadding="1" border="0">
+  <tr valign="top">
+	<td nowrap="nowrap"><img src="templates/DAJ_Glass/images/nav.gif" border="0"></td>
+	<td width="100%"><span class="mainmenu"><a href="index.php.html" class="mainmenu">Computer-Forum Foren-Übersicht</a> » <a href="viewforum.php%3Ff=10.html" class="mainmenu">Programmieren</a> » <a class="mainmenu" href="viewtopic.php%3Ft=158&amp;start=0&amp;postdays=0&amp;postorder=asc&amp;highlight=.html">Arrays zusammenfügen und sortieren (PHP)</a></span></td>
+  </tr>
+</table>
+
+<br />
+
+<table width="100%" cellspacing="1" cellpadding="1" border="0">
+  <tr>
+	<td valign="middle" nowrap="nowrap"><span class="nav"><a href="posting.php%3Fmode=newtopic&amp;f=10.html"><img src="templates/DAJ_Glass/images/lang_german/post.gif" border="0" alt="Neues Thema eröffnen" align="middle" /></a>  <a href="http://www.computer-forum.net/posting.php?mode=reply&amp;t=158"><img src="templates/DAJ_Glass/images/lang_german/reply.gif" border="0" alt="Neue Antwort erstellen" align="middle" /></a></span></td>
+	<td valign="middle" align="left" width="50%"><span class="gensmall"><b></b></span></td>
+		             <td align="right" valign="bottom" class="gensmall">
+				       <a href="http://www.computer-forum.net/search.php?search_id=unanswered" class="gensmall">Unbeantwortete Beiträge anzeigen</a></td>
+
+
+  </tr>
+</table>
+
+<table width="100%" cellspacing="0" cellpadding="0" class="forumline">
+  <tr valign="middle">
+	<td height="25" nowrap="nowrap" class="row4"><span class="cattitle"> Arrays zusammenfügen und sortieren (PHP)</span></td>
+	<td align="right" class="row4"><span class="mainmenu1">« <a href="http://www.computer-forum.net/viewtopic.php?t=158&amp;view=previous" class="mainmenu1">Vorheriges Thema anzeigen</a> :: <a href="http://www.computer-forum.net/viewtopic.php?t=158&amp;view=next" class="mainmenu1">Nächstes Thema anzeigen</a> » </span></td>
+  </tr>
+  <tr>
+  	<td colspan="2">
+	  <table width="100%" cellspacing="1" cellpadding="3" border="0">
+		
+		<tr align="center">
+		  <td class="row6" width="150" height="20" nowrap="nowrap"><span class="mainmenu">Autor</span></td>
+		  <td class="row6" nowrap="nowrap"><span class="mainmenu">Nachricht</span></th>
+		</tr>
+		<tr valign="middle">
+		  <td class="row1" width="150" height="20" nowrap="nowrap"><span class="name"><a name="1075"></a><b>cataclysmic</b></span></td>
+		  <td class="row1" width="100%">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td width="100%"><a href="http://www.computer-forum.net/viewtopic.php?p=1075#1075"><img src="templates/DAJ_Glass/images/icon_minipost.gif" alt="Beitrag" title="Beitrag" border="0" /></a><span class="postdetails">Verfasst am: 03.04.2005 - 14:24<span class="genmed"> </span>   Titel: Arrays zusammenfügen und sortieren (PHP)</span></td>
+				<td nowrap="nowrap" valign="middle"><a href="http://www.computer-forum.net/posting.php?mode=quote&amp;p=1075"><img src="templates/DAJ_Glass/images/lang_german/icon_quote.gif" alt="Antworten mit Zitat" title="Antworten mit Zitat" border="0" /></a>   </td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td valign="top" align="center" class="row2"><br /><span class="postdetails">Stadtschreiber<br /><img src="images/raenge/stadtschreiber.gif" alt="Stadtschreiber" title="Stadtschreiber" border="0" /><br /><br /></span><div align="left"><span class="postdetails">Anmeldungsdatum: 09.03.2005<br />Beiträge: 407<br />Wohnort: Göttingen</span></div><br /></td>
+		  <td class="row2" width="100%" height="28" valign="top">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td><span class="postbody">Ich habe 2 mysql-Abfragen und will die entsprechenden arrays zusammenfügen und entsprechend eines keys sortieren:
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">
+<br />
+$active_topics_sql=&quot;SELECT a.topic_id,a.topic_title,&nbsp; a.topic_replies,&nbsp; a.topic_last_post_id, c.post_time 
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;FROM phpbb_topics a, phpbb_users b, phpbb_posts c, phpbb_forums d 
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;where a.topic_last_post_id=c.post_id 
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;and b.user_id=c.poster_id 
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;and d.forum_id=a.forum_id 
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;and d.auth_view=0 
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;ORDER BY topic_views DESC 
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;LIMIT 5&quot;; 
+<br />
+$active_topics = $db-&gt;sql_query&#40;$active_topics_sql&#41;; </td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">$active_topics_sql2=&quot;SELECT a.topic_id,a.topic_title,&nbsp; a.topic_views, a.topic_replies,&nbsp; a.topic_last_post_id, c.post_time, d.cat_id
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;FROM phpbb_topics a, phpbb_users b, phpbb_posts c, phpbb_forums d, &quot; . AUTH_ACCESS_TABLE . &quot; aa, &quot; . USER_GROUP_TABLE . &quot; ug&nbsp; &nbsp;
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;where a.topic_last_post_id=c.post_id &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;and b.user_id=c.poster_id 
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;and d.forum_id=a.forum_id
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;and ug.user_id = &quot;.$userdata&#91;'user_id'&#93;. &quot;
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;and aa.group_id = ug.group_id&nbsp; 
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;and aa.forum_id=d.forum_id
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;ORDER BY topic_views DESC 
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;LIMIT 20&quot;; 
+<br />
+$active_topics2 = $db-&gt;sql_query&#40;$active_topics_sql2&#41;;</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+Das sind die abfragen und das hier die arrays:
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">$line = mysql_fetch_array&#40;$active_topics&#41;</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">$line2 = mysql_fetch_array&#40;$active_topics2&#41;</td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+So und ich möchte jetzt die beiden arrays zusammenfügen und nach topic_views sortieren.
+<br />
+
+<br />
+Thx<br />_________________<br />Slackware .... was sonst. <a href="http://www.texnix.de" target="_blank">www.texnix.de</a></span><span class="gensmall"></span></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row6" valign="middle"><a href="viewtopic.php%3Ft=158.html#top" class="mainmenu">Nach oben</a></td>
+		  <td class="row6" width="100%" height="20" valign="bottom" nowrap="nowrap">
+		  	<table cellspacing="0" cellpadding="0" border="0" height="18" width="18">
+			  <tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php%3Fmode=viewprofile&amp;u=36.html"><img src="templates/DAJ_Glass/images/lang_german/icon_profile.gif" alt="Benutzer-Profile anzeigen" title="Benutzer-Profile anzeigen" border="0" /></a> <a href="privmsg.php%3Fmode=post&amp;u=36.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a>  <a href="http://www.texnix.de" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> <a href="aim:goim?screenname=felixkaminsky&amp;message=Hello+Are+you+there?"><img src="templates/DAJ_Glass/images/lang_german/icon_aim.gif" alt="AIM-Name" title="AIM-Name" border="0" /></a> <a href="http://edit.yahoo.com/config/send_webmesg?.target=cataclysmic_sms_1&amp;.src=pg"><img src="templates/DAJ_Glass/images/lang_german/icon_yim.gif" alt="Yahoo Messenger" title="Yahoo Messenger" border="0" /></a> <a href="profile.php%3Fmode=viewprofile&amp;u=36.html"><img src="templates/DAJ_Glass/images/lang_german/icon_msnm.gif" alt="MSN Messenger" title="MSN Messenger" border="0" /></a><script language="JavaScript" type="text/javascript"><!--
+
+				if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+					document.write(' <a href="http://wwp.icq.com/scripts/search.dll?to=118693529"><img src="templates/DAJ_Glass/images/lang_german/icon_icq_add.gif" alt="ICQ-Nummer" title="ICQ-Nummer" border="0" /></a>');
+				else
+					document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"><a href="http://wwp.icq.com/scripts/search.dll?to=118693529"><img src="templates/DAJ_Glass/images/lang_german/icon_icq_add.gif" alt="ICQ-Nummer" title="ICQ-Nummer" border="0" /></a></div><div style="position:absolute;left:3px;top:-1px"><a href="http://wwp.icq.com/118693529#pager"><img src="http://web.icq.com/whitepages/online?icq=118693529&img=5" width="18" height="18" border="0" /></a></div></div>');
+
+				//--></script><noscript><a href="http://wwp.icq.com/scripts/search.dll?to=118693529"><img src="templates/DAJ_Glass/images/lang_german/icon_icq_add.gif" alt="ICQ-Nummer" title="ICQ-Nummer" border="0" /></a></noscript></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row3" colspan="2" height="2"><img src="templates/DAJ_Glass/images/spacer.gif" border="0" width="1" height="1"></td>
+		</tr>
+		<tr valign="middle">
+		  <td class="row1" width="150" height="20" nowrap="nowrap"><span class="name"><a name="1077"></a><b>LordThundering</b></span></td>
+		  <td class="row1" width="100%">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td width="100%"><a href="http://www.computer-forum.net/viewtopic.php?p=1077#1077"><img src="templates/DAJ_Glass/images/icon_minipost.gif" alt="Beitrag" title="Beitrag" border="0" /></a><span class="postdetails">Verfasst am: 03.04.2005 - 14:33<span class="genmed"> </span>   Titel: </span></td>
+				<td nowrap="nowrap" valign="middle"><a href="http://www.computer-forum.net/posting.php?mode=quote&amp;p=1077"><img src="templates/DAJ_Glass/images/lang_german/icon_quote.gif" alt="Antworten mit Zitat" title="Antworten mit Zitat" border="0" /></a>   </td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td valign="top" align="center" class="row2"><br /><span class="postdetails">techn. Administrator<br /><img src="images/raenge/admin_tech.gif" alt="techn. Administrator" title="techn. Administrator" border="0" /><br /><br /></span><div align="left"><span class="postdetails">Anmeldungsdatum: 05.03.2005<br />Beiträge: 1465<br />Wohnort: /home/blitz</span></div><br /></td>
+		  <td class="row2" width="100%" height="28" valign="top">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td><span class="postbody">mach sowas doch direkt in sql..
+<br />
+oder spricht da was dagegen?
+<br />
+
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">SELECT a.topic_id,a.topic_title,&nbsp; a.topic_views, a.topic_replies,&nbsp; a.topic_last_post_id, c.post_time, d.cat_id, 
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM phpbb_topics a, phpbb_users b, phpbb_posts c, phpbb_forums d, &quot; . AUTH_ACCESS_TABLE . &quot; aa, &quot; . USER_GROUP_TABLE . &quot; ug&nbsp; &nbsp;
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;where a.topic_last_post_id=c.post_id&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and b.user_id=c.poster_id
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and d.forum_id=a.forum_id
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and ug.user_id = &quot;.$userdata&#91;'user_id'&#93;. &quot;
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and aa.group_id = ug.group_id 
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and aa.forum_id=d.forum_id
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp;and d.auth_view=0
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ORDER BY topic_views DESC
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;LIMIT 20&quot;; </td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+Das soltle machen, was du willst..<br />_________________<br /><span style="font-style: italic">Grüße,
+<br />
+LordThundering </span>
+<br />
+
+<br />
+Bei Fragen oder Problemen bitte PN an <a href="privmsg.php%3Fmode=post&amp;u=13.html" target="_blank" class="postlink">mich</a> oder Atomical.</span><span class="gensmall"></span></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row6" valign="middle"><a href="viewtopic.php%3Ft=158.html#top" class="mainmenu">Nach oben</a></td>
+		  <td class="row6" width="100%" height="20" valign="bottom" nowrap="nowrap">
+		  	<table cellspacing="0" cellpadding="0" border="0" height="18" width="18">
+			  <tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php%3Fmode=viewprofile&amp;u=13.html"><img src="templates/DAJ_Glass/images/lang_german/icon_profile.gif" alt="Benutzer-Profile anzeigen" title="Benutzer-Profile anzeigen" border="0" /></a> <a href="privmsg.php%3Fmode=post&amp;u=13.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a>   <a href="aim:goim?screenname=lordthunderingpb&amp;message=Hello+Are+you+there?"><img src="templates/DAJ_Glass/images/lang_german/icon_aim.gif" alt="AIM-Name" title="AIM-Name" border="0" /></a>  <a href="profile.php%3Fmode=viewprofile&amp;u=13.html"><img src="templates/DAJ_Glass/images/lang_german/icon_msnm.gif" alt="MSN Messenger" title="MSN Messenger" border="0" /></a><script language="JavaScript" type="text/javascript"><!--
+
+				if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+					document.write(' <a href="http://wwp.icq.com/scripts/search.dll?to=97449678"><img src="templates/DAJ_Glass/images/lang_german/icon_icq_add.gif" alt="ICQ-Nummer" title="ICQ-Nummer" border="0" /></a>');
+				else
+					document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"><a href="http://wwp.icq.com/scripts/search.dll?to=97449678"><img src="templates/DAJ_Glass/images/lang_german/icon_icq_add.gif" alt="ICQ-Nummer" title="ICQ-Nummer" border="0" /></a></div><div style="position:absolute;left:3px;top:-1px"><a href="http://wwp.icq.com/97449678#pager"><img src="http://web.icq.com/whitepages/online?icq=97449678&img=5" width="18" height="18" border="0" /></a></div></div>');
+
+				//--></script><noscript><a href="http://wwp.icq.com/scripts/search.dll?to=97449678"><img src="templates/DAJ_Glass/images/lang_german/icon_icq_add.gif" alt="ICQ-Nummer" title="ICQ-Nummer" border="0" /></a></noscript></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row3" colspan="2" height="2"><img src="templates/DAJ_Glass/images/spacer.gif" border="0" width="1" height="1"></td>
+		</tr>
+		<tr valign="middle">
+		  <td class="row1" width="150" height="20" nowrap="nowrap"><span class="name"><a name="1078"></a><b>LordThundering</b></span></td>
+		  <td class="row1" width="100%">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td width="100%"><a href="http://www.computer-forum.net/viewtopic.php?p=1078#1078"><img src="templates/DAJ_Glass/images/icon_minipost.gif" alt="Beitrag" title="Beitrag" border="0" /></a><span class="postdetails">Verfasst am: 03.04.2005 - 14:44<span class="genmed"> </span>   Titel: </span></td>
+				<td nowrap="nowrap" valign="middle"><a href="http://www.computer-forum.net/posting.php?mode=quote&amp;p=1078"><img src="templates/DAJ_Glass/images/lang_german/icon_quote.gif" alt="Antworten mit Zitat" title="Antworten mit Zitat" border="0" /></a>   </td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td valign="top" align="center" class="row2"><br /><span class="postdetails">techn. Administrator<br /><img src="images/raenge/admin_tech.gif" alt="techn. Administrator" title="techn. Administrator" border="0" /><br /><br /></span><div align="left"><span class="postdetails">Anmeldungsdatum: 05.03.2005<br />Beiträge: 1465<br />Wohnort: /home/blitz</span></div><br /></td>
+		  <td class="row2" width="100%" height="28" valign="top">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td><span class="postbody">jezt mal or..
+<br />
+
+<br />
+
+<br />
+</span><table width="90%" cellspacing="1" cellpadding="3" border="0" align="center">  <tr> 	<td><span class="genmed"><b>Code:</b></span></td>  </tr>  <tr>	<td class="code">SELECT a.topic_id,a.topic_title,&nbsp; a.topic_views, a.topic_replies,&nbsp; a.topic_last_post_id, c.post_time, d.cat_id, 
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;FROM phpbb_topics a, phpbb_users b, phpbb_posts c, phpbb_forums d, &quot; . AUTH_ACCESS_TABLE . &quot; aa, &quot; . USER_GROUP_TABLE . &quot; ug&nbsp; &nbsp;
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;where a.topic_last_post_id=c.post_id&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and b.user_id=c.poster_id
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and d.forum_id=a.forum_id and
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#40;d.auth_view=0 or &#40;
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ug.user_id = &quot;.$userdata&#91;'user_id'&#93;. &quot;
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and aa.group_id = ug.group_id 
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and aa.forum_id=d.forum_id&#41;&#41;
+<br />
+&nbsp; &nbsp;&nbsp; &nbsp;
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ORDER BY topic_views DESC
+<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;LIMIT 20&quot;; </td>  </tr></table><span class="postbody">
+<br />
+
+<br />
+Das soltle machen, was du willst..[/quote]<br />_________________<br /><span style="font-style: italic">Grüße,
+<br />
+LordThundering </span>
+<br />
+
+<br />
+Bei Fragen oder Problemen bitte PN an <a href="privmsg.php%3Fmode=post&amp;u=13.html" target="_blank" class="postlink">mich</a> oder Atomical.</span><span class="gensmall"></span></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row6" valign="middle"><a href="viewtopic.php%3Ft=158.html#top" class="mainmenu">Nach oben</a></td>
+		  <td class="row6" width="100%" height="20" valign="bottom" nowrap="nowrap">
+		  	<table cellspacing="0" cellpadding="0" border="0" height="18" width="18">
+			  <tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php%3Fmode=viewprofile&amp;u=13.html"><img src="templates/DAJ_Glass/images/lang_german/icon_profile.gif" alt="Benutzer-Profile anzeigen" title="Benutzer-Profile anzeigen" border="0" /></a> <a href="privmsg.php%3Fmode=post&amp;u=13.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a>   <a href="aim:goim?screenname=lordthunderingpb&amp;message=Hello+Are+you+there?"><img src="templates/DAJ_Glass/images/lang_german/icon_aim.gif" alt="AIM-Name" title="AIM-Name" border="0" /></a>  <a href="profile.php%3Fmode=viewprofile&amp;u=13.html"><img src="templates/DAJ_Glass/images/lang_german/icon_msnm.gif" alt="MSN Messenger" title="MSN Messenger" border="0" /></a><script language="JavaScript" type="text/javascript"><!--
+
+				if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+					document.write(' <a href="http://wwp.icq.com/scripts/search.dll?to=97449678"><img src="templates/DAJ_Glass/images/lang_german/icon_icq_add.gif" alt="ICQ-Nummer" title="ICQ-Nummer" border="0" /></a>');
+				else
+					document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"><a href="http://wwp.icq.com/scripts/search.dll?to=97449678"><img src="templates/DAJ_Glass/images/lang_german/icon_icq_add.gif" alt="ICQ-Nummer" title="ICQ-Nummer" border="0" /></a></div><div style="position:absolute;left:3px;top:-1px"><a href="http://wwp.icq.com/97449678#pager"><img src="http://web.icq.com/whitepages/online?icq=97449678&img=5" width="18" height="18" border="0" /></a></div></div>');
+
+				//--></script><noscript><a href="http://wwp.icq.com/scripts/search.dll?to=97449678"><img src="templates/DAJ_Glass/images/lang_german/icon_icq_add.gif" alt="ICQ-Nummer" title="ICQ-Nummer" border="0" /></a></noscript></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row3" colspan="2" height="2"><img src="templates/DAJ_Glass/images/spacer.gif" border="0" width="1" height="1"></td>
+		</tr>
+		<tr valign="middle">
+		  <td class="row1" width="150" height="20" nowrap="nowrap"><span class="name"><a name="1082"></a><b>cokker</b></span></td>
+		  <td class="row1" width="100%">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td width="100%"><a href="http://www.computer-forum.net/viewtopic.php?p=1082#1082"><img src="templates/DAJ_Glass/images/icon_minipost.gif" alt="Beitrag" title="Beitrag" border="0" /></a><span class="postdetails">Verfasst am: 03.04.2005 - 19:45<span class="genmed"> </span>   Titel: </span></td>
+				<td nowrap="nowrap" valign="middle"><a href="http://www.computer-forum.net/posting.php?mode=quote&amp;p=1082"><img src="templates/DAJ_Glass/images/lang_german/icon_quote.gif" alt="Antworten mit Zitat" title="Antworten mit Zitat" border="0" /></a>   </td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td valign="top" align="center" class="row2"><br /><span class="postdetails">Moderator<br /><img src="images/raenge/mod.gif" alt="Moderator" title="Moderator" border="0" /><br /><br /></span><div align="left"><span class="postdetails">Anmeldungsdatum: 06.03.2005<br />Beiträge: 679<br /></span></div><br /></td>
+		  <td class="row2" width="100%" height="28" valign="top">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td><span class="postbody">Hast du schon mal im PHP-Handbuch unter Array-Functions geschaut ob was passendes dabei ist.
+<br />
+
+<br />
+So weit ich mit entsinnen kann gibt es Funktionen zum zusammenfügen und sortieren. Ob was für dich dabei ist, steht auf einem anderen Blatt.
+<br />
+
+<br />
+Das mit dem SQL ist natürlich eleganter. Sparst die u.U ne Menge Arbeit.
+<br />
+
+<br />
+Gruß
+<br />
+Sven</span><span class="gensmall"></span></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row6" valign="middle"><a href="viewtopic.php%3Ft=158.html#top" class="mainmenu">Nach oben</a></td>
+		  <td class="row6" width="100%" height="20" valign="bottom" nowrap="nowrap">
+		  	<table cellspacing="0" cellpadding="0" border="0" height="18" width="18">
+			  <tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php%3Fmode=viewprofile&amp;u=30.html"><img src="templates/DAJ_Glass/images/lang_german/icon_profile.gif" alt="Benutzer-Profile anzeigen" title="Benutzer-Profile anzeigen" border="0" /></a> <a href="privmsg.php%3Fmode=post&amp;u=30.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a>     <script language="JavaScript" type="text/javascript"><!--
+
+				if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+					document.write(' ');
+				else
+					document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script><noscript></noscript></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row3" colspan="2" height="2"><img src="templates/DAJ_Glass/images/spacer.gif" border="0" width="1" height="1"></td>
+		</tr>
+		<tr valign="middle">
+		  <td class="row1" width="150" height="20" nowrap="nowrap"><span class="name"><a name="1090"></a><b>cataclysmic</b></span></td>
+		  <td class="row1" width="100%">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td width="100%"><a href="http://www.computer-forum.net/viewtopic.php?p=1090#1090"><img src="templates/DAJ_Glass/images/icon_minipost.gif" alt="Beitrag" title="Beitrag" border="0" /></a><span class="postdetails">Verfasst am: 03.04.2005 - 22:29<span class="genmed"> </span>   Titel: </span></td>
+				<td nowrap="nowrap" valign="middle"><a href="http://www.computer-forum.net/posting.php?mode=quote&amp;p=1090"><img src="templates/DAJ_Glass/images/lang_german/icon_quote.gif" alt="Antworten mit Zitat" title="Antworten mit Zitat" border="0" /></a>   </td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td valign="top" align="center" class="row2"><br /><span class="postdetails">Stadtschreiber<br /><img src="images/raenge/stadtschreiber.gif" alt="Stadtschreiber" title="Stadtschreiber" border="0" /><br /><br /></span><div align="left"><span class="postdetails">Anmeldungsdatum: 09.03.2005<br />Beiträge: 407<br />Wohnort: Göttingen</span></div><br /></td>
+		  <td class="row2" width="100%" height="28" valign="top">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td><span class="postbody">bei php.net war ich schon, und es gibt einige Funktionern für diesen Zweck, nur habe ich nix zum Laufen bekommen.
+<br />
+
+<br />
+Die Idee vom Lorg ist wirklich gut, nur der Server hat sich zu tode gerechnet, mein Heimrechner hat für diese Abfrage 35sec gebraucht und die Anfrage an den Server habe ich nach 40sec abgebrochen.
+<br />
+
+<br />
+Die beiden Abfragen für sich laufen allerdings ohne Probleme auch ohne großen Zeitaufwand.<br />_________________<br />Slackware .... was sonst. <a href="http://www.texnix.de" target="_blank">www.texnix.de</a></span><span class="gensmall"></span></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row6" valign="middle"><a href="viewtopic.php%3Ft=158.html#top" class="mainmenu">Nach oben</a></td>
+		  <td class="row6" width="100%" height="20" valign="bottom" nowrap="nowrap">
+		  	<table cellspacing="0" cellpadding="0" border="0" height="18" width="18">
+			  <tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php%3Fmode=viewprofile&amp;u=36.html"><img src="templates/DAJ_Glass/images/lang_german/icon_profile.gif" alt="Benutzer-Profile anzeigen" title="Benutzer-Profile anzeigen" border="0" /></a> <a href="privmsg.php%3Fmode=post&amp;u=36.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a>  <a href="http://www.texnix.de" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> <a href="aim:goim?screenname=felixkaminsky&amp;message=Hello+Are+you+there?"><img src="templates/DAJ_Glass/images/lang_german/icon_aim.gif" alt="AIM-Name" title="AIM-Name" border="0" /></a> <a href="http://edit.yahoo.com/config/send_webmesg?.target=cataclysmic_sms_1&amp;.src=pg"><img src="templates/DAJ_Glass/images/lang_german/icon_yim.gif" alt="Yahoo Messenger" title="Yahoo Messenger" border="0" /></a> <a href="profile.php%3Fmode=viewprofile&amp;u=36.html"><img src="templates/DAJ_Glass/images/lang_german/icon_msnm.gif" alt="MSN Messenger" title="MSN Messenger" border="0" /></a><script language="JavaScript" type="text/javascript"><!--
+
+				if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+					document.write(' <a href="http://wwp.icq.com/scripts/search.dll?to=118693529"><img src="templates/DAJ_Glass/images/lang_german/icon_icq_add.gif" alt="ICQ-Nummer" title="ICQ-Nummer" border="0" /></a>');
+				else
+					document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"><a href="http://wwp.icq.com/scripts/search.dll?to=118693529"><img src="templates/DAJ_Glass/images/lang_german/icon_icq_add.gif" alt="ICQ-Nummer" title="ICQ-Nummer" border="0" /></a></div><div style="position:absolute;left:3px;top:-1px"><a href="http://wwp.icq.com/118693529#pager"><img src="http://web.icq.com/whitepages/online?icq=118693529&img=5" width="18" height="18" border="0" /></a></div></div>');
+
+				//--></script><noscript><a href="http://wwp.icq.com/scripts/search.dll?to=118693529"><img src="templates/DAJ_Glass/images/lang_german/icon_icq_add.gif" alt="ICQ-Nummer" title="ICQ-Nummer" border="0" /></a></noscript></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row3" colspan="2" height="2"><img src="templates/DAJ_Glass/images/spacer.gif" border="0" width="1" height="1"></td>
+		</tr>
+		<tr valign="middle">
+		  <td class="row1" width="150" height="20" nowrap="nowrap"><span class="name"><a name="1094"></a><b>LH</b></span></td>
+		  <td class="row1" width="100%">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td width="100%"><a href="http://www.computer-forum.net/viewtopic.php?p=1094#1094"><img src="templates/DAJ_Glass/images/icon_minipost.gif" alt="Beitrag" title="Beitrag" border="0" /></a><span class="postdetails">Verfasst am: 04.04.2005 - 10:16<span class="genmed"> </span>   Titel: </span></td>
+				<td nowrap="nowrap" valign="middle"><a href="http://www.computer-forum.net/posting.php?mode=quote&amp;p=1094"><img src="templates/DAJ_Glass/images/lang_german/icon_quote.gif" alt="Antworten mit Zitat" title="Antworten mit Zitat" border="0" /></a>   </td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td valign="top" align="center" class="row2"><br /><span class="postdetails">Poet<br /><img src="images/raenge/poet.gif" alt="Poet" title="Poet" border="0" /><br /><br /></span><div align="left"><span class="postdetails">Anmeldungsdatum: 05.03.2005<br />Beiträge: 1147<br />Wohnort: Berlin</span></div><br /></td>
+		  <td class="row2" width="100%" height="28" valign="top">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td><span class="postbody">Hi cataclysmic, 
+<br />
+
+<br />
+bitte poste doch mal Beispiele für die Ausgabe der Arrays mit print_r()
+<br />
+
+<br />
+Ich tue mioch da optisch grad etwas schwer. thx</span><span class="gensmall"></span></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row6" valign="middle"><a href="viewtopic.php%3Ft=158.html#top" class="mainmenu">Nach oben</a></td>
+		  <td class="row6" width="100%" height="20" valign="bottom" nowrap="nowrap">
+		  	<table cellspacing="0" cellpadding="0" border="0" height="18" width="18">
+			  <tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php%3Fmode=viewprofile&amp;u=14.html"><img src="templates/DAJ_Glass/images/lang_german/icon_profile.gif" alt="Benutzer-Profile anzeigen" title="Benutzer-Profile anzeigen" border="0" /></a> <a href="privmsg.php%3Fmode=post&amp;u=14.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a>     <script language="JavaScript" type="text/javascript"><!--
+
+				if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+					document.write(' ');
+				else
+					document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"></div><div style="position:absolute;left:3px;top:-1px"></div></div>');
+
+				//--></script><noscript></noscript></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row3" colspan="2" height="2"><img src="templates/DAJ_Glass/images/spacer.gif" border="0" width="1" height="1"></td>
+		</tr>
+		<tr valign="middle">
+		  <td class="row1" width="150" height="20" nowrap="nowrap"><span class="name"><a name="1098"></a><b>LordThundering</b></span></td>
+		  <td class="row1" width="100%">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td width="100%"><a href="http://www.computer-forum.net/viewtopic.php?p=1098#1098"><img src="templates/DAJ_Glass/images/icon_minipost.gif" alt="Beitrag" title="Beitrag" border="0" /></a><span class="postdetails">Verfasst am: 04.04.2005 - 13:39<span class="genmed"> </span>   Titel: </span></td>
+				<td nowrap="nowrap" valign="middle"><a href="http://www.computer-forum.net/posting.php?mode=quote&amp;p=1098"><img src="templates/DAJ_Glass/images/lang_german/icon_quote.gif" alt="Antworten mit Zitat" title="Antworten mit Zitat" border="0" /></a>   </td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td valign="top" align="center" class="row2"><br /><span class="postdetails">techn. Administrator<br /><img src="images/raenge/admin_tech.gif" alt="techn. Administrator" title="techn. Administrator" border="0" /><br /><br /></span><div align="left"><span class="postdetails">Anmeldungsdatum: 05.03.2005<br />Beiträge: 1465<br />Wohnort: /home/blitz</span></div><br /></td>
+		  <td class="row2" width="100%" height="28" valign="top">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td><span class="postbody">hmm,nur mal ne kurze frage:
+<br />
+hast du doppelte ausgaben?
+<br />
+
+<br />
+sonst würde ich einfach die arrays aneinandern hängen (nen foreach durch die arrays, oder sowas..)<br />_________________<br /><span style="font-style: italic">Grüße,
+<br />
+LordThundering </span>
+<br />
+
+<br />
+Bei Fragen oder Problemen bitte PN an <a href="privmsg.php%3Fmode=post&amp;u=13.html" target="_blank" class="postlink">mich</a> oder Atomical.</span><span class="gensmall"></span></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row6" valign="middle"><a href="viewtopic.php%3Ft=158.html#top" class="mainmenu">Nach oben</a></td>
+		  <td class="row6" width="100%" height="20" valign="bottom" nowrap="nowrap">
+		  	<table cellspacing="0" cellpadding="0" border="0" height="18" width="18">
+			  <tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php%3Fmode=viewprofile&amp;u=13.html"><img src="templates/DAJ_Glass/images/lang_german/icon_profile.gif" alt="Benutzer-Profile anzeigen" title="Benutzer-Profile anzeigen" border="0" /></a> <a href="privmsg.php%3Fmode=post&amp;u=13.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a>   <a href="aim:goim?screenname=lordthunderingpb&amp;message=Hello+Are+you+there?"><img src="templates/DAJ_Glass/images/lang_german/icon_aim.gif" alt="AIM-Name" title="AIM-Name" border="0" /></a>  <a href="profile.php%3Fmode=viewprofile&amp;u=13.html"><img src="templates/DAJ_Glass/images/lang_german/icon_msnm.gif" alt="MSN Messenger" title="MSN Messenger" border="0" /></a><script language="JavaScript" type="text/javascript"><!--
+
+				if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+					document.write(' <a href="http://wwp.icq.com/scripts/search.dll?to=97449678"><img src="templates/DAJ_Glass/images/lang_german/icon_icq_add.gif" alt="ICQ-Nummer" title="ICQ-Nummer" border="0" /></a>');
+				else
+					document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"><a href="http://wwp.icq.com/scripts/search.dll?to=97449678"><img src="templates/DAJ_Glass/images/lang_german/icon_icq_add.gif" alt="ICQ-Nummer" title="ICQ-Nummer" border="0" /></a></div><div style="position:absolute;left:3px;top:-1px"><a href="http://wwp.icq.com/97449678#pager"><img src="http://web.icq.com/whitepages/online?icq=97449678&img=5" width="18" height="18" border="0" /></a></div></div>');
+
+				//--></script><noscript><a href="http://wwp.icq.com/scripts/search.dll?to=97449678"><img src="templates/DAJ_Glass/images/lang_german/icon_icq_add.gif" alt="ICQ-Nummer" title="ICQ-Nummer" border="0" /></a></noscript></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row3" colspan="2" height="2"><img src="templates/DAJ_Glass/images/spacer.gif" border="0" width="1" height="1"></td>
+		</tr>
+		<tr valign="middle">
+		  <td class="row1" width="150" height="20" nowrap="nowrap"><span class="name"><a name="1107"></a><b>cataclysmic</b></span></td>
+		  <td class="row1" width="100%">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td width="100%"><a href="http://www.computer-forum.net/viewtopic.php?p=1107#1107"><img src="templates/DAJ_Glass/images/icon_minipost.gif" alt="Beitrag" title="Beitrag" border="0" /></a><span class="postdetails">Verfasst am: 05.04.2005 - 09:38<span class="genmed"> </span>   Titel: </span></td>
+				<td nowrap="nowrap" valign="middle"><a href="http://www.computer-forum.net/posting.php?mode=quote&amp;p=1107"><img src="templates/DAJ_Glass/images/lang_german/icon_quote.gif" alt="Antworten mit Zitat" title="Antworten mit Zitat" border="0" /></a>   </td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td valign="top" align="center" class="row2"><br /><span class="postdetails">Stadtschreiber<br /><img src="images/raenge/stadtschreiber.gif" alt="Stadtschreiber" title="Stadtschreiber" border="0" /><br /><br /></span><div align="left"><span class="postdetails">Anmeldungsdatum: 09.03.2005<br />Beiträge: 407<br />Wohnort: Göttingen</span></div><br /></td>
+		  <td class="row2" width="100%" height="28" valign="top">
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			  <tr>
+				<td><span class="postbody">Also es sollte keine Überschneidungen geben.
+<br />
+
+<br />
+Ich kann ja nochmal genau erklären was das Ziel ist.
+<br />
+
+<br />
+Das Script ist Teil eines Mods für phpBB  das die aktuellsten Themen die meiste Gesehenen und die meiste Beantworteten  Threads im Index anzeigt.
+<br />
+
+<br />
+Jetzt ist es so, dass ich 2 Unterforen gemacht habe, da wir eine weitere klassenstufe in das Forum aufnehmen.
+<br />
+Es gibt das mit 3 Kategorien, 1 die offen ist für beide Gruppen und 2 die jeweils nur einer Gruppe zugänglich sind.
+<br />
+Jetzt ist es so, dass das Script so wie es vorhanden ist nur die offenen Teil anzeigt, das ist das script ohne groups drinne.
+<br />
+Ich habe es jetzt hinbekommen das so zu modifizieren, dass es nur den jeweils geschützten Bereich anzeigt, aber ich hätte halt gerne eine Mischung, so dass wenn man online ist die neusten Sachen aus dem eigenen geschützten udn dem öffentlichen Bereich sieht.
+<br />
+
+<br />
+Ich dachte jetzt man könnte die aus den SQL-Abfragen resultieren arrays zusammenfügen und neu nach dem jeweiligen key sortieren und dann die 5 Aktuellsten auslesen.<br />_________________<br />Slackware .... was sonst. <a href="http://www.texnix.de" target="_blank">www.texnix.de</a></span><span class="gensmall"></span></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row6" valign="middle"><a href="viewtopic.php%3Ft=158.html#top" class="mainmenu">Nach oben</a></td>
+		  <td class="row6" width="100%" height="20" valign="bottom" nowrap="nowrap">
+		  	<table cellspacing="0" cellpadding="0" border="0" height="18" width="18">
+			  <tr>
+				<td valign="middle" nowrap="nowrap"><a href="profile.php%3Fmode=viewprofile&amp;u=36.html"><img src="templates/DAJ_Glass/images/lang_german/icon_profile.gif" alt="Benutzer-Profile anzeigen" title="Benutzer-Profile anzeigen" border="0" /></a> <a href="privmsg.php%3Fmode=post&amp;u=36.html"><img src="templates/DAJ_Glass/images/lang_german/icon_pm.gif" alt="Private Nachricht senden" title="Private Nachricht senden" border="0" /></a>  <a href="http://www.texnix.de" target="_userwww"><img src="templates/DAJ_Glass/images/lang_german/icon_www.gif" alt="Website dieses Benutzers besuchen" title="Website dieses Benutzers besuchen" border="0" /></a> <a href="aim:goim?screenname=felixkaminsky&amp;message=Hello+Are+you+there?"><img src="templates/DAJ_Glass/images/lang_german/icon_aim.gif" alt="AIM-Name" title="AIM-Name" border="0" /></a> <a href="http://edit.yahoo.com/config/send_webmesg?.target=cataclysmic_sms_1&amp;.src=pg"><img src="templates/DAJ_Glass/images/lang_german/icon_yim.gif" alt="Yahoo Messenger" title="Yahoo Messenger" border="0" /></a> <a href="profile.php%3Fmode=viewprofile&amp;u=36.html"><img src="templates/DAJ_Glass/images/lang_german/icon_msnm.gif" alt="MSN Messenger" title="MSN Messenger" border="0" /></a><script language="JavaScript" type="text/javascript"><!--
+
+				if ( navigator.userAgent.toLowerCase().indexOf('mozilla') != -1 && navigator.userAgent.indexOf('5.') == -1 && navigator.userAgent.indexOf('6.') == -1 )
+					document.write(' <a href="http://wwp.icq.com/scripts/search.dll?to=118693529"><img src="templates/DAJ_Glass/images/lang_german/icon_icq_add.gif" alt="ICQ-Nummer" title="ICQ-Nummer" border="0" /></a>');
+				else
+					document.write('</td><td>&nbsp;</td><td valign="top" nowrap="nowrap"><div style="position:relative"><div style="position:absolute"><a href="http://wwp.icq.com/scripts/search.dll?to=118693529"><img src="templates/DAJ_Glass/images/lang_german/icon_icq_add.gif" alt="ICQ-Nummer" title="ICQ-Nummer" border="0" /></a></div><div style="position:absolute;left:3px;top:-1px"><a href="http://wwp.icq.com/118693529#pager"><img src="http://web.icq.com/whitepages/online?icq=118693529&img=5" width="18" height="18" border="0" /></a></div></div>');
+
+				//--></script><noscript><a href="http://wwp.icq.com/scripts/search.dll?to=118693529"><img src="templates/DAJ_Glass/images/lang_german/icon_icq_add.gif" alt="ICQ-Nummer" title="ICQ-Nummer" border="0" /></a></noscript></td>
+			  </tr>
+			</table>
+		  </td>
+		</tr>
+		<tr>
+		  <td class="row3" colspan="2" height="2"><img src="templates/DAJ_Glass/images/spacer.gif" border="0" width="1" height="1"></td>
+		</tr>
+		<tr align="center">
+		  <td class="row3" colspan="2" height="28">
+		    <table cellspacing="0" cellpadding="0" border="0">
+			  <tr><form method="post" action="http://www.computer-forum.net/viewtopic.php?t=158&amp;start=0">
+				<td align="center"><span class="mainmenu1">Beiträge der letzten Zeit anzeigen: <select name="postdays"><option value="0" selected="selected">Alle Beiträge</option><option value="1">1 Tag</option><option value="7">7 Tage</option><option value="14">2 Wochen</option><option value="30">1 Monat</option><option value="90">3 Monate</option><option value="180">6 Monate</option><option value="364">1 Jahr</option></select> <select name="postorder"><option value="asc" selected="selected">Die ältesten zuerst</option><option value="desc">Die neusten zuerst</option></select> <input type="submit" value="Los" class="liteoption" name="submit" /></span></td>
+			  </form></tr>
+			</table>
+		  </td>
+		</tr>
+	  </table>
+	</td>
+  </tr>
+</table>
+
+<table width="100%" cellspacing="1" cellpadding="1" border="0">
+  <tr valign="top">
+	<td nowrap="nowrap"><span class="nav"><a href="posting.php%3Fmode=newtopic&amp;f=10.html"><img src="templates/DAJ_Glass/images/lang_german/post.gif" border="0" alt="Neues Thema eröffnen" align="middle" /></a>  <a href="http://www.computer-forum.net/posting.php?mode=reply&amp;t=158"><img src="templates/DAJ_Glass/images/lang_german/reply.gif" border="0" alt="Neue Antwort erstellen" align="middle" /></a></span></td>
+	<td valign="middle" width="100%"><span class="gensmall"></span></td>
+	<td align="right" nowrap="nowrap"><span class="nav">Seite <b>1</b> von <b>1</b></span></td>
+  </tr>
+</table>
+
+<br />
+
+<table width="100%" cellspacing="1" cellpadding="1" border="0">
+  <tr valign="top">
+	<td nowrap="nowrap"><img src="templates/DAJ_Glass/images/nav.gif" border="0"></td>
+	<td width="100%"><span class="mainmenu"><a href="index.php.html" class="mainmenu">Computer-Forum Foren-Übersicht</a> » <a href="viewforum.php%3Ff=10.html" class="mainmenu">Programmieren</a> » <a class="mainmenu" href="viewtopic.php%3Ft=158&amp;start=0&amp;postdays=0&amp;postorder=asc&amp;highlight=.html">Arrays zusammenfügen und sortieren (PHP)</a></span></td>
+	<td nowrap="nowrap" align="right"><form method="get" name="jumpbox" action="http://www.computer-forum.net/viewforum.php" onSubmit="if(document.jumpbox.f.value == -1){return false;}">
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+	<td nowrap="nowrap"><span class="gensmall">Gehe zu: <select name="f" onchange="if(this.options[this.selectedIndex].value != -1){ forms['jumpbox'].submit() }"><option value="-1">Forum auswählen</option><option value="-1">&nbsp;</option><option value="-1">Betriebssysteme</option><option value="-1">----------------</option><option value="2">Linux</option><option value="3">Mac OS X / Unix</option><option value="4">Windows</option><option value="5">Sonst. Betriebssysteme</option><option value="-1">&nbsp;</option><option value="-1">Hardware</option><option value="-1">----------------</option><option value="6">Hardware</option><option value="7">Mobile Computing</option><option value="-1">&nbsp;</option><option value="-1">Software</option><option value="-1">----------------</option><option value="8">Anwendungen</option><option value="9">Spiele</option><option value="10"selected="selected">Programmieren</option><option value="11">Sicherheit</option><option value="-1">&nbsp;</option><option value="-1">Internet & Intranet</option><option value="-1">----------------</option><option value="12">Netzwerk</option><option value="13">Web-Forum</option><option value="-1">&nbsp;</option><option value="-1">Sonstiges</option><option value="-1">----------------</option><option value="1">Rund ums Forum</option><option value="18">Kaufberatung</option><option value="15">Smalltalk</option></select><input type="hidden" name="sid" value="74cf9c6e0ec09eb401cf65cc493d8e44" /> <input type="submit" value="Los" class="liteoption" /></span></td>
+  </tr>
+</table>
+</form>
+</td>
+  </tr>
+</table>
+
+<br />
+
+<table width="100%" cellspacing="0" cellpadding="0" class="forumline">
+  <tr>
+  	<td class="row6">
+	  <table width="100%" cellspacing="1" cellpadding="3" border="0">
+		<tr>
+		  <td width="40%" valign="top" nowrap="nowrap"><span class="gensmall"></span><br /><br /></td>
+		  <td align="right" valign="middle" nowrap="nowrap"><span class="gensmall">Du <b>kannst keine</b> Beiträge in dieses Forum schreiben.<br />Du <b>kannst</b> auf Beiträge in diesem Forum <b>nicht</b> antworten.<br />Du <b>kannst</b> deine Beiträge in diesem Forum <b>nicht</b> bearbeiten.<br />Du <b>kannst</b> deine Beiträge in diesem Forum <b>nicht</b> löschen.<br />Du <b>kannst</b> an Umfragen in diesem Forum <b>nicht</b> mitmachen.<br /></span></td>
+  		</tr>
+	  </table>
+	</td>
+  </tr>
+</table>
+
+  	</td>
+	<td class="right"><span class="vsmall"> </span></td>
+  </tr>
+  <tr>
+  	<td class="left"><span class="vsmall"> </span></td>
+	<td colspan="2" class="row2">
+	<div align="center"><span class="copyright"><br /><br />
+	<a href="http://www.computer-forum.net/viewtopic.php?p=1661"><b>Impressum</b></a><br/><br><br>
+	DAJ Glass (1.0.5) template by <a href="http://www.dumbassjones.com/" target="_blank" class="copyright">Dustin Baccetti</a><br />
+	Powered by <a href="http://www.phpbb.com/" target="_phpbb" class="copyright">phpBB</a>  © 2001, 2002 phpBB Group<br />Deutsche Übersetzung von <a href="http://www.phpbb.de/" target="_blank" class="copyright">phpBB.de</a></span></div>
+	</td>
+	<td class="right"><span class="vsmall"> </span></td>
+  </tr>
+  <tr>
+  	<td height="27" class="ll"><span class="vsmall"> </span></td>
+	<td colspan="2" class="lc"><span class="vsmall"> </span></td>
+	<td class="lr"><span class="vsmall"> </span></td>
+  </tr>
+</table>
+
+</body>
+</html>
+
